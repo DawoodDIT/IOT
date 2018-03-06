@@ -1,0 +1,28 @@
+{
+  "sut": {
+    "url": "https://m2mportal-stage.vodafone.com/m2mscp"
+  },
+  "Login": {
+    "Username": "adil.mohammed@slr-consultants.co.uk",
+    "Password": "Portal4*"
+  },
+  "CustomerWithOwnUsers": {
+   "Username": "karthika.arun@slr-consultants.com",
+   "Password": "M2Mm2mM2M"
+},
+  "CustomerForReset": {
+   "Username": "vidya.mahadevaiah@slr-consultants.com",
+   "Password": "M2Mm2mM2M"
+},
+  "CustomerWithRestrictCSP": {
+    "Username": "abctestprofile@gmail.com",
+    "Password": "M2Mm2mM2M"
+},
+
+  "CustomerWithAccessRight": {
+    "Username": "deftestprofile@gmail.com",
+    "Password": "M2Mm2mM2M"
+  }
+
+
+}

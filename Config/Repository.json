@@ -1,0 +1,141 @@
+{
+    "text": {
+       "MSISDN": {
+          "locator": "name",
+          "locatorvalue": "condition.msisdn"
+        }
+      },
+      "text": {
+       "Organization Short Code": {
+          "locator": "id",
+          "locatorvalue": "orgCode_value"
+        }
+      },
+  "text": {
+       "APN": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_apnNameSelectLbl"
+        }
+      },
+    "table":{
+      "device":{
+              "locator" : "id",
+              "locatorvalue": "__ns2036994902_tableColumns"
+      }
+    },
+    "button": {
+       "Refresh": {
+          "locator": "id",
+          "locatorvalue": "__ns2036993941_refreshPage"
+        },
+	"removegroup":{
+        "locator":"class",
+        "locatorvalue":"remove"
+    },
+       "VPN Plus": {
+          "locator": "id",
+          "locatorvalue": "__ns2036993941_newVPNBtn"
+        },
+       "APN Plus": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_addNewAPNProfilePlus"
+        },
+	"MCCMNC Plus": {
+          "locator": "id",
+          "locatorvalue": "__ns2036993941_newMccMncBtn"
+        },
+	"Webservice Plus": {
+          "locator": "id",
+          "locatorvalue": "__ns2036993941_newWebServiceBtn"
+        },
+       "AddContact": {
+          "locator": "id",
+          "locatorvalue": "__ns2036993941_newContactBtn"
+        },
+      "editContact":{
+         "locator": "id",
+         "locatorvalue":"__ns2036993941_contact0editBtn"
+       },
+
+      "saveContact":{
+      "locator": "id",
+         "locatorvalue":"__ns2036993941_contact0saveBtnText"
+    },
+
+      "searchUser":{
+        "locator":"id",
+        "locatorvalue":"__ns2036994902_searchFiltersSearchBtnText"
+    },
+ "clearFilters":{
+      "locator":"id",
+      "locatorvalue":"__ns2036994902_searchFiltersCleanFilters"
+    },
+
+ "hamBurgerBefore":{
+    "locator":"xpath",
+    "locatorvalue":"//button[@class='ColVis_Button TableTools_Button ColVis_MasterButton']"
+  },
+
+
+  "hamBurgerAfter":{
+    "locator":"xpath",
+    "locatorvalue":"//div[@class='ColVis_catcher TableTools_catcher']"
+  }
+
+      },
+  "radiobutton": {
+       "Default": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_mccMncDefault"
+        }
+      },
+
+  "uploadbutton": {
+     "Select file": {
+        "locator": "id",
+        "locatorvalue": "attchFileId"
+      }
+    },
+   "link": {
+     "TXT": {
+        "locator": "class",
+        "locatorvalue": "batchType"
+      }
+    },
+    "tab": {
+       "Device_Tools": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_tab_Tools"
+        }
+      }
+	,
+    "expandlink": {
+      "Newvpn": {
+         "locator":"xpath",
+         "locatorvalue":"//*[@class='vpn_name pull-left']"
+        }
+      },
+    "checkbox": {
+      "Incoming": {
+         "locator":"id",
+         "locatorvalue":"__ns2036993941_blockIncoming1RW"
+        }, "Outgoing": {
+         "locator":"id",
+         "locatorvalue":"__ns2036993941_blockOutgoing1RW"
+        }
+      },
+    "checkbox2": {
+      "Incoming": {
+         "locator":"id",
+         "locatorvalue":"__ns2036993941_allowIncoming2RW"
+        }, "Outgoing": {
+         "locator":"id",
+         "locatorvalue":"__ns2036993941_allowOutgoing2RW"
+        }
+      }
+
+
+  }
+  
+
+
