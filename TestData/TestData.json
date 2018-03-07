@@ -1,3 +1,38 @@
 {
-	
+	"ADMIN": {
+		"Platform": "Platform as Platform Administrator",
+		"Opco": "PPVGE as Operator Administrator",
+		"Cust1": "AutomationCust1 as Customer Administrator",
+		"Cust2": "Automation2 as Customer Administrator",
+		"Cust3": "Automation3 as Customer Administrator",
+		"CustLBS": "AutomationLBS as Customer Administrator",
+		"CustGeoLBS": "Geo_LBS as Customer Administrator"
+	},
+	"SIMStateOperation": {
+        "InactiveIMSI": "111110001000000",
+        "SleepIMSI1": "111117500000021",
+        "SleepIMSI2": "111117500010753",
+        "SleepIMSI3": "111117500010764",
+        "TestIMSI1": "111117500010808",
+        "SuspendIMSI": "111117500010756",
+        "StandbyIMSI": "111117500010756",
+        "TestIMSI2": "111117600030701",
+        "ReadyIMSI1": "111110001000002",
+        "ReadyIMSI2": "111110001000003",
+        "IMSIRange": "204043258711181,204043258711182",
+        "RangeIMSI1": "204043258711181",
+        "RangeIMSI2": "204043258711182",
+        "InactiveIMSI2": "111117500000512",
+		"OpCoAdmin": "PPVGE as Operator Administrator",
+		"OpCoGroupAdmin": "AutoOpGrp11 as Operator Group Administrator",
+		"CustomerAdmin": "AutomationCust1 as Customer Administrator",
+		"SubCustAdmin": "AutoSubCust as Sub-customer Administrator",
+		"CustGroupAdmin": "AutoCustGroup as Customer Group Administrator",
+		"ResellerAdmin": "",
+		"PlatformAdmin": "Platform as Platform Administrator",
+		"IMSI1": "204043258711181",
+		"IMSI2": "204043258711182",
+		"MSISDN": "204043720199828",
+		"Status": "Active"
+	}
 }
