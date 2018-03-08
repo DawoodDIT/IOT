@@ -10,6 +10,7 @@ Feature:AccountManagement
       When click on menu "Administration"
       Then verify text "My organisation"
       When click on submenu "My organisation"
+      Then wait for 5 seconds
       Then verify text "Overview"
       When click on link "Details"
       Then verify text "Devices"
