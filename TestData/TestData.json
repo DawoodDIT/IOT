@@ -1,3 +1,105 @@
 {
+	"ADMIN": {
+		"Platform": "Platform as Platform Administrator",
+		"Opco": "PPVGE as Operator Administrator",
+		"Cust1": "AutomationCust1 as Customer Administrator",
+		"Cust2": "Automation2 as Customer Administrator",
+		"Cust3": "Automation3 as Customer Administrator",
+		"CustLBS": "AutomationLBS as Customer Administrator",
+		"CustGeoLBS": "Geo_LBS as Customer Administrator"
+	},
+	"SIMStateOperation": {
+        "InactiveIMSI": "111110001000000",
+        "SleepIMSI1": "111117500000021",
+        "SleepIMSI2": "111117500010753",
+        "SleepIMSI3": "111117500010764",
+        "TestIMSI1": "111117500010808",
+        "SuspendIMSI": "111117500010756",
+        "StandbyIMSI": "111117500010756",
+        "TestIMSI2": "111117600030701",
+        "ReadyIMSI1": "111110001000002",
+        "ReadyIMSI2": "111110001000003",
+        "IMSIRange": "204043258711181,204043258711182",
+        "RangeIMSI1": "204043258711181",
+        "RangeIMSI2": "204043258711182",
+        "InactiveIMSI2": "111117500000512",
+		"OpCoAdmin": "PPVGE as Operator Administrator",
+		"OpCoGroupAdmin": "AutoOpGrp11 as Operator Group Administrator",
+		"CustomerAdmin": "AutomationCust1 as Customer Administrator",
+		"SubCustAdmin": "AutoSubCust as Sub-customer Administrator",
+		"CustGroupAdmin": "AutoCustGroup as Customer Group Administrator",
+		"ResellerAdmin": "",
+		"PlatformAdmin": "Platform as Platform Administrator",
+		"IMSI1": "204043258711181",
+		"IMSI2": "204043258711182",
+		"MSISDN": "204043720199828",
+		"Status": "Active"
+	},
 	
+	"AccountManagement": {
+	"admin": "testuser1234@mailinator.com",
+	"name":"Test189 User",
+	"notAdmin": "butterfly123456@mailinator.com",
+	"userForReset":"vidya.mahadevaiah@slr-consultants.com",
+    "userForAccessRight":"deftestprofile@gmail.com"
+
+	},
+
+	"CustomerReports2": {
+    "opCo":"PPVGE as Operator Administrator",
+    "Cust":"AutomationCust1 as Customer Administrator",
+    "CustName":"AutomationCust1",
+    "StartDate":"2017-11-01",
+    "SimWithSMSUsage":"204043258711180",
+    "SimWithRadFailure":"204043258711182",
+    "SIMGroupName":"SIMGroup01",
+    "StartDate2":"2017-10-01",
+    "DateWithUsage":"2018-01-18",
+    "DateWithCalls":"2018-01-11",
+    "Cust2":"Automation2",
+    "Cust3":"Automation3",
+    "Cust3Name":"Automation3 as Customer Administrator",
+    "CustOrderNo":"10021354000007",
+    "profileWitRadiusFailure":"AutoCSPipv6_90128"
+	},
+
+	"DMB163":{
+    "WithProvisioningHistory": "111110001000019",
+     "WithAPNAttributeChange": "204043720141084",
+     "Suspended": "204046855627929",
+	 "Active": "111117500010785",
+     "Live/Test": "204043258711180",
+
+	 "IMSINo": "111117500000013",
+     "TextAreaName":"IMSI",
+	 "Restricted": "",
+     "Detatched": "",
+     "Barred": "",
+     "Purged": ""
+
+
+
+   },
+
+	"Status":{
+     "Suspended": "204046855627929",
+	 "Active": "111117500010785",
+     "Live/Test": "204043258711180",
+	 "Restricted": "",
+	 "Detatched": "",
+	 "Barred": "",
+	"Purged": ""
+
+
+   },
+
+	"SubscriberState":{
+      "Restricted": "",
+		"Purged": "",
+		 "BarredNoUsage": "",
+		"BarredWithUsage": "",
+		"ActiveNoUsage": "111117500010787",
+		"FailedPSIResponse": ""
+
+   }
 }
