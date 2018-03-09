@@ -235,24 +235,30 @@ def getValueFromLabelAndStore(context, lblName,position,storeValue):
 @Then('change sim "{imsivalue}" from "{initState}" to "{finalState}"')
 def step_impl(context,imsivalue,initState,finalState):
     context.execute_steps("""
+        Then verify text "Devices"
         When click on menu "Devices"
-        When click on menu "All devices"
+        Then verify text "All devices"
+        When click on submenu "All devices"
         Then verify text "Results"
         Then enter textarea "IMSI" "{imsivalue}"
         When click on button "Search"
+        Then verify text "Results"
         Then verify text "{initState}"
         Then click on "checkbox" of table based on below criteria
         |IMSI|
         |{imsivalue}|
         When click on link "Operations"
+        Then verify text "Batch Operations"
         When click on button "Next"
-        Then select dropdown "* Action" "Change state"
         Then verify text "Batch operation"
+        Then select dropdown "* Action" "Change state"
+        Then verify text "New State"
         Then select dropdown "New State" "{finalState}"
         #Then select dropdown "State change reason" "End of contract"
         When click on button "Next"
+        Then verify text "You are about to apply the following to"
         When click on button "Submit"
-        Then verify text "The batch operation was successfully submitted"
+        Then verify text "The batch operation was successfully submitted with the following batch ID:"
         When click on button "Go to devices"
         Then verify text "{finalState}"
         Then report "State change is successful"
@@ -700,3 +706,12 @@ def getfileName(context,fileType,storeValue):
 @Then('verify hidden header "{headerName}"')
 def verifyHiddenHeader(context,headerName):
     context.driver.verifyHiddenHeader(headerName)
+
+@When('click menu "{menu}" and submenu "{submenu}"')
+def step_impl(context, menu,submenu):
+    context.execute_steps("""
+        Then verify text "{menu}"
+        When click on menu "{menu}"
+        Then verify text "{submenu}"
+        When click on submenu "{submenu}"
+    """.format(menu=menu,submenu=submenu))
