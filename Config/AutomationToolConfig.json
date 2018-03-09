@@ -3,7 +3,7 @@
     "browserType": "chrome",
     "timeout": 60,
     "loglevel": "DEBUG",
-    "reportlevel":"test",
+    "reportlevel":"ALL",
     "configfile":"json",
     "reporttype":"ALL"
   },
