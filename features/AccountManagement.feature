@@ -101,7 +101,7 @@ Feature:AccountManagement
       Then enter "Mobile" "randomPhoneNo"
       Then enter "Job Title" "randomJob"
       When click on button "Save"
-      Then wait for 10 seconds
+      Then wait for 60 seconds
       Then get value of "Mobile" and store in "newPhoneNo"
       Then verify if "newPhoneNo" "equal" "randomPhoneNo"
       Then get value of "Job Title" and store in "newJob"
@@ -127,7 +127,7 @@ Feature:AccountManagement
       Then enter "Secondary contact number" "randomPhoneNo1"
       Then enter textarea "Address" "randomAddress"
       When click on button "saveContact"
-      Then wait for 10 seconds
+      Then wait for 60 seconds
       Then get value of "Secondary contact number" and store in "newPhoneNo1"
       Then verify if "newPhoneNo1" "equal" "randomPhoneNo1"
       Then get value of "Address" and store in "newAddress1"
@@ -161,7 +161,7 @@ Feature:AccountManagement
       Then enter "Mobile" "randomPhoneNo"
       Then enter "Job Title" "randomJob"
       When click on button "Save"
-      Then wait for 10 seconds
+      Then wait for 60 seconds
       Then get value of "Mobile" and store in "newPhoneNo"
       Then verify if "newPhoneNo" "equal" "randomPhoneNo"
       Then get value of "Job Title" and store in "newJob"
@@ -187,7 +187,7 @@ Feature:AccountManagement
       Then enter "Secondary contact number" "randomPhoneNo1"
       Then enter textarea "Address" "randomAddress"
       When click on button "saveContact"
-      Then wait for 10 seconds
+      Then wait for 60 seconds
       Then get value of "Secondary contact number" and store in "newPhoneNo1"
       Then verify if "newPhoneNo1" "equal" "randomPhoneNo1"
       Then get value of "Address" and store in "newAddress1"
@@ -275,7 +275,7 @@ Feature:AccountManagement
         When click on button "Edit"
         Then enter "Description" "Different"
         When click on button "Save"
-        Then wait for 10 seconds
+        Then wait for 60 seconds
         Then get value of "Description" and store in "newDescription"
         Then verify if "newDescription" "equal" "Different"
         Then logout
@@ -481,7 +481,7 @@ Feature:AccountManagement
         Then verify text "add new role"
         Then select dropdown "Role" "Customer Operations Limited"
         When click on button "Save"
-        Then wait for 10 seconds
+        Then wait for 60 seconds
         Then verify not
         |type|value|
         |button|Save|
@@ -535,11 +535,11 @@ Feature:AccountManagement
         Then verify text "add new role"
         Then select dropdown "Role" "Customer Administrator"
         When click on button "Save"
-        Then wait for 10 seconds
+        Then wait for 60 seconds
         Then verify not
         |type|value|
         |button|Save|
-
+        Then wait for 180 seconds
         Then logout
 
    @TC_AccountManagement_031_ReadOnlyaccess_Part4
@@ -590,7 +590,7 @@ Feature:AccountManagement
         Then verify text "add new role"
         Then select dropdown "Status" "Blocked"
         When click on button "Save"
-        Then wait for 10 seconds
+        Then wait for 60 seconds
         Then verify not
         |type|value|
         |button|Save|
@@ -625,7 +625,7 @@ Feature:AccountManagement
         Then verify text "add new role"
         Then select dropdown "Status" "Active"
         When click on button "Save"
-        Then wait for 10 seconds
+        Then wait for 60 seconds
         Then verify not
         |type|value|
         |button|Save|
