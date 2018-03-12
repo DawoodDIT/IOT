@@ -470,7 +470,7 @@ def step_impl(context, customer, imsi, batchfile ):
     context.execute_steps("""
         Then verify text "Devices"
         When click on menu "Devices"
-        Then wait for 5 seconds
+        Then wait for 10 seconds
         Then verify text "All devices"
         When click on submenu "All devices"
         Then wait for 5 seconds
@@ -498,7 +498,7 @@ def step_impl(context, customer, imsi, batchfile ):
     context.execute_steps("""
         Then verify text "Devices"
         When click on menu "Devices"
-        Then wait for 5 seconds
+        Then wait for 10 seconds
         Then verify text "All devices"
         When click on submenu "All devices"
         Then wait for 5 seconds
