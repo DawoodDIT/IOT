@@ -864,6 +864,30 @@
     "NewPassword": "test123",
     "Supported": "Provisioning status",
     "Period": "hour"
-  }
+  },
+
+    "SMSConfiguration": {
+        "OpCoAdmin": "E2Eopco as Operator Administrator",
+        "CustAdmin": "AutomationCust1 as Customer Administrator",
+        "CustSMS": "AutomationCust1",
+        "Cust2": "AutomationCust1",
+        "CSP": "AutoCSP2",
+        "IMSI": "204043258711183",
+        "IMSIMO": "204043258711183",
+        "IMSIMT": "204043258711183",
+        "IMSITrans": "204043258711183",
+        "IMSIwakeup": "204043258711183",
+        "TestMode": "204043258711183",
+        "Shortcode": "810000001",
+        "SMPPid": "Test",
+        "SMPPpassword": "Test",
+        "SMPPBind": "8",
+        "MsgGreaterThan160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.1234",
+        "Msg160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.",
+        "SMSDeliveryURL": "http://195.233.215.91:8280/GDSPWebServiceStubs/SMSDeliveryNotificationServicev2",
+        "SMSDeliveryUser": "Test",
+        "SMSDeliveryPwd":  "Test",
+        "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+    }
 
 }
