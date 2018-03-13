@@ -40,11 +40,16 @@ def verifyTextOnScreen(self,textName):
     timeout = Module.Utility.ReadDataFromJsonFile("tool", "timeout")
 
     while found == "false" and count < timeout:
+        Module.logger.DEBUG("Getting the complete text on page")
         all_text = self.driver.find_element_by_tag_name("body").text
+        Module.logger.DEBUG("Stored all text on page")
         try:
+            Module.logger.DEBUG("Starting comparison")
             assert textName in all_text ,Module.logger.ERROR("Text not found")
+            Module.logger.DEBUG("Comparison done and successful")
             found = "true"
         except:
+            Module.logger.DEBUG("Comparison failed")
             found = "false"
             count = count + 2
             time.sleep(2)

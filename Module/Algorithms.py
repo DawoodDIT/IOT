@@ -57,6 +57,7 @@ def find_auto_element(self,locator, locatorvalue, value, str_compare):
     if (all_obj is not None) and (locatorvalue != "img") and (locatorvalue != "input"):
         if str_compare=="eq":
             for obj in all_obj:
+                Module.logger.DEBUG("Compare:" + value + "," + obj.text)
                 if value == obj.text:
                     Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                     found = True
@@ -65,6 +66,7 @@ def find_auto_element(self,locator, locatorvalue, value, str_compare):
 
         if str_compare == "in":
             for obj in all_obj:
+                Module.logger.DEBUG("Compare:" + value + "," + obj.text)
                 if value in obj.text:
                     Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                     found = True
@@ -74,6 +76,7 @@ def find_auto_element(self,locator, locatorvalue, value, str_compare):
     elif (all_obj is not None) and (locatorvalue == "input"):
         if str_compare == "eq":
             for obj in all_obj:
+                Module.logger.DEBUG("Compare:" + value + "," + obj.get_attribute("value"))
                 if value == obj.get_attribute("value"):
                     Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                     found = True
@@ -82,6 +85,7 @@ def find_auto_element(self,locator, locatorvalue, value, str_compare):
 
         if str_compare == "in":
             for obj in all_obj:
+                Module.logger.DEBUG("Compare:" + value + "," + obj.get_attribute("value"))
                 if value in obj.get_attribute("value"):
                     Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                     found = True
@@ -105,6 +109,7 @@ def find_auto_element_for_input_tag(self, value, str_compare):
     all_obj = self.driver.find_elements_by_tag_name("input")
     if str_compare=="eq":
         for obj in all_obj:
+            Module.logger.DEBUG("Compare:" + value + "," + obj.get_attribute("value"))
             if value == obj.get_attribute("value"):
                 Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                 found = True
@@ -113,6 +118,7 @@ def find_auto_element_for_input_tag(self, value, str_compare):
 
     if str_compare == "in":
         for obj in all_obj:
+            Module.logger.DEBUG("Compare:" + value + "," + obj.get_attribute("value"))
             if value in obj.get_attribute("value"):
                 Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)
                 found = True
@@ -149,6 +155,7 @@ def find_auto_element_on_position(self,locator,locatorvalue,value,position = 1):
 
     if all_obj != None and locatorvalue != "img":
         for obj in all_obj:
+            Module.logger.DEBUG("Compare:" + obj.text + "," + value)
             if obj.text == value:
                 if currentposition == position:
                     Module.logger.DEBUG("During search we found the object with attribute text: " + obj.text)

@@ -260,7 +260,10 @@ def step_impl(context,imsivalue,initState,finalState):
         When click on button "Submit"
         Then verify text "The batch operation was successfully submitted with the following batch ID:"
         When click on button "Go to devices"
-        Then verify text "{finalState}"
+        Then verify text "Results"
+        Then verify value of "State" is "{finalState}" of table based on below criteria
+        |IMSI|
+        |{imsivalue}|
         Then report "State change is successful"
     """.format(imsivalue=imsivalue,initState=initState,finalState=finalState))
 
@@ -465,37 +468,55 @@ def step_impl(context,storeValue):
 @When('opco upload batch file for customer "{customer}" Imsi "{imsi}" and Batch "{batchfile}"')
 def step_impl(context, customer, imsi, batchfile ):
     context.execute_steps("""
+        Then verify text "Devices"
         When click on menu "Devices"
+        Then wait for 10 seconds
+        Then verify text "All devices"
         When click on submenu "All devices"
+        Then wait for 5 seconds
+        Then verify text "IMSI"
         Then enter textarea "IMSI" "{imsi}"
         When click on button "Search"
+        Then verify text "Operations"
         When click on link "Operations"
+        Then verify text "You can also perform operations from file"
         When click on link "> You can also perform operations from file"
+        Then verify text "Organisation"
         When click on input "Organisation" and enter value "{customer}"
         Then wait for 10 seconds
+        Then verify text "Select file"
         When select upload button "Select file" and upload file "{batchfile}"
         When click on button "Next"
         Then verify text "You are about to"
         Then store time in "strtime"
         When click on button "Submit"
-        Then verify text "The batch operation was successfully submitted."
+        Then verify text "The batch operation was successfully submitted"
         """.format(customer=customer, imsi=imsi, batchfile=batchfile))
 
 @When('customer upload batch file for customer "{customer}" Imsi "{imsi}" and Batch "{batchfile}"')
 def step_impl(context, customer, imsi, batchfile ):
     context.execute_steps("""
+        Then verify text "Devices"
         When click on menu "Devices"
+        Then wait for 10 seconds
+        Then verify text "All devices"
         When click on submenu "All devices"
+        Then wait for 5 seconds
+        Then verify text "IMSI"
         Then enter textarea "IMSI" "{imsi}"
         When click on button "Search"
+        Then verify text "Operations"
         When click on link "Operations"
+        Then verify text "You can also perform operations from file"
         When click on link "> You can also perform operations from file"
+        Then verify text "Select file"
+        When click on input "Organisation" and enter value "USE_BatchOperationCustomer_Cust"
         When select upload button "Select file" and upload file "{batchfile}"
         When click on button "Next"
         Then verify text "You are about to"
         Then store time in "strtime"
         When click on button "Submit"
-        Then verify text "The batch operation was successfully submitted."
+        Then verify text "The batch operation was successfully submitted"
         """.format(customer=customer, imsi=imsi, batchfile=batchfile))
 
 @Then('verify filetext \'{text}\' in file "{filetype}"')

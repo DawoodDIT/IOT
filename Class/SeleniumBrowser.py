@@ -259,6 +259,7 @@ class SeleniumBrowser:
             Module.logger.INFO("logout start")
             self.driver.find_element_by_id("__ns1790630358_homeLnk2").click()
             time.sleep(5)
+            Module.logger.DEBUG("Clicked on m2m home link")
             self.driver.find_element_by_id("__ns1790630358_logoutLnk").click()
             Module.logger.INFO("logout end")
             self.driver.close()
