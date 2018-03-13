@@ -113,5 +113,768 @@
     "FilterIMSI":"111117500000013",
     "PSUsageIMSI":"204043258711178",
     "CSUsageIMSI":"204043258711178"
+  },
+  "Customer1": {
+    "MSISDN1": "111110001000000",
+    "IMSIRange": "204043258711181,204043258711182",
+    "IMSI1": "204043258711181",
+    "IMSI2": "204043258711182",
+    "MSISDN": "204043720199828",
+    "Status": "Active"
+  },
+  "CustomerSMS": {
+    "Cust1": "ADI_Testing_Cust",
+    "IMSI": "204043258711182"
+  },
+  "User": {
+    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+  },
+  "PSUsageUser": {
+    "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator"
+  },
+  "ServiceProfile": {
+    "DropdownName": "Service Profile",
+    "DropdownValue": "Automation3_CSP1_1111"
+  },
+  "IMSI": {
+    "IMSINo": "111117500000013",
+    "TextAreaName": "IMSI"
+  },
+  "PSUsageIMSI": {
+    "IMSINo": "204043258711178",
+    "TextAreaName": "IMSI"
+  },
+  "CustomAttribute": {
+    "CustomAttrName": "Attribute2",
+    "CustomAttrValue": "Live SIM"
+  },
+  "IMSIWildCard": {
+    "IMSINo": "1*",
+    "TextAreaName": "IMSI"
+  },
+  "ICCIDWildCard": {
+    "ICCIDNo": "1*",
+    "TextAreaName": "ICCID"
+  },
+  "IMEIWildCard": {
+    "IMEINo": "3*",
+    "TextName": "IMEI"
+  },
+  "APNDropdown": {
+    "DropdownValue": "ppinternet.gdsp"
+  },
+  "APNCredentials": {
+    "Username": "m2m",
+    "Password": "m2m"
+  },
+  "CustomerOrder": {
+    "Date": "2018-10-04",
+    "Quantity": "10",
+    "Organisation": "Automation2",
+    "Recipient": "Automation3",
+    "NewRecipient": "Auto",
+    "ContactName": "AutoName",
+    "Phone": "0000000",
+    "Email": "auto@gmail.com",
+    "Address": "Reading",
+    "City": "Reading",
+    "Country": "Australia"
+  },
+  "DisableTeardown": {
+    "Organisation": "Automation3"
+  },
+  "OPCOIMSICust1": {
+    "MSISDN": "901280015030580"
+  },
+  "OPCOCust2": {
+    "NAME": "ADI_Testing_Cust"
+  },
+  "OPCOCust2CSP": {
+    "NAME": "test"
+  },
+  "OPCOADMIN": {
+    "NAME": "PPVGE as Operator Administrator"
+  },
+  "CUSTADMIN": {
+    "NAME": "ADI_Testing_Cust as Customer Administrator"
+  },
+  "CUSTIMSICust1": {
+    "MSISDN": "901280015030580"
+  },
+  "CUSTCust2": {
+    "NAME": "ADI_Testing_Cust"
+  },
+  "CUSTCust2CSP": {
+    "NAME": "error"
+  },
+  "IMSIinCustomerwithLBSDisabled": {
+    "MSISDN": "111110001000010",
+    "NAME": "IITC_FORD"
+  },
+  "IMSIinCustomerwithLBSEnabled": {
+    "MSISDN": "111110001000010",
+    "NAME": "IITC_Test"
+  },
+  "ToLBSEnabledCustomer": {
+    "MSISDN": "111110001000010",
+    "NAME": "IITC_Test"
+  },
+  "ToLBSDisabledCustomer": {
+    "MSISDN": "111110001000010",
+    "NAME": "IITC_FORD"
+  },
+  "ToLBSEnabledCSP": {
+    "NAME": "IITC_Test_DK_11111"
+  },
+  "ToLBSDisabledCSP": {
+    "NAME": "IITC_FORD_CSP_UK"
+  },
+  "IMSIinCustomerwithSMPPDisabled": {
+    "MSISDN": "111110001000011"
+  },
+  "ToSMPPEnabledCustomer": {
+    "NAME": "IITC_Test"
+  },
+  "ToSMPPEnabledCSP": {
+    "NAME": "IITC_AT-11111"
+  },
+  "IMSIinCustomerwithSMSMOratingDisabled": {
+    "MSISDN": "111110001000012"
+  },
+  "ToSMSMOratingEnabledCustomer": {
+    "NAME": "IITC_Test"
+  },
+  "ToSMSMOratingEnabledCSP": {
+    "NAME": "IITC_BE-11111"
+  },
+  "IMSIinCustomer": {
+    "MSISDN": "111110001000013"
+  },
+  "TootherCSP": {
+    "NAME": "IITC_Ford_DE_11111"
+  },
+  "IMSIwithSMSMOrating": {
+    "MSISDN": "111110001000014"
+  },
+  "TodifferentSMSMOratingEnabledCustomer": {
+    "NAME": "IITC_Test"
+  },
+  "TodifferentSMSMOratingEnabledCSP": {
+    "NAME": "IITC_NL_11111"
+  },
+  "IMSIinVoicedisabledcustomer": {
+    "MSISDN": "111110001000015"
+  },
+  "Voiceenabledcustomer": {
+    "NAME": "IITC_Test"
+  },
+  "VoiceenabledcustomerCSP": {
+    "NAME": "IITC_NL_2"
+  },
+  "IMSIwithnoIMEIDetected": {
+    "MSISDN": "111110001000018"
+  },
+  "IMSIUpdatewithnoIMEIDetected": {
+    "MSISDN": "111110001000003"
+  },
+  "IMSIUpdatewithnewIMEI": {
+    "MSISDN": "1234567890123400"
+  },
+  "IMSIwithLastDetectedIMEI": {
+    "MSISDN": "901280015030580"
+  },
+  "IMSISetwithLastDetectedIMEI": {
+    "MSISDN": "901280015030580"
+  },
+  "CUSTADMIN1": {
+    "NAME": "ADI_Testing_Cust as Customer Administrator"
+  },
+  "CUSTADMIN2": {
+    "NAME": "AutomationCust1 as Customer Administrator"
+  },
+  "IMSIDetectedwithFirstEverUse": {
+    "MSISDN": "204043258711178"
+  },
+  "IMSIDetectedwithFirstActiveLiveUse": {
+    "MSISDN": "204043720130553"
+  },
+  "IMSIDetectedwithExplicitly": {
+    "MSISDN": "204043720141080"
+  },
+  "IMSITearDownandIMEILock": {
+    "MSISDN": "901289999899967"
+  },
+  "NewIMSITearDownandIMEILock": {
+    "MSISDN": "111110001000018"
+  },
+  "IMSINoTearDownandIMEILock": {
+    "MSISDN": "901289999899923"
+  },
+  "IMSITearDownandEventAction": {
+    "MSISDN": "901289998150388"
+  },
+  "IMSITACNoTearDownandEventAction": {
+    "MSISDN": "901280015030580"
+  },
+  "IMSITACTearDownandEventAction": {
+    "MSISDN": "901280015030580"
+  },
+  "IMSITACTearDownandIMEILock": {
+    "MSISDN": "901280015030580"
+  },
+  "P2PIMSI": {
+    "MSISDN": "204043258711182"
+  },
+  "IMSItest": {
+    "WithProvisioningHistory": "111110001000019",
+    "WithAPNAttributeChange": "204043720141084",
+    "Suspended": "204046855627929"
+  },
+  "SIMHistory": {
+    "IMSI": "111117500000013",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+  },
+  "CustomAttributes": {
+    "CustomAttribute1": "Attribute1",
+    "CustomAttribute2": "Attribute2",
+    "CustomAttribute3": "Attribute3",
+    "CustomAttribute4": "Attribute4",
+    "CustomAttribute5": "Attribute5",
+    "CA1Value": "SIM1",
+    "CA2Value": "SIM2",
+    "CA3Value": "SIM3",
+    "CA4Value": "SIM4",
+    "CA5Value": "SIM5",
+    "IMSI": "111117500000013",
+    "Organisation": "Automation3",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+  },
+  "SIMDetails": {
+    "IMSI": "204043720141080",
+    "NewHomeCountry": "United Kingdom"
+  },
+  "SIMGroup": {
+    "IMSI": "111117500000013",
+    "Organisation": "Automation3",
+    "GroupName": "SIMGroup",
+    "Description": "SIM Group Des"
+  },
+  "mobile2": {
+    "deviceId": "FA4HBA5LAQK7BEEA",
+    "deviceId1": "FA4HBA5LAQK7BEEA",
+    "RecMobNo": "+447891913566"
+  },
+  "mobile3": {
+    "deviceId": "CY8LBQS4BIS4W8FU",
+    "RecMobNo": "+447891913566"
+  },
+  "CustomerOnboarding": {
+    "Customer": "Automation3",
+    "MoveSIMCustomer": "AutomationCust1",
+    "MoveSIMcsp": "AutoCSP2",
+    "ParentOrg": "PPVGE",
+    "NewCopyCustName": "CopyCustAuto1",
+    "CopyCustDes": "CustomerOrganisation",
+    "Cust2Copy": "Automation3",
+    "Tariffs": "22222",
+    "CustomerUser": "Automation3 as Customer Administrator",
+    "IMSI": "111117500000013",
+    "IMSIforEncoding": "204043258711181",
+    "SMSShortCode<4": "123",
+    "SMSShortCode>15": "123456789123456789",
+    "SMSShortCodeAlphabets": "abcd",
+    "SMSShorCodeValid": "310000210",
+    "CustomerCodeEdit": "Automation3_Edited",
+    "WebServicesName": "submitSimWUTrigger",
+    "CallLimit": "3",
+    "Period": "minute",
+    "CallLimit_Edit": "10",
+    "Period_Edit": "hour",
+    "MaxNumberOfSMStoStore": "50",
+    "APIGroups": "API_USER_AUTOMATION_0001",
+    "Certificate": "alice.crt",
+    "CertificatePassword": "Vodafone"
+  },
+  "SMSCommand": {
+    "Customer": "AutomationCust1",
+    "IMSI": "204043258711180",
+    "CustomerUser": "AutomationCust1 as Customer Administrator",
+    "SenderNumber": "310000210",
+    "TransactionalSMS": "This is transactional SMS"
+
+  },
+  "SIMRegistrationData": {
+    "IMSINo": "204043258711178",
+    "Organisation": "Automation3",
+    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+  },
+  "SIMProvisioning":{
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator",
+    "RangeTypeGlobal": "Global",
+    "RangeTypeOpco": "Operator/Reseller",
+    "RangeTypeCust": "Customer",
+    "IMSIStart": "111110000000000",
+    "IMSIEnd": "111110000000009",
+    "DescriptionGlobal": "Global Range",
+    "DescriptionOpco": "OpcoRange",
+    "DescriptionCust": "CustomerRange",
+    "DescriptionEdit": "Edited",
+    "NextAvailableIMSI": "111110000000000",
+    "OrganisationOPCO": "PPVGE",
+    "OrganisationCust": "Automation3",
+    "SIMAmount": "10",
+     "Reference": "Order3",
+    "Amount": "10",
+    "Organisation": "Automation3"
+
+  },
+  "Diagnostics": {
+    "APNExtRad": "aaastream3",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "Customer": "Automation3",
+    "IMSI": "204043258711180",
+    "IMSImsisdn": "882393258711182",
+    "IMSI2": "204043258711180",
+    "MultipleSIMs": "204043258711182,204043258711180",
+    "APN": "ppinternetd.gdsp",
+    "APN2": "sms.profile",
+    "APN3": "ppinternet.gdsp",
+    "API4Charts1": "createUser",
+    "API4Charts2": "getTariffList",
+    "API4Charts3": "getContactDetails",
+    "API4Charts4": "getUserDetails",
+    "API4Charts5": "guiGetDeviceDetails",
+    "APIChartsPeriod": "Select range",
+    "API4Reseller": "getDeviceUsageInfov3",
+    "RangeBetween": "2015-06-01",
+    "RangeAnd": "2015-07-01",
+    "RangeBetween1": "2015-06-01",
+    "RangeAnd1": "2015-07-01"
+  },
+  "EventManagement": {
+    "CustName": "AutomationCust1",
+    "EventName": "myEvent",
+    "EventMetric": "API Calls (Number)",
+    "EventNameForCopy": "myEventCopy",
+    "MonitoringPeriodHourly": "Hourly",
+    "MonitoringPeriodMonthly": "Monthly",
+    "MonitoringPeriodQuarterly": "Quarterly",
+    "ThresholdValue": "50",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
+    "EventDescription": "Event Description",
+    "EventDescriptionEdit": "Edited",
+    "BusinessService1": "submitWUTrigger",
+    "BusinessService2": "submitSMS",
+    "BusinessService3": "getDeviceInfo",
+    "BusinessService4": "getDeviceUsageInfo",
+    "BusinessService5": "getUserDetails",
+    "BusinessService6": "createUser"
+  },
+  "Reporting": {
+    "CustName": "AutomationCust1",
+    "OpcoName": "PPVGE",
+    "ReportPeriod": "Last month",
+    "ReportPeriodImmediate": "Today",
+    "RangeBetween": "2017-03-01",
+    "RangeAnd": "2018-01-10",
+    "InvoiceDate": "2017-05-02",
+    "NotificationIMSI": "204043258711181",
+    "SIMHistoryIMSI": "204043258711184",
+    "PacketDataIMSI": "204043258711180",
+    "RadiusFailureIMSI": "901280015030580",
+    "RadiusFailureReason": "BAD AUTHENTICATION",
+    "PdAPN": "ppinternet.gdsp",
+    "SIMHistoryCSP": "AutoCSP2",
+    "SIMGroup": "SIMGroup01",
+    "RadiusFailureCSP": "AutoCSPipv6_90128",
+    "SimGroup": "AutomationGroup",
+    "SIMHistoryCountry": "GB",
+    "SIMIdentifier": "3",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator",
+    "NotificationContact": "Dawood",
+    "ServingOpco": "VFUK",
+    "ThresholdMinutes": "3",
+    "ThresholdMIB": "3",
+    "IPAllocationAPN": "gdsp04.vodafone.com",
+    "RequestedOn": "2018-01-23",
+    "Custname": "AutomationCust1",
+    "OpConame": "PPVGE",
+    "Serviceprofile": "Auto2CSP",
+    "SIMgroup": "TestSIMGroup",
+    "SIMState": "All",
+    "IMSI": "204043258711183",
+    "Changetype": "Customer service profile changed",
+    "Customerorderno": "1055400117",
+    "Reporttype": "Contracting OpCo Overview",
+    "Reporttype1": "IMEI Locked Devices",
+    "Reporttype2": "Notification Events for Customer",
+    "Reporttype3": "SIM Group Detail",
+    "Reporttype4": "SIM History Audit for Customer",
+    "Reporttype5": "SIM History Audit for Customer Profile",
+    "Reporttype6": "SIM History Audit for IMSI",
+    "Reporttype7": "Unauthorised API Requests",
+    "Reporttype8": "Transaction Report",
+    "Reporttype9": "Serving OpCo Packet-Data Overview",
+    "Reporttype10": "State Changes Summary",
+    "Reporttype11": "Static IP Address Allocations",
+    "Reporttype12": "Top and Bottom Circuit-Switched Devices by Duration",
+    "Reporttype13": "Top and Bottom Packet-Data Devices by Data Usage",
+    "Reporttype14": "SIM Inventory for Customer",
+    "Reporttype15": "SIM Pairings file",
+    "Reporttype16": "Itemised SMS Usage By IMSI",
+    "Reporttype17": "State Changes by Date",
+    "ReportFormat": "PDF",
+    "ReportFormat1": "XML",
+    "ReportFormat2": "CSV",
+    "NotificationMethod": "None",
+    "NotificationMethod1": "Contact",
+    "Contact1": "Aravinth SLR",
+    "Contact2": "Aravinth Gmail",
+    "Contact3": "DawoodGmail"
+  },
+  "CSPOperations": {
+    "OPCOMovesimIMSI": "204043258711183",
+    "OPCOMovesimCustname": "Automation3",
+    "OPCOMovesimCSPname": "Automation3_CSP1_20402",
+    "CustMovesimIMSI": "204043258711183",
+    "CustMovesimCustname": "AutomationCust1",
+    "CustMovesimCSPname": "AutoCSP2",
+    "LBSDisabledCustIMSI": "204043258711183",
+    "LBSEnabledCust": "Automation3",
+    "LBSEnabledCSP": "Automation3_CSP1_20402",
+    "SMPPDisabledCustIMSI": "204043258711183",
+    "SMPPEnabledCust": "AutomationCust1",
+    "SMPPEnabledCSP": "AutoCSP2",
+    "SMSMOratingDisabledCustIMSI": "204043258711183",
+    "SMSMOratingEnabledCust": "Automation3",
+    "SMSMOratingEnabledCSP": "Automation3_CSP1_20402",
+    "MovetoOtherCSPIMSI": "204043258711183",
+    "MovetoOtherCSPCustname": "Automation3",
+    "MovetoOtherCSPCSPname": "CSP_Static_APN",
+    "TodifferentSMSMOratingEnabledIMSI": "204043258711183",
+    "TodifferentSMSMOratingEnabledCustname": "AutomationCust1",
+    "TodifferentSMSMOratingEnabledCSPname": "AutoCSP2",
+    "VoicedisabledCustIMSI": "204043258711183",
+    "VoiceEnabledCust": "Automation3",
+    "VoiceEnabledCustCSP": "Automation3_CSP1_20402",
+    "VoiceDisabledCust": "AutomationCust1",
+    "VoiceDisabledCustCSP": "AutoCSP2"
+  },
+  "IMEI": {
+    "IMSIwithnoIMEIDetected": "111110001000018",
+    "IMSIUpdatewithnoIMEIDetected": "111110001000020",
+    "IMSIUpdatewithnewIMEI": "1234567890123400",
+    "IMSIwithLastDetectedIMEI": "204043258711183",
+    "LastDetectedIMEIDeviceID": "FA4HBA5LAQK7BEEA",
+    "IMSISetwithLastDetectedIMEI": "204043258711183"
+  },
+  "IMEIOperations": {
+    "CSPwithExplicitlyCSPname": "Auto1_CSP_IMEI_Firstuse",
+    "CSPwithExplicitlyCustname": "AutomationCust1",
+    "CSPwithExplicitlyIMSI": "204043258711181",
+    "CSPwithFirstEverUseCSPname": "Auto1_CSP_IMEI_Firstuse",
+    "CSPwithFirstEverUseCustname": "AutomationCust1",
+    "CSPwithFirstEverUseIMSI": "204043258711181",
+    "CSPwithFirstActiveUseCSPname": "Auto1_CSP_IMEI_Firstliveuse",
+    "CSPwithFirstActiveUseCustname": "AutomationCust1",
+    "CSPwithFirstActiveUseIMSI": "204043258711181",
+    "MatchIMEINoTearDownandIMEILockIMSI": "204043258711181",
+    "MatchIMEINoTearDownandIMEILockCSPname": "Auto1_CSP_IMEI",
+    "MatchIMEINoTearDownandIMEILockDeviceID": "FA4HBA5LAQK7BEEA",
+    "MatchIMEITearDownandEventActionIMSI": "204043258711181",
+    "MatchIMEITearDownandEventActionIMEI": "1234567890123400",
+    "MatchIMEITearDownandEventActionCSPname": "Auto1_CSP_IMEI",
+    "MatchIMEITearDownandEventActionDeviceID": "FA4HBA5LAQK7BEEA",
+    "MatchIMEITearDownandIMEILockIMSI": "204043258711181",
+    "MatchIMEITearDownandIMEILockIMEI": "1234567890123400",
+    "MatchIMEITearDownandIMEILockCSPname": "Auto1_CSP_IMEI",
+    "MatchIMEITearDownandIMEILockDeviceID": "FA4HBA5LAQK7BEEA",
+    "MatchTACValue": "35686806",
+    "MatchTACNoTearDownandEventActionIMSI": "204043258711181",
+    "MatchTACNoTearDownandEventActionCSPname": "Auto1_CSP_IMEI",
+    "MatchTACNoTearDownandEventActionDeviceID": "FA4HBA5LAQK7BEEA",
+    "MatchTACTearDownandEventActionIMSI": "204043258711181",
+    "MatchTACTearDownandEventActionIMEI": "1234567890123400",
+    "MatchTACTearDownandEventActionCSPname": "Auto1_CSP_IMEI",
+    "MatchTACTearDownandEventActionDeviceID": "FA4HBA5LAQK7BEEA",
+    "MatchTACTearDownandIMEILockIMSI": "204043258711181",
+    "MatchTACTearDownandIMEILockIMEI": "1234567890123400",
+    "MatchTACTearDownandIMEILockCSPname": "Auto1_CSP_IMEI",
+    "MatchTACTearDownandIMEILockDeviceID": "FA4HBA5LAQK7BEEA"
+  },
+  "P2PDiagnostic": {
+    "IMSI": "204043258711182",
+    "MoveSIMCustomer": "AutomationCust1",
+    "Message": "P2PDiagnostic",
+    "IOTdeviceID": "EABYBQGANJLBBEVS",
+    "NonIOTdevice": "+447556231570"
+  },
+  "P2PSMSTransaction": {
+    "ALDLMOIMSI": "204043258711182",
+    "ALDLMOMessage": "DLAccesslistMO",
+    "ALDLMOIOTID": "EABYBQGANJLBBEVS",
+    "ALDLMONonIOT": "+447556231570",
+    "ALDLMOOrgName": "AutomationCust1",
+    "ALDLMOOtherpartynumber": "447556231570",
+    "ALCSPMOIMSI": "204043258711182",
+    "ALCSPMOMessage": "CSPAccesslistMO",
+    "ALCSPMOIOTID": "EABYBQGANJLBBEVS",
+    "ALCSPMONonIOT": "+447556231570",
+    "ALCSPMOOrgName": "AutomationCust1",
+    "ALCSPMOOtherpartynumber": "447556231570",
+    "ALDLMTIMSI": "204043258711182",
+    "ALDLMTMessage": "DLAccesslistMT",
+    "ALDLMTIOTID": "EABYBQGANJLBBEVS",
+    "ALDLMTNonIOT": "+447556231570",
+    "ALDLMTOrgName": "AutomationCust1",
+    "ALDLMTOtherpartynumber": "447556231570",
+    "ALCSPMTIMSI": "204043258711182",
+    "ALCSPMTMessage": "CSPAccesslistMT",
+    "ALCSPMTIOTID": "EABYBQGANJLBBEVS",
+    "ALCSPMTNonIOT": "+447556231570",
+    "ALCSPMTOrgName": "AutomationCust1",
+    "ALCSPMTOtherpartynumber": "447556231570",
+    "ALnoneMTIMSI": "204043258711182",
+    "ALnoneMTMessage": "ALnoneMT",
+    "ALnoneMTIOTID": "EABYBQGANJLBBEVS",
+    "ALnoneMTNonIOT": "+447556231570",
+    "ALnoneMTOrgName": "AutomationCust1",
+    "ALnoneMTOtherpartynumber": "447556231570",
+    "CSPMTdenyMOIMSI": "204043258711182",
+    "CSPMTdenyMOMessage": "CSPMTdenyMO",
+    "CSPMTdenyMOIOTID": "EABYBQGANJLBBEVS",
+    "CSPMTdenyMONonIOT": "+447556231570",
+    "CSPMTdenyMOOrgName": "AutomationCust1",
+    "CSPMTdenyMOOtherpartynumber": "447556231570",
+    "CSPMOdenyMTIMSI": "204043258711182",
+    "CSPMOdenyMTMessage": "CSPMOdenyMT",
+    "CSPMOdenyMTIOTID": "EABYBQGANJLBBEVS",
+    "CSPMOdenyMTNonIOT": "+447556231570",
+    "CSPMOdenyMTOrgName": "AutomationCust1",
+    "CSPMOdenyMTOtherpartynumber": "447556231570",
+    "CSPMOMTallowMOIMSI": "204043258711182",
+    "CSPMOMTallowMOMessage": "CSPMOMTallowMO",
+    "CSPMOMTallowMOIOTID": "EABYBQGANJLBBEVS",
+    "CSPMOMTallowMONonIOT": "+447556231570",
+    "CSPMOMTallowMOOrgName": "AutomationCust1",
+    "CSPMOMTallowMOOtherpartynumber": "447556231570",
+    "CSPMOMTallowMTIMSI": "204043258711182",
+    "CSPMOMTallowMTMessage": "CSPMOMTallowMT",
+    "CSPMOMTallowMTIOTID": "EABYBQGANJLBBEVS",
+    "CSPMOMTallowMTNonIOT": "+447556231570",
+    "CSPMOMTallowMTOrgName": "AutomationCust1",
+    "CSPMOMTallowMTOtherpartynumber": "447556231570",
+    "P2PSMSExpiredIMSI": "204043258711182",
+    "P2PSMSExpiredMessage": "P2PSMSExpired",
+    "P2PSMSExpiredIOTID": "EABYBQGANJLBBEVS",
+    "P2PSMSExpiredNonIOT": "+447556231570",
+    "P2PSMSExpiredOrgName": "AutomationCust1",
+    "P2PSMSExpiredOtherpartynumber": "447556231570",
+    "P2PSMSDeliveredIMSI": "204043258711182",
+    "P2PSMSDeliveredMessage": "P2PSMSDelivered",
+    "P2PSMSDeliveredIOT": "EABYBQGANJLBBEVS",
+    "P2PSMSDeliveredNonIOT": "+447556231570",
+    "P2PSMSDeliveredOrgName": "AutomationCust1",
+    "P2PSMSDeliveredOtherpartynumber": "447556231570"
+  },
+  "AAACallwaiting": {
+    "Customer": "AutomationCust1",
+    "CSdeviceID": "EABYBQGANJLBBEVS",
+    "NonIOTdevice": "+447556231570",
+    "CSdeviceID1": "CY8LBQS4BIS4W8FU",
+    "CSdeviceID2": "FA4HBA5LAQK7BEEA",
+    "CSdeviceMSISDN": "00882393258711182",
+    "CSdeviceMSISDN1": "00882390015030580",
+    "CS1IMSI": "204043258711182",
+    "CS2IMSI": "204043258711180"
+  },
+  "AAAVoiceConfiguration": {
+    "Custname": "AutomationLBS",
+    "CS1deviceID": "EABYBQGANJLBBEVS",
+    "NonIOTdevice": "+447556231570",
+    "NewVPNname": "Newvpn",
+    "CSPVPNname": "Newvpn",
+    "CSPname": "AutoCSP_LBS",
+    "NewVPNdescription": "Description",
+    "BlacklistVPN": "Newvpn",
+    "WhitelistVPN": "Newvpn",
+    "Blocknumber": "00447556231571",
+    "BlockAllnumber": "*",
+    "Allownumber": "00447556231572",
+    "AllowAllnumber": "*",
+    "TransactionalSMS": "This is transactional SMS"
+  },
+  "AAAVoiceUsage": {
+    "Custname": "AutomationCust1",
+    "CS1deviceID": "EABYBQGANJLBBEVS",
+    "NonIOTdevice": "+447556231570",
+    "NewVPNname": "NewVPN",
+    "CSPname": "Automation3_CSP1_1111",
+    "NewVPNdescription": "Description",
+    "TransactionalSMS": "This is transactional SMS"
+  },
+  "AAAConfigureLBS": {
+    "NewLBScustname": "Automation33",
+    "NewLBScustDescription": "Description",
+    "NewLBScustTariff": "1111",
+    "LBSusername": "wr@slr.com",
+    "LBSPassword": "slr",
+    "NewLBScustname1": "Automation30",
+    "NewLBScustDescription1": "Description",
+    "LBSdisabledCust": "LBSDisabled",
+    "LBSdisabledCSP": "LBSDisabledCSP",
+    "LBSdisabledPP": "LBSDisabledPP",
+    "LBSCSPRadius": "50"
+  },
+  "AAAManageLBS": {
+    "Custname": "Geo_LBS",
+    "IMSI1": "204043258711181",
+    "IMSI2": "204043720141083",
+    "MultipleIMSI": "204043258711181,204043720141083",
+    "Startdate": "2017-11-08",
+    "Enddate": "2017-11-08",
+    "CSPname": "Automation3_CSP1_1111",
+    "NewVPNdescription": "Description",
+    "TransactionalSMS": "This is transactional SMS"
+  },
+  "AAASIMAutoCapture": {
+    "Custname": "Geo_LBS",
+    "IMSI": "204043258711181",
+    "IMSI2": "204043720141083"
+  },
+  "PlatformOpCoEnablement": {
+    "Custname": "Geo_LBS",
+    "MCCMNC": "62234",
+    "Type": "GDSP enabled operator",
+    "VirtualType": "GDSP enabled virtual operator",
+    "Country": "United Kingdom",
+    "TADIGcode": "Opco",
+    "APIGroup": "test_APIgroup",
+    "ResAPIGroup": "MyAPI",
+    "ResOpConame": "test",
+    "OpConame": "test_Operator",
+    "NewResOpConame": "test_Updated",
+    "ResOpCodescription": "DescriptionUpdated",
+    "IPAddress": "10.10.2.4/17",
+    "IPAddressDelete": "",
+    "SimpleOpConame": "testing",
+    "OpConameDelete": "test_Updateddelete"
+  },
+  "APIThrottle": {
+    "OpConame": "test_Operator",
+    "Webservice": "getCustomerServiceProfileDetailsv4",
+    "CustAPIGroup": "MyAPI",
+    "CustWebservice": "getDeviceHistory",
+    "CreateWebservice": "setSimDetails",
+    "WebserviceCreateuser": "createUser",
+    "callLimit": "10",
+    "WrongcallLimit": "abcd",
+    "Entitytype": "System wide",
+    "Period": "hour",
+    "Custname": "Test_Customer1",
+    "NewResOpConame": "test_Updated",
+    "ResOpCodescription": "DescriptionUpdated",
+    "OpConameDelete": "test_Updateddelete"
+  },
+  "EMOutboundWebConfig": {
+    "Custname": "Automation2",
+    "Description": "description",
+    "URL": "https://www.test.com",
+    "Username": "test",
+    "Password": "test",
+    "NewUsername": "test123",
+    "NewPassword": "test123",
+    "Supported": "Provisioning status",
+    "Period": "hour"
+  },
+    "EMNotificationReport": {
+    "Custname": "Automation2",
+    "Period": "hour"
+  },
+   "EMBREModification": {
+    "Custname": "Automation3",
+    "APN": "ppinternet.gdsp",
+    "Serviceprofile": "Automation3_CSP1_20402",
+    "NewServiceprofile": "Automation3_CSP1_1111",
+    "Description": "description",
+
+    "Eventmetric": "Combined Usage",
+    "Eventmetric1": "Voice Duration",
+    "Eventmetric2": "Packet Data Volume (Bytes In + Out)",
+    "Eventmetric3": "API Call Success Percentage",
+    "Eventmetric4": "Packet Data Volume (Bytes In Only)",
+    "Eventmetric5": "Voice Connections (Numbers)",
+    "Eventmetric6": "SMS Delivery Notification Success Percentage",
+    "Eventmetric7": "None",
+
+    "Entitytype1": "SIM group",
+    "Entitytype2": "Customer",
+    "Entitytype3": "Service profile",
+    "Entitytype4": "APN",
+
+    "SIMgroup": "TestSIMGroup",
+    "Requiredstate": "Any",
+    "Requiredstate1": "Active.live",
+
+    "Monitoringlevel1": "Compound",
+    "Monitoringlevel2": "Device",
+    "Monitoringlevel3": "Entity",
+
+    "Onvalue": "1",
+    "Monitoringperiod1": "Daily",
+    "Monitoringperiod2": "Hourly",
+    "Monitoringperiod3": "Monthly",
+    "Monitoringperiod4": "Weekly",
+    "Monitoringperiod5": "Annual",
+    "Monitoringperiod6": "Six-Monthly",
+    "Monitoringperiod7": "Quarterly",
+
+    "Throesholdvalue": "1",
+    "Threshold1": "Seconds",
+    "Threshold2": "Minutes",
+    "Threshold3": "Bytes",
+    "Deviceaction1": "None",
+    "Deviceaction2": "Change state",
+    "Deviceaction3": "Change service profile",
+    "Reporttype": "Notification Events for Customer",
+    "IMSI": "204043258711183",
+    "Shortcode": "310000210",
+    "Smstype": "Payload",
+    "Messagebody": "Message",
+    "Message": "Message",
+    "CSdeviceMSISDN1": "0088239325871183",
+    "CSdeviceMSISDN2": "0088239325871181",
+    "CSdeviceID1":"EABYBQGANJLBBEVS",
+    "CSdeviceID2": "FA4HBA5LAQK7BEEA",
+    "IOTdeviceID": "EABYBQGANJLBBEVS",
+    "device": "310000210",
+    "URL": "https://www.test.com",
+    "Username": "test",
+    "Password": "test",
+    "NewUsername": "test123",
+    "NewPassword": "test123",
+    "Supported": "Provisioning status",
+    "Period": "hour"
   }
+
 }
