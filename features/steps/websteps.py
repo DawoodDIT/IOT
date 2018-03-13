@@ -260,7 +260,9 @@ def step_impl(context,imsivalue,initState,finalState):
         When click on button "Submit"
         Then verify text "The batch operation was successfully submitted with the following batch ID:"
         When click on button "Go to devices"
-        Then verify text "Results"
+        Then verify text "Results"        
+        Then enter textarea "IMSI" "{imsivalue}"
+        When click on button "Search"
         Then verify value of "State" is "{finalState}" of table based on below criteria
         |IMSI|
         |{imsivalue}|
