@@ -1,89 +1,74 @@
 {
-
-	"SIMStateOperation": {
-        "InactiveIMSI": "111110001000000",
-        "SleepIMSI1": "111117500000021",
-        "SleepIMSI2": "111117500010753",
-        "SleepIMSI3": "111117500010764",
-        "TestIMSI1": "111117500010808",
-        "SuspendIMSI": "111117500000034",
-        "StandbyIMSI": "111117500000019",
-        "TestIMSI2": "111117600030701",
-        "ReadyIMSI1": "111110001000002",
-        "ReadyIMSI2": "111110001000003",
-        "IMSIRange": "204043258711181,204043258711182",
-        "RangeIMSI1": "204043258711181",
-        "RangeIMSI2": "204043258711182",
-        "InactiveIMSI2": "111117500000512"
-	},
-
-	"AccountManagement": {
-	"admin": "testuser1234@mailinator.com",
-	"name":"Test189 User",
-	"notAdmin": "butterfly123456@mailinator.com",
-	"userForReset":"vidya.mahadevaiah@slr-consultants.com",
-    "userForAccessRight":"deftestprofile@gmail.com"
-
-	},
-
-	"CustomerReports2": {
-    "opCo":"PPVGE as Operator Administrator",
-    "Cust":"AutomationCust1 as Customer Administrator",
-    "CustName":"AutomationCust1",
-    "StartDate":"2017-11-01",
-    "SimWithSMSUsage":"204043258711180",
-    "SimWithRadFailure":"204043258711182",
-    "SIMGroupName":"SIMGroup01",
-    "StartDate2":"2017-10-01",
-    "DateWithUsage":"2018-01-18",
-    "DateWithCalls":"2018-01-11",
-    "Cust2":"Automation2",
-    "Cust3":"Automation3",
-    "Cust3Name":"Automation3 as Customer Administrator",
-    "CustOrderNo":"10021354000007",
-    "profileWitRadiusFailure":"AutoCSPipv6_90128"
-	},
-
-	"DMB163":{
+  "SIMStateOperation": {
+    "InactiveIMSI": "111110001000000",
+    "SleepIMSI1": "111117500000021",
+    "SleepIMSI2": "111117500010753",
+    "SleepIMSI3": "111117500010764",
+    "TestIMSI1": "111117500010808",
+    "SuspendIMSI": "111117500000034",
+    "StandbyIMSI": "111117500000019",
+    "TestIMSI2": "111117600030701",
+    "ReadyIMSI1": "111110001000002",
+    "ReadyIMSI2": "111110001000003",
+    "IMSIRange": "204043258711181,204043258711182",
+    "RangeIMSI1": "204043258711181",
+    "RangeIMSI2": "204043258711182",
+    "InactiveIMSI2": "111117500000512"
+  },
+  "AccountManagement": {
+    "admin": "testuser1234@mailinator.com",
+    "name": "Test189 User",
+    "notAdmin": "butterfly123456@mailinator.com",
+    "userForReset": "vidya.mahadevaiah@slr-consultants.com",
+    "userForAccessRight": "deftestprofile@gmail.com"
+  },
+  "CustomerReports2": {
+    "opCo": "PPVGE as Operator Administrator",
+    "Cust": "AutomationCust1 as Customer Administrator",
+    "CustName": "AutomationCust1",
+    "StartDate": "2017-11-01",
+    "SimWithSMSUsage": "204043258711180",
+    "SimWithRadFailure": "204043258711182",
+    "SIMGroupName": "SIMGroup01",
+    "StartDate2": "2017-10-01",
+    "DateWithUsage": "2018-01-18",
+    "DateWithCalls": "2018-01-11",
+    "Cust2": "Automation2",
+    "Cust3": "Automation3",
+    "Cust3Name": "Automation3 as Customer Administrator",
+    "CustOrderNo": "10021354000007",
+    "profileWitRadiusFailure": "AutoCSPipv6_90128"
+  },
+  "DMB163": {
     "WithProvisioningHistory": "111110001000019",
-     "WithAPNAttributeChange": "204043720141084",
-     "Suspended": "204046855627929",
-	 "Active": "111117500010785",
-     "Live/Test": "204043258711180",
-
-	 "IMSINo": "111117500000013",
-     "TextAreaName":"IMSI",
-	 "Restricted": "",
-     "Detatched": "",
-     "Barred": "",
-     "Purged": ""
-
-
-
-   },
-
-	"Status":{
-     "Suspended": "204046855627929",
-	 "Active": "111117500010785",
-     "Live/Test": "204043258711180",
-	 "Restricted": "",
-	 "Detatched": "",
-	 "Barred": "",
-	"Purged": ""
-
-
-   },
-
-	"SubscriberState":{
-      "Restricted": "",
-		"Purged": "",
-		 "BarredNoUsage": "",
-		"BarredWithUsage": "",
-		"ActiveNoUsage": "111117500010787",
-		"FailedPSIResponse": ""
-
-   },
-
+    "WithAPNAttributeChange": "204043720141084",
+    "Suspended": "204046855627929",
+    "Active": "111117500010785",
+    "Live/Test": "204043258711180",
+    "IMSINo": "111117500000013",
+    "TextAreaName": "IMSI",
+    "Restricted": "",
+    "Detatched": "",
+    "Barred": "",
+    "Purged": ""
+  },
+  "Status": {
+    "Suspended": "204046855627929",
+    "Active": "111117500010785",
+    "Live/Test": "204043258711180",
+    "Restricted": "",
+    "Detatched": "",
+    "Barred": "",
+    "Purged": ""
+  },
+  "SubscriberState": {
+    "Restricted": "",
+    "Purged": "",
+    "BarredNoUsage": "",
+    "BarredWithUsage": "",
+    "ActiveNoUsage": "111117500010787",
+    "FailedPSIResponse": ""
+  },
   "ADMIN": {
     "Platform": "Platform as Platform Administrator",
     "Opco": "PPVGE as Operator Administrator",
@@ -94,14 +79,29 @@
     "CustGeoLBS": "Geo_LBS as Customer Administrator",
     "Cust4": "ADI_Testing_Cust as Customer Administrator"
   },
-
   "SIMOperations": {
     "IMSIWildCard": "1*",
     "ICCIDWildcard": "1*",
     "IMEIWildcard": "1*",
-    "FilterIMSI":"111117500000013",
-    "PSUsageIMSI":"204043258711178",
-    "CSUsageIMSI":"204043258711178"
+    "FilterIMSI": "111117500000013",
+    "PSUsageIMSI": "204043258711178",
+    "CSUsageIMSI": "204043258711178",
+    "IMSINo": "204043258711178",
+    "TextAreaName": "IMSI",
+    "DropdownValue": "ppinternet.gdsp",
+    "Username": "m2m",
+    "Password": "m2m",
+    "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "WildCardIMSINo": "1*",
+    "ICCIDNo": "1*",
+    "TextAreaNameICCID": "ICCID",
+    "IMEINo": "3*",
+    "TextAreaNameIMEI": "IMEI",
+    "RangeBetween": "2015-06-01",
+    "RangeAnd": "2018-03-14"
+
   },
   "Customer1": {
     "MSISDN1": "111110001000000",
@@ -329,7 +329,7 @@
     "PlatformAdministratorRole": "Platform as Platform Administrator",
     "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
   },
-  "CustomAttributes": {
+  "SIMCustomAttributes": {
     "CustomAttribute1": "Attribute1",
     "CustomAttribute2": "Attribute2",
     "CustomAttribute3": "Attribute3",
@@ -346,16 +346,16 @@
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
     "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+
   },
-  "SIMDetails": {
-    "IMSI": "204043720141080",
-    "NewHomeCountry": "United Kingdom"
-  },
-  "SIMGroup": {
+  "SIMGroups": {
     "IMSI": "111117500000013",
     "Organisation": "Automation3",
     "GroupName": "SIMGroup",
-    "Description": "SIM Group Des"
+    "Description": "SIM Group Des",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator"
   },
   "mobile2": {
     "deviceId": "FA4HBA5LAQK7BEEA",
@@ -391,7 +391,21 @@
     "MaxNumberOfSMStoStore": "50",
     "APIGroups": "API_USER_AUTOMATION_0001",
     "Certificate": "alice.crt",
-    "CertificatePassword": "Vodafone"
+    "CertificatePassword": "Vodafone",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "CustomerSMSCommand": "AutomationCust1",
+    "IMSICommand": "204043258711180",
+    "CustomerSMSCommandUser": "AutomationCust1 as Customer Administrator",
+    "SenderNumber": "310000210",
+    "TransactionalSMS": "This is transactional SMS",
+    "GroupName": "SIMGroup",
+    "Description": "SIM Group Des"
+
+
+
+
   },
   "SMSCommand": {
     "Customer": "AutomationCust1",
@@ -399,7 +413,6 @@
     "CustomerUser": "AutomationCust1 as Customer Administrator",
     "SenderNumber": "310000210",
     "TransactionalSMS": "This is transactional SMS"
-
   },
   "SIMRegistrationData": {
     "IMSINo": "204043258711178",
@@ -407,9 +420,10 @@
     "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator",
+    "TextAreaName": "IMSI"
   },
-  "SIMProvisioning":{
+  "SIMProvisioning": {
     "CustomerAdministratorRole": "Automation3 as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
@@ -427,10 +441,15 @@
     "OrganisationOPCO": "PPVGE",
     "OrganisationCust": "Automation3",
     "SIMAmount": "10",
-     "Reference": "Order3",
+    "Reference": "Order3",
     "Amount": "10",
     "Organisation": "Automation3"
-
+  },
+  "SIMDetails": {
+    "IMSI": "204043720141080",
+    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "NewHomeCountry": "Germany"
   },
   "Diagnostics": {
     "APNExtRad": "aaastream3",
@@ -796,17 +815,16 @@
     "Supported": "Provisioning status",
     "Period": "hour"
   },
-    "EMNotificationReport": {
+  "EMNotificationReport": {
     "Custname": "Automation2",
     "Period": "hour"
   },
-   "EMBREModification": {
+  "EMBREModification": {
     "Custname": "Automation3",
     "APN": "ppinternet.gdsp",
     "Serviceprofile": "Automation3_CSP1_20402",
     "NewServiceprofile": "Automation3_CSP1_1111",
     "Description": "description",
-
     "Eventmetric": "Combined Usage",
     "Eventmetric1": "Voice Duration",
     "Eventmetric2": "Packet Data Volume (Bytes In + Out)",
@@ -815,20 +833,16 @@
     "Eventmetric5": "Voice Connections (Numbers)",
     "Eventmetric6": "SMS Delivery Notification Success Percentage",
     "Eventmetric7": "None",
-
     "Entitytype1": "SIM group",
     "Entitytype2": "Customer",
     "Entitytype3": "Service profile",
     "Entitytype4": "APN",
-
     "SIMgroup": "TestSIMGroup",
     "Requiredstate": "Any",
     "Requiredstate1": "Active.live",
-
     "Monitoringlevel1": "Compound",
     "Monitoringlevel2": "Device",
     "Monitoringlevel3": "Entity",
-
     "Onvalue": "1",
     "Monitoringperiod1": "Daily",
     "Monitoringperiod2": "Hourly",
@@ -837,7 +851,6 @@
     "Monitoringperiod5": "Annual",
     "Monitoringperiod6": "Six-Monthly",
     "Monitoringperiod7": "Quarterly",
-
     "Throesholdvalue": "1",
     "Threshold1": "Seconds",
     "Threshold2": "Minutes",
@@ -853,7 +866,7 @@
     "Message": "Message",
     "CSdeviceMSISDN1": "0088239325871183",
     "CSdeviceMSISDN2": "0088239325871181",
-    "CSdeviceID1":"EABYBQGANJLBBEVS",
+    "CSdeviceID1": "EABYBQGANJLBBEVS",
     "CSdeviceID2": "FA4HBA5LAQK7BEEA",
     "IOTdeviceID": "EABYBQGANJLBBEVS",
     "device": "310000210",
@@ -865,29 +878,27 @@
     "Supported": "Provisioning status",
     "Period": "hour"
   },
-
-    "SMSConfiguration": {
-        "OpCoAdmin": "E2Eopco as Operator Administrator",
-        "CustAdmin": "AutomationCust1 as Customer Administrator",
-        "CustSMS": "AutomationCust1",
-        "Cust2": "AutomationCust1",
-        "CSP": "AutoCSP2",
-        "IMSI": "204043258711183",
-        "IMSIMO": "204043258711183",
-        "IMSIMT": "204043258711183",
-        "IMSITrans": "204043258711183",
-        "IMSIwakeup": "204043258711183",
-        "TestMode": "204043258711183",
-        "Shortcode": "310000210",
-        "SMPPid": "Test",
-        "SMPPpassword": "Test",
-        "SMPPBind": "8",
-        "MsgGreaterThan160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.1234",
-        "Msg160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.",
-        "SMSDeliveryURL": "http://195.233.215.91:8280/GDSPWebServiceStubs/SMSDeliveryNotificationServicev2",
-        "SMSDeliveryUser": "Test",
-        "SMSDeliveryPwd":  "Test",
-        "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
-    }
-
+  "SMSConfiguration": {
+    "OpCoAdmin": "PPVGE as Operator Administrator",
+    "CustAdmin": "AutomationCust1 as Customer Administrator",
+    "CustSMS": "AutomationCust1",
+    "Cust2": "AutomationCust1",
+    "CSP": "AutoCSP2",
+    "IMSI": "204043258711183",
+    "IMSIMO": "204043258711183",
+    "IMSIMT": "204043258711183",
+    "IMSITrans": "204043258711183",
+    "IMSIwakeup": "204043258711183",
+    "TestMode": "204043258711183",
+    "Shortcode": "310000210",
+    "SMPPid": "Test",
+    "SMPPpassword": "Test",
+    "SMPPBind": "8",
+    "MsgGreaterThan160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.1234",
+    "Msg160char": "The maximum length of text message that you can send is 160 characters. However if you send more than 160 characters then your message will not be delivered.",
+    "SMSDeliveryURL": "http://195.233.215.91:8280/GDSPWebServiceStubs/SMSDeliveryNotificationServicev2",
+    "SMSDeliveryUser": "Test",
+    "SMSDeliveryPwd": "Test",
+    "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+  }
 }

@@ -1,5 +1,6 @@
 @SMSConfiguration
 Feature: SMS Inbox
+  ##Please refer SMSConfiguration in TestData.json for Test data
   ##SMS Configuration##
   @REG_R5.0_GUI_SMS-Configuration_001
   Scenario: verify that SMS communication entries older than the Maximum Age of SMS Messages (days) are removed from the system.

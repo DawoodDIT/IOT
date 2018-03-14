@@ -11,13 +11,13 @@ Feature: SIM Custom Attributes
       Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "Customers"
       Then verify text "Results"
-      Then enter "Organisation" "USE_CustomAttributes_Organisation"
+      Then enter "Organisation" "USE_SIMCustomAttributes_Organisation"
       When click on button "Search"
-      When click on link "USE_CustomAttributes_Organisation"
+      When click on link "USE_SIMCustomAttributes_Organisation"
       Then verify text "Overview"
       When click on tab "Details"
       When click on button "Edit"
-      Then enter "Custom attributes" "USE_CustomAttributes_CustomAttribute1"
+      Then enter "Custom attributes" "USE_SIMCustomAttributes_CustomAttribute1"
       When click on button "Save"
       Then verify text "Custom attributes"
       Then logout
@@ -28,14 +28,14 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_CustomAttributes_OperatorAdministratorRole"
-      Then verify text "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on link "USE_CustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
+      Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
       When click menu "Administration" and submenu "My organisation"
       Then verify text "Overview"
       When click on tab "Details"
       When click on button "Edit"
-      Then enter "Custom attributes" "USE_CustomAttributes_CustomAttribute1"
+      Then enter "Custom attributes" "USE_SIMCustomAttributes_CustomAttribute1"
       When click on button "Save"
       Then verify text "Custom attributes"
       Then logout
@@ -47,15 +47,14 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_CustomAttributes_IMSI"
+      Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
-      When click on link "USE_CustomAttributes_IMSI"
+      When click on link "USE_SIMCustomAttributes_IMSI"
       Then verify text "Service Profile"
-      Then verify text "USE_CustomAttributes_CustomAttribute2"
-      Then verify text "USE_CustomAttributes_CA1Value"
+      Then verify text "USE_SIMCustomAttributes_CustomAttribute2"
+      Then verify text "USE_SIMCustomAttributes_CA1Value"
       Then wait for 10 seconds
       Then logout
 
@@ -66,9 +65,9 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_CustomAttributes_OperatorAdministratorRole"
-      Then verify text "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on link "USE_CustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
+      Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
       When click menu "Administration" and submenu "My organisation"
       Then verify text "Overview"
       When click on tab "Details"
@@ -84,25 +83,23 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_CustomAttributes_OperatorAdministratorRole"
-      Then verify text "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on link "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
+      Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_CustomAttributes_IMSI"
+      Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
-      When click on link "USE_CustomAttributes_IMSI"
+      When click on link "USE_SIMCustomAttributes_IMSI"
       Then verify text "Overview"
       When click on button "Edit"
-      Then enter "USE_CustomAttributes_CustomAttribute1" "USE_CustomAttributes_CA1Value"
+      Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"
       When click on button "Save"
       Then verify text "Overview"
-      Then verify text "USE_CustomAttributes_CA1Value"
+      Then verify text "USE_SIMCustomAttributes_CA1Value"
       Then verify text "Devices"
-      When click on menu "Devices"
-      When click on submenu "All devices"
-      Then verify text "USE_CustomAttributes_CustomAttribute1"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
       Then wait for 10 seconds
       Then logout
     @REG_R9_GUI_Config_CA_004
@@ -112,21 +109,20 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_CustomAttributes_OperatorAdministratorRole"
-      Then verify text "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on link "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on menu "Devices"
-      When click on link "All devices"
+      When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
+      Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_CustomAttributes_IMSI"
+      Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
-      When click on link "USE_CustomAttributes_IMSI"
+      When click on link "USE_SIMCustomAttributes_IMSI"
       When click on button "Edit"
-      Then enter "USE_CustomAttributes_CustomAttribute1" "USE_CustomAttributes_CA1Value"
+      Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"
       When click on button "Save"
       When click on tab "Details"
       When click on tab "Overview"
-      Then verify text "USE_CustomAttributes_CA1Value"
+      Then verify text "USE_SIMCustomAttributes_CA1Value"
       Then wait for 5 seconds
       Then logout
 
@@ -137,16 +133,15 @@ Feature: SIM Custom Attributes
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_CustomAttributes_OperatorAdministratorRole"
-      Then verify text "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on link "USE_CustomAttributes_CustomerAdministratorRole"
-      When click on menu "Devices"
-      When click on link "All devices"
+      When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
+      Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
-      Then verify text "USE_CustomAttributes_CustomAttribute1"
-      Then enter "USE_CustomAttributes_CustomAttribute1" "USE_CustomAttributes_CA1Value"
+      Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
+      Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"
       When click on button "Search"
-      Then verify text "USE_CustomAttributes_IMSI"
+      Then verify text "USE_SIMCustomAttributes_IMSI"
       Then logout
 
 
