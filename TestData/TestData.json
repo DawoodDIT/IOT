@@ -93,7 +93,7 @@
     "Password": "m2m",
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "PlatformAdministratorRole": "Platform as Platform Administrator"
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
     "WildCardIMSINo": "1*",
     "ICCIDNo": "1*",
     "TextAreaNameICCID": "ICCID",
@@ -346,10 +346,7 @@
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
     "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
-  },
-  "SIMDetails": {
-    "IMSI": "204043720141080",
-    "NewHomeCountry": "United Kingdom"
+
   },
   "SIMGroups": {
     "IMSI": "111117500000013",
@@ -394,7 +391,21 @@
     "MaxNumberOfSMStoStore": "50",
     "APIGroups": "API_USER_AUTOMATION_0001",
     "Certificate": "alice.crt",
-    "CertificatePassword": "Vodafone"
+    "CertificatePassword": "Vodafone",
+    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "CustomerSMSCommand": "AutomationCust1",
+    "IMSICommand": "204043258711180",
+    "CustomerSMSCommandUser": "AutomationCust1 as Customer Administrator",
+    "SenderNumber": "310000210",
+    "TransactionalSMS": "This is transactional SMS",
+    "GroupName": "SIMGroup",
+    "Description": "SIM Group Des"
+
+
+
+
   },
   "SMSCommand": {
     "Customer": "AutomationCust1",
