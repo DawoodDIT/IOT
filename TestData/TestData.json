@@ -85,7 +85,23 @@
     "IMEIWildcard": "1*",
     "FilterIMSI": "111117500000013",
     "PSUsageIMSI": "204043258711178",
-    "CSUsageIMSI": "204043258711178"
+    "CSUsageIMSI": "204043258711178",
+    "IMSINo": "204043258711178",
+    "TextAreaName": "IMSI",
+    "DropdownValue": "ppinternet.gdsp",
+    "Username": "m2m",
+    "Password": "m2m",
+    "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
+    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
+    "PlatformAdministratorRole": "Platform as Platform Administrator"
+    "WildCardIMSINo": "1*",
+    "ICCIDNo": "1*",
+    "TextAreaNameICCID": "ICCID",
+    "IMEINo": "3*",
+    "TextAreaNameIMEI": "IMEI",
+    "RangeBetween": "2015-06-01",
+    "RangeAnd": "2018-03-14"
+
   },
   "Customer1": {
     "MSISDN1": "111110001000000",
@@ -421,7 +437,7 @@
     "IMSI": "204043720141080",
     "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "NewHomeCountry":"Germany"
+    "NewHomeCountry": "Germany"
   },
   "Diagnostics": {
     "APNExtRad": "aaastream3",
