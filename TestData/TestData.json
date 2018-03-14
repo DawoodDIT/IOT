@@ -744,7 +744,7 @@
   "AAAConfigureLBS": {
     "NewLBScustname": "Automation33",
     "NewLBScustDescription": "Description",
-    "NewLBScustTariff": "1111",
+    "NewLBScustTariff": "22222",
     "LBSusername": "wr@slr.com",
     "LBSPassword": "slr",
     "NewLBScustname1": "Automation30",
@@ -756,11 +756,12 @@
   },
   "AAAManageLBS": {
     "Custname": "Geo_LBS",
+    "IMSI": "204043720138235",
     "IMSI1": "204043258711181",
     "IMSI2": "204043720141083",
-    "MultipleIMSI": "204043258711181,204043720141083",
+    "MultipleIMSI": "204043720138235,901280000156662",
     "Startdate": "2017-11-08",
-    "Enddate": "2017-11-08",
+    "Enddate": "2018-03-14",
     "CSPname": "Automation3_CSP1_1111",
     "NewVPNdescription": "Description",
     "TransactionalSMS": "This is transactional SMS"
