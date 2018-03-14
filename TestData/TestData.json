@@ -409,7 +409,8 @@
     "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
+    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator",
+    "TextAreaName": "IMSI"
   },
   "SIMProvisioning": {
     "CustomerAdministratorRole": "Automation3 as Customer Administrator",
