@@ -1,5 +1,6 @@
 @SMS-MO
 Feature: SMS MO
+  ##Please refer SMSConfiguration in TestData.json for Test data
   @REG_R7.0_SMS_MO_001
   Scenario: verify that the status of SMS MO is updated successfully when SMS MO Service Enabled
     #SMS MO
