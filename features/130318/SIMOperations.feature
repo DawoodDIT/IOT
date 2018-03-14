@@ -2,7 +2,7 @@
 Feature: SIM Operations
   This feature covers SIM operations functionality.
 
-  #Success#Configured
+  #Success
   @REG_R7_GUI_Search_SIM_002
   Scenario: Test to verify whether Opco User can search SIMs using wildcard search options
     Given test case starts
@@ -26,7 +26,7 @@ Feature: SIM Operations
     Then verify text "matching result(s)"
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R6_GUI_Search_SIM_004
   Scenario: Test to verify whether Opco can Save All SIM information as csv with all the SIM details available under Opco
     Given test case starts
@@ -40,7 +40,7 @@ Feature: SIM Operations
     When click on button "CSV"
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R6_GUI_Search_SIM_003
   Scenario: Test to verify whether Customer can Save Searched SIM information as csv with all the SIM details
     Given test case starts
@@ -61,7 +61,7 @@ Feature: SIM Operations
     Then logout
 
 
-  #Success#Configured
+  #Success
   @REG_R6_GUI_Filter_SIM_002
   Scenario: Test to verify whether Customer can Save Filtered SIM information as csv with all the SIM details
     Given test case starts
@@ -85,7 +85,7 @@ Feature: SIM Operations
     Then logout
 
 
-    #Success#Configured
+    #Success
   @REG_R7_GUI_Filter_SIM_001
   Scenario: Test to verify whether Customer User can filter SIMs using available Search options
     Given test case starts
@@ -117,7 +117,7 @@ Feature: SIM Operations
     Then wait for 5 seconds
     Then logout
 
-  #Success#Configured
+  #Success
   @TC_SIMOperations_FILTER_SIM_Search_Export_OPCO
   Scenario:  Filter Search SIM and export - OPCO User
     Given test case starts
@@ -154,8 +154,8 @@ Feature: SIM Operations
     Then select radiobutton "Activity list"
     Then verify text "Results"
     Then select dropdown "Type" "RADIUS events"
-#    Then enterDate "Activities between" "USE_Diagnostics_RangeBetween"
-#    Then enterDate "and" "USE_Diagnostics_RangeAnd"
+#    Then enterDate "Activities between" "USE_SIMOperations_RangeBetween"
+#    Then enterDate "and" "USE_SIMOperations_RangeAnd"
     When click on button "Search"
     Then wait for 5 seconds
     Then verify text "Success"
@@ -234,7 +234,7 @@ Feature: SIM Operations
     Then logout
 
 
-  #Success#Configured
+  #Success
   @REG_R10_GUI_PS_Usage_001
   Scenario: Test to verify whether Customer User can view PS Usage details
     Given test case starts
@@ -269,7 +269,7 @@ Feature: SIM Operations
     Then logout
 
 
-    #Success#Configured
+    #Success
   @REG_R6_GUI_PD_Session_003
   Scenario:  Test to verify whether Opco User can view Packet Switch Data Session details
     Given test case starts
@@ -293,7 +293,7 @@ Feature: SIM Operations
     Then logout
 
 
-  #Success#Configured
+  #Success
   @REG_R10_GUI_SMS_Usage_001
   Scenario:  Test to verify whether Customer User can view SMS Usage details
     Given test case starts
@@ -327,7 +327,7 @@ Feature: SIM Operations
     Then wait for 5 seconds
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R10_GUI_PD_Session_004
   Scenario:  Test to verify whether Opco User can view Multiple Packet Switch Data Session details
     Given test case starts
@@ -359,7 +359,7 @@ Feature: SIM Operations
     Then verify text "Service Profile"
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R5_GUI_APN_Details_003
   Scenario:  Test to verify whether Opco User can view APN Details of a SIM
     Given test case starts
@@ -406,7 +406,7 @@ Feature: SIM Operations
     Then verify text "Call duration"
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R5_GUI_PD_Session_001
   Scenario:  Test to verify whether Customer User can view Packet Switch Data Session details
     Given test case starts
@@ -443,7 +443,7 @@ Feature: SIM Operations
     Then wait for 5 seconds
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R5_GUI_APN_Details_002
   Scenario:  Test to verify whether Customer User can set APN Credentials for a specific SIM
     Given test case starts
@@ -475,7 +475,7 @@ Feature: SIM Operations
     Then wait for 5 seconds
     Then logout
 
-  #Success#Configured
+  #Success
   @REG_R10_GUI_APN_Details_004
   Scenario: Test to verify whether Opco User can Update APN Credentials Set for a specific SIM
     Given test case starts
