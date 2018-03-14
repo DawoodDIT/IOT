@@ -153,18 +153,18 @@
       Then login
       Then verify text "M2M Dashboard"
       When click on link "USE_ADMIN_Opco"
-      Then verify text "USE_ADMIN_CustLBS"
-      When click on link "USE_ADMIN_CustLBS"
+      Then verify text "USE_ADMIN_CustGeoLBS"
+      When click on link "USE_ADMIN_CustGeoLBS"
       When click on menu "Devices"
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
       Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
       | IMSI            |
-      | USE_AAAManageLBS_IMSI1 |
+      | USE_AAAManageLBS_IMSI |
       When click on menu "Location"
       Then verify text "Location"
       When click on button "Display SIMs on map"
@@ -181,17 +181,17 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_OPCOADMIN_NAME"
-      Then verify text "USE_LBSCUST_NAME"
-      When click on link "USE_LBSCUST_NAME"
+      When click on link "USE_ADMIN_Opco"
+      Then verify text "USE_ADMIN_CustGeoLBS"
+      When click on link "USE_ADMIN_CustGeoLBS"
       When click on menu "Devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
       Then click on "checkbox" of table based on below criteria
       | IMSI            |
-      | USE_AAAManageLBS_IMSI1 |
+      | USE_AAAManageLBS_IMSI |
       When click on menu "Location"
       Then verify text "Location"
       When click on button "Display tracked locations"
@@ -200,6 +200,7 @@
       Then enter date "Start Date" "USE_AAAManageLBS_Startdate"
       Then enter date "End Date" "USE_AAAManageLBS_Enddate"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then logout
 
@@ -250,6 +251,7 @@
       Then enter date "Start Date" "USE_AAAManageLBS_Startdate"
       Then enter date "End Date" "USE_AAAManageLBS_Enddate"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then logout
 
@@ -266,9 +268,9 @@
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
-      When click on link "USE_AAAManageLBS_IMSI1"
+      When click on link "USE_AAAManageLBS_IMSI"
       Then verify text "Overview"
       When click on link "Operations"
       Then verify text "Set Location tracking"
@@ -293,9 +295,9 @@
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
-      When click on link "USE_AAAManageLBS_IMSI1"
+      When click on link "USE_AAAManageLBS_IMSI"
       Then verify text "Overview"
       When click on link "Details"
       Then verify text "SIM"
@@ -315,16 +317,16 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_OPCOADMIN_NAME"
-      Then verify text "USE_LBSCUST_NAME"
-      When click on link "USE_LBSCUST_NAME"
+      When click on link "USE_ADMIN_Opco"
+      Then verify text "USE_ADMIN_CustGeoLBS"
+      When click on link "USE_ADMIN_CustGeoLBS"
       When click on menu "Devices"
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
-      When click on link "USE_AAAManageLBS_IMSI1"
+      When click on link "USE_AAAManageLBS_IMSI"
       Then verify text "Overview"
       When click on link "Operations"
       Then verify text "Set Location tracking"
@@ -344,14 +346,14 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_OPCOADMIN_NAME"
-      Then verify text "USE_LBSCUST_NAME"
-      When click on link "USE_LBSCUST_NAME"
+      When click on link "USE_ADMIN_Opco"
+      Then verify text "USE_ADMIN_CustGeoLBS"
+      When click on link "USE_ADMIN_CustGeoLBS"
       When click on menu "Devices"
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
       Then select all from table
       When click on menu "Location"
@@ -362,6 +364,7 @@
       Then enter date "Start Date" "USE_AAAManageLBS_Startdate"
       Then enter date "End Date" "USE_AAAManageLBS_Enddate"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then logout
 
@@ -373,16 +376,16 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on link "USE_OPCOADMIN_NAME"
-      Then verify text "USE_LBSCUST_NAME"
-      When click on link "USE_LBSCUST_NAME"
+      When click on link "USE_ADMIN_Opco"
+      Then verify text "USE_ADMIN_CustGeoLBS"
+      When click on link "USE_ADMIN_CustGeoLBS"
       When click on menu "Devices"
       Then verify text "All devices"
       When click on submenu "All devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI1"
+      Then enter textarea "IMSI" "USE_AAAManageLBS_IMSI"
       When click on button "Search"
-      When click on link "USE_AAAManageLBS_IMSI1"
+      When click on link "USE_AAAManageLBS_IMSI"
       Then verify text "Overview"
       When click on link "Details"
       Then verify text "SIM"
