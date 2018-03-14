@@ -879,7 +879,7 @@
     "Period": "hour"
   },
   "SMSConfiguration": {
-    "OpCoAdmin": "E2Eopco as Operator Administrator",
+    "OpCoAdmin": "PPVGE as Operator Administrator",
     "CustAdmin": "AutomationCust1 as Customer Administrator",
     "CustSMS": "AutomationCust1",
     "Cust2": "AutomationCust1",
