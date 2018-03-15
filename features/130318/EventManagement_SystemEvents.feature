@@ -154,8 +154,8 @@ Feature: System Events part of Event Management functionality
     When click on button "Search"
     Then verify text "Event trigger"
     Then click on "Event triggers" of table based on below criteria
-     |Event trigger|Entity type|
-     |Active.Ready to Active.Standby|System|
+      | Event trigger                  | Entity type |
+      | Active.Ready to Active.Standby | System      |
 #    When click on link "Active.Ready to Active.Standby"
     Then verify no text "Edit"
     Then verify no text "Organisation"
@@ -199,9 +199,9 @@ Feature: System Events part of Event Management functionality
     When click on link "See event detail"
     Then verify text "USE_EventManagement_CustName"
     Then verify
-      |type|value|
-      |button|Edit|
-      |button|Delete event trigger|
+      | type   | value                |
+      | button | Edit                 |
+      | button | Delete event trigger |
     When click on button "Delete event trigger"
     Then verify text "You're about to delete"
     When click on button "Delete"
@@ -213,8 +213,8 @@ Feature: System Events part of Event Management functionality
     When click on button "Search"
     Then verify text "Event trigger"
     Then click on "Event triggers" of table based on below criteria
-      |Entity type|Event metric|
-      |Customer|Time In State|
+      | Entity type | Event metric  |
+      | Customer    | Time In State |
     When click on button "Delete event trigger"
     Then verify text "You're about to delete"
     When click on button "Delete"
@@ -226,8 +226,8 @@ Feature: System Events part of Event Management functionality
     When click on button "Search"
     Then verify text "Event trigger"
     Then click on "Event triggers" of table based on below criteria
-      |Entity type|Event metric|
-      |Customer|Time In State|
+      | Entity type | Event metric  |
+      | Customer    | Time In State |
     When click on button "Delete event trigger"
     Then verify text "You're about to delete"
     When click on button "Delete"
@@ -239,8 +239,8 @@ Feature: System Events part of Event Management functionality
     When click on button "Search"
     Then verify text "Event trigger"
     Then click on "Event triggers" of table based on below criteria
-      |Entity type|Event metric|
-      |Customer|Time In State|
+      | Entity type | Event metric  |
+      | Customer    | Time In State |
     When click on button "Delete event trigger"
     Then verify text "You're about to delete"
     When click on button "Delete"
@@ -252,8 +252,8 @@ Feature: System Events part of Event Management functionality
     When click on button "Search"
     Then verify text "Event trigger"
     Then click on "Event triggers" of table based on below criteria
-      |Entity type|Event metric|
-      |Customer|Time In State|
+      | Entity type | Event metric  |
+      | Customer    | Time In State |
     When click on button "Delete event trigger"
     Then verify text "You're about to delete"
     When click on button "Delete"

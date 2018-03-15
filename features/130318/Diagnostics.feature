@@ -12,6 +12,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then select dropdown "Class" "Customer"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "APN" of table based on below criteria
       |Class|
@@ -20,6 +21,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then select dropdown "Class" "Global"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "APN" of table based on below criteria
       |Class|
@@ -28,6 +30,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then select dropdown "Class" "Operator/Reseller"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "APN" of table based on below criteria
       |Class|
@@ -46,6 +49,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APNExtRad"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APNExtRad"
       Then verify text "Overview"
       When click on tab "Details"
@@ -86,6 +90,7 @@ Feature: Diagnostics
       When click on submenu "All devices"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
       | IMSI                   |
       | USE_Diagnostics_IMSI |
@@ -112,12 +117,15 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -141,6 +149,7 @@ Feature: Diagnostics
       When click on submenu "All devices"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
       | IMSI |
       | USE_Diagnostics_IMSI |
@@ -164,14 +173,18 @@ Feature: Diagnostics
       Then select dropdown "Network Protocol" "SMPP"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -194,6 +207,7 @@ Feature: Diagnostics
       When click on submenu "All devices"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
       | IMSI |
       | USE_Diagnostics_IMSI |
@@ -219,13 +233,16 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -250,6 +267,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
       | IMSI |
       | USE_Diagnostics_IMSI |
@@ -280,12 +298,14 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -302,6 +322,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -319,6 +340,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -343,6 +365,7 @@ Feature: Diagnostics
       When click on submenu "All devices"
       Then enter textarea "IMSI" "USE_Diagnostics_MultipleSIMs"
       When click on button "Search"
+      Then verify text "Results"
       Then select all from table
       When click on tab "Device_Tools"
       When click on button "Diagnostic trace"
@@ -382,12 +405,14 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -404,8 +429,10 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Diameter"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -422,6 +449,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -439,6 +467,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "SMPP"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -456,6 +485,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -473,6 +503,7 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Radius"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -497,6 +528,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
       Then verify text "Overview"
       When click on tab "Details"
@@ -525,8 +557,10 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "This step is just to add some wait"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
@@ -551,6 +585,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
       Then verify text "Overview"
       When click on tab "Details"
@@ -579,8 +614,10 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -604,6 +641,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
       Then verify text "Overview"
       When click on tab "Details"
@@ -639,6 +677,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -656,8 +695,10 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -681,6 +722,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
       Then verify text "Overview"
       When click on tab "Details"
@@ -712,10 +754,12 @@ Feature: Diagnostics
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
       Then verify text "Results"
+      Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -733,8 +777,10 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       When click on button "Search"
+      Then verify text "Results"
       Then click on header "Trace Time"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -748,6 +794,7 @@ Feature: Diagnostics
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
       Then verify text "Overview"
       When click on tab "Details"
@@ -875,6 +922,7 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN3"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -907,6 +955,7 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN3"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -938,6 +987,7 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then click on "Trace Results" of table based on below criteria
       |Network Protocol|IMSI|
@@ -963,6 +1013,7 @@ Feature: Diagnostics
       Then enter date "And" "USE_Diagnostics_RangeAnd1"
       Then select dropdown "APN" "USE_Diagnostics_APN2"
       When click on button "Search"
+      Then verify text "Results"
       Then verify no text "No results were found"
       Then logout
 
