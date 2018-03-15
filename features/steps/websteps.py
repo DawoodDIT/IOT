@@ -235,10 +235,7 @@ def getValueFromLabelAndStore(context, lblName,position,storeValue):
 @Then('change sim "{imsivalue}" from "{initState}" to "{finalState}"')
 def step_impl(context,imsivalue,initState,finalState):
     context.execute_steps("""
-        Then verify text "Devices"
-        When click on menu "Devices"
-        Then verify text "All devices"
-        When click on submenu "All devices"
+        When click menu "Devices" and submenu "All devices"
         Then verify text "Results"
         Then enter textarea "IMSI" "{imsivalue}"
         When click on button "Search"
@@ -272,8 +269,7 @@ def step_impl(context,imsivalue,initState,finalState):
 @Then('State change reason is mandatory "{imsivalue}" from "{initState}" to "{finalState}"')
 def step_impl(context, imsivalue, initState, finalState):
     context.execute_steps("""
-         When click on menu "Devices"
-         When click on menu "All devices"
+        When click menu "Devices" and submenu "All devices"
          Then verify text "Results"
          Then enter textarea "IMSI" "{imsivalue}"
          When click on button "Search"
@@ -380,8 +376,7 @@ def step_impl(context, vv, vp, ev, priority, mudh, ow):
 @Then('send SMStype "{smstype}""{msgbody}" from IMSI "{imsivalue}" to shortcode "{shortcodevalue}"')
 def step_impl(context, smstype, msgbody, imsivalue, shortcodevalue):
     context.execute_steps("""
-         When click on menu "Devices"
-         When click on menu "All devices"
+         When click menu "Devices" and submenu "All devices"
          Then verify text "Results"
          Then enter textarea "IMSI" "{imsivalue}"
          When click on button "Search"
@@ -397,24 +392,28 @@ def step_impl(context, smstype, msgbody, imsivalue, shortcodevalue):
 @Then('click on Recent Data Usage for Imsi "{imsivalue}"')
 def step_impl(context, imsivalue):
     context.execute_steps("""
-        When click on menu "Devices"
-        When click on menu "All devices"
+        When click menu "Devices" and submenu "All devices"
+        Then verify text "Results"
         Then enter textarea "IMSI" "{imsivalue}"
         When click on button "Search"
+        Then verify text "{imsivalue}"
         When click on link "{imsivalue}"
         Then verify text "Data Session"
         Then verify text "Active for"
         When click on link "Details"
+        Then verify text "Recent data usage"
         When click on link "Recent data usage"
+        
     """.format(imsivalue=imsivalue))
 
 @Then('set APN credentials for "{imsivalue}" apn "{apnname}" username "{username}" Password "{password}"')
 def step_impl(context, imsivalue, apnname, username, password ):
     context.execute_steps("""
-        When click on menu "Devices"
-        When click on menu "All devices"
+        When click menu "Devices" and submenu "All devices"
+        Then verify text "Results"
         Then enter textarea "IMSI" "{imsivalue}"
         When click on button "Search"
+        Then verify text "{imsivalue}"
         When click on link "{imsivalue}"
         When click on link "Operations"
         When click on link "Configure"
