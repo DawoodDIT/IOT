@@ -232,12 +232,13 @@
      Given browser is open
      Then login
      Then verify text "M2M Dashboard"
-     When click on link "USE_OPCOADMIN_NAME"
-     Then verify text "USE_AutoLBSCUST_NAME"
-     When click on link "USE_AutoLBSCUST_NAME"
+     When click on link "USE_ADMIN_Opco"
+     Then verify text "USE_ADMIN_CustLBS"
+     When click on link "USE_ADMIN_CustLBS"
      When click on menu "Administration"
      Then verify text "Service profiles"
      When click on submenu "Service profiles"
+     Then verify text "Results"
      Then verify text "Results"
      Then enter "Service Profile" "USE_AAAVoiceConfiguration_CSPname"
      When click on button "Search"
