@@ -6,17 +6,17 @@ Feature: SMS MO
     #SMS MO
     Given test case starts
     Given select mobile "mobile2"
-    Given browser is open
     When launch mobile app "message"
     Then store time in "strtime"
     Then send sms "SMS MO Testing Message" from "USE_SMSConfiguration_Mobile2deviceId" to "USE_SMSConfiguration_Shortcode"
+    Given browser is open
     Then login
     Then verify text "USE_SMSConfiguration_OpCoAdmin"
     When click on link "USE_SMSConfiguration_OpCoAdmin"
     Then verify text "USE_SMSConfiguration_CustAdmin"
     When click on link "USE_SMSConfiguration_CustAdmin"
     When click menu "Devices" and submenu "All devices"
-    Then enter textarea "IMSI" "USE_CustomerSMS_IMSIMO"
+    Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
     When click on link "USE_SMSConfiguration_IMSIMO"
     When click on link "History"
