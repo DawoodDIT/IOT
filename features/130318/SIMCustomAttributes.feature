@@ -74,7 +74,8 @@ Feature: SIM Custom Attributes
       Then verify text "Overview"
       When click on tab "Details"
       When click on button "Edit"
-      When click on button "customattribute"
+      Then enter "Custom attributes" "CustomAttribute1"
+      Then select check box "included on"
       When click on button "Save"
       Then logout
 
