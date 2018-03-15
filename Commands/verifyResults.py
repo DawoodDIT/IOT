@@ -28,9 +28,11 @@ def verifyResults(self,values):
         ## Verify if row contains data
         Module.logger.INFO("Verifying for the row" +rows.text)
         for val in values:
+
             newvalue = self.getValueFromDic(val)
-            if newvalue == None:
+            if "USE" in newvalue:
                 newvalue = Module.Utility.readTestData(val)
+
             newvalue = str(newvalue)
             Module.logger.INFO("Value to verify is " + newvalue)
 
