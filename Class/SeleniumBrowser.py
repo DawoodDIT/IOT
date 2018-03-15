@@ -55,7 +55,7 @@ class SeleniumBrowser:
           Env = Module.Utility.fnReadDataFromExcel("Login.xlsx", "URL", "ToBeExecuted","Yes","Type")
           url = Module.Utility.fnReadDataFromExcel("Login.xlsx", "URL", "Type",Env,"URL")
         Module.logger.INFO("Opening URL " + url)
-        self.driver.get(url)
+        #self.driver.get(url)
 
         Module.logger.DEBUG("COOKIE Listing and deletion start")
         try:
@@ -70,6 +70,10 @@ class SeleniumBrowser:
         except:
             Module.logger.DEBUG("exception in deleting cookies")
         Module.logger.DEBUG("COOKIE Listing and deletion end")
+
+        time.sleep(60)
+        # Opening URL
+        self.driver.get(url)
 
         try:
             cookies_list = self.driver.get_cookies()
@@ -262,12 +266,20 @@ class SeleniumBrowser:
             Module.logger.DEBUG("Clicked on m2m home link")
             self.driver.find_element_by_id("__ns1790630358_logoutLnk").click()
             Module.logger.INFO("logout end")
-            self.driver.close()
+            #self.driver.close()
+            try:
+                self.driver.quit()
+            except:
+                Module.logger.DEBUG("Exception in driver.quit")
             Module.CleanUp.killAllProcess()
             Module.CleanUp.remove_dir()
         except:
             Module.CleanUp.remove_dir()
-            self.driver.close()
+            #self.driver.close()
+            try:
+                self.driver.quit()
+            except:
+                Module.logger.DEBUG("Exception in driver.quit")
         #Module.Report.stopJVM()
 
 
