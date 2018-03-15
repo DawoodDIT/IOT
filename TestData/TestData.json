@@ -377,7 +377,7 @@
     "Tariffs": "22222",
     "CustomerUser": "Automation3 as Customer Administrator",
     "IMSI": "111117500000013",
-    "IMSIforEncoding": "204043258711181",
+    "IMSIforEncoding": "111117500000013",
     "SMSShortCode<4": "123",
     "SMSShortCode>15": "123456789123456789",
     "SMSShortCodeAlphabets": "abcd",
@@ -415,7 +415,7 @@
     "TransactionalSMS": "This is transactional SMS"
   },
   "SIMRegistrationData": {
-    "IMSINo": "204043258711178",
+    "IMSINo": "204043720141080",
     "Organisation": "Automation3",
     "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
@@ -442,7 +442,7 @@
     "OrganisationCust": "Automation3",
     "SIMAmount": "10",
     "Reference": "Order3",
-    "Amount": "10",
+    "Amount": "1",
     "Organisation": "Automation3"
   },
   "SIMDetails": {
