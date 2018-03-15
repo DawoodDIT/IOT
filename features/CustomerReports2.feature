@@ -11,9 +11,12 @@ Scenario: Test to verify the steps taken by the Customer User to view Itemised S
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Itemised SMS Usage By Customer v2"
   Then verify text "* Period"
@@ -22,7 +25,7 @@ Scenario: Test to verify the steps taken by the Customer User to view Itemised S
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
  Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
   Then verify filetext "PERIOD_START" in downloaded file "xml"
@@ -51,6 +54,7 @@ Scenario: Test to verify the steps taken by the Customer User to view Itemised S
   Then verify text "Generate report"
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -89,9 +93,12 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Itemised SMS Usage By Customer Profile v2"
   Then verify text "* Period"
@@ -101,8 +108,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then select dropdown "Service profile" "AutoCSP2"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
   Then verify filetext "Itemised SMS Usage By Customer Profile" in downloaded file "xml"
@@ -130,6 +136,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -168,9 +175,12 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Itemised SMS Usage By SIM v2"
   Then verify text "* Period"
@@ -180,7 +190,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then enter "SIM Identifier" "USE_CustomerReports2_SimWithSMSUsage"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -209,6 +219,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -247,9 +258,12 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Itemised SMS Usage for SIM v3"
   Then verify text "* Period"
@@ -260,7 +274,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
   Then select dropdown "Message Type" "Sent"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -297,6 +311,7 @@ Scenario: Test to verify the steps taken by the customer user to view Itemised S
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -344,9 +359,12 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Packet-Data Usage by IMSI"
   Then verify text "* Period"
@@ -355,7 +373,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -385,6 +403,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -413,6 +432,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -450,9 +470,12 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Packet-Data Usage By SIM And APN v4"
   Then verify text "* Period"
@@ -461,7 +484,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -492,6 +515,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -521,6 +545,7 @@ Scenario: Test to verify the steps taken by the customer user to view Packet-Dat
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -559,9 +584,12 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "RADIUS Authentication Failures for Customer v3"
   Then verify text "* Period"
@@ -570,7 +598,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -596,6 +624,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -621,7 +650,8 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then verify filetext "CUSTOMER_PROFILE_NAME" in downloaded file "csv"
 
    Then select dropdown "* Format" "PDF"
-  When click on button "Generate"
+   When click on button "Generate"
+   Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -658,9 +688,12 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile v3"
   Then verify text "* Period"
@@ -670,7 +703,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then select dropdown "Service profile" "USE_CustomerReports2_profileWitRadiusFailure"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -696,6 +729,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -722,6 +756,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -758,9 +793,12 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "RADIUS Authentication Failures for SIM v3"
   Then verify text "* Period"
@@ -770,7 +808,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
   Then enter "SIM Identifier" "USE_CustomerReports2_SimWithRadFailure"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -802,7 +840,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
   Then verify filetext "RADIUS Authentication Failures for SIM" in downloaded file "csv"
@@ -833,6 +871,7 @@ Scenario: Test to verify the steps taken by the customer user to view RADIUS Aut
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -870,9 +909,12 @@ Scenario: Test to verify the steps taken by the customer user to view Rogue Usag
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Rogue Usage Events v3"
   Then verify text "* Period"
@@ -881,7 +923,7 @@ Scenario: Test to verify the steps taken by the customer user to view Rogue Usag
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -911,6 +953,7 @@ Scenario: Test to verify the steps taken by the customer user to view Rogue Usag
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -941,7 +984,7 @@ Scenario: Test to verify the steps taken by the customer user to view Rogue Usag
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
   Then verify filetext "Rogue Usage Events" in downloaded file "pdf"
@@ -974,14 +1017,18 @@ Scenario: Test to verify the steps taken by the customer user to view Secondary 
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Secondary MSISDN Mapping v2"
   Then verify text "Format"
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1009,14 +1056,18 @@ Scenario: Test to verify the steps taken by the customer user to view Service Pr
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Service Profile Details for Customer"
   Then verify text "Format"
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
 
@@ -1087,9 +1138,12 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Delta Events for Customer v3"
   Then verify text "* Period"
@@ -1098,7 +1152,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1129,6 +1183,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1174,9 +1229,12 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Delta Events for Customer Profile v3"
   Then verify text "* Period"
@@ -1186,7 +1244,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then select dropdown "Service profile" "AutoCSP2"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1217,6 +1275,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1263,9 +1322,12 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Delta Events for SIM v2"
   Then verify text "* Period"
@@ -1275,7 +1337,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
   Then enter "SIM Identifier" "USE_CustomerReports2_SimWithRadFailure"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1302,6 +1364,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Delta 
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1350,16 +1413,19 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Group 
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Group Detail"
   Then verify text "SIM group name"
   Then select dropdown "* SIM group name" "USE_CustomerReports2_SIMGroupName"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1380,6 +1446,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Group 
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1397,6 +1464,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Group 
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1426,9 +1494,12 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Identi
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Identifier-MSISDN Pairing v2"
   Then verify text "* Period"
@@ -1437,7 +1508,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Identi
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1459,6 +1530,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Identi
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1478,6 +1550,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Identi
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1504,15 +1577,19 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Invent
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Inventory for Customer v2"
   Then verify text "SIM state"
   Then select dropdown "SIM state" "All"
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1545,6 +1622,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Invent
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1577,9 +1655,12 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Pairin
   Then verify text "USE_CustomerReports2_Cust2"
   When click on link "USE_CustomerReports2_Cust2"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SIM Pairings file v2"
   Then verify text "Customer order number"
@@ -1587,6 +1668,7 @@ Scenario: Test to verify the steps taken by the customer user to view SIM Pairin
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_Cust2" in downloaded file "csv"
@@ -1615,8 +1697,10 @@ Scenario: Test to verify the steps taken by the customer user to view SMS Usage 
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "SMS Usage by SIM v2"
   Then verify text "* Period"
@@ -1625,7 +1709,7 @@ Scenario: Test to verify the steps taken by the customer user to view SMS Usage 
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1652,6 +1736,7 @@ Scenario: Test to verify the steps taken by the customer user to view SMS Usage 
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1675,6 +1760,7 @@ Scenario: Test to verify the steps taken by the customer user to view SMS Usage 
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1709,9 +1795,12 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Changes by Date"
   Then verify text "* Period"
@@ -1720,7 +1809,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1744,6 +1833,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1764,6 +1854,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
    Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1792,9 +1883,12 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Changes by Home Country"
   Then verify text "* Period"
@@ -1803,8 +1897,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
   Then verify filetext "State Changes by Home Country" in downloaded file "xml"
@@ -1827,6 +1920,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -1847,6 +1941,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1876,9 +1971,12 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Changes by Home Country and Date"
   Then verify text "* Period"
@@ -1887,7 +1985,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1912,7 +2010,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
   Then verify filetext "State Changes by Home Country and Date" in downloaded file "csv"
@@ -1933,6 +2031,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -1965,9 +2064,12 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Changes Summary"
   Then verify text "* Period"
@@ -1976,7 +2078,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
   Then enter date for "and" "today"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -1999,6 +2101,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -2018,6 +2121,7 @@ Scenario: Test to verify the steps taken by the customer user to view State Chan
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -2048,16 +2152,19 @@ Scenario: Test to verify the steps taken by customer user to view the State Coun
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Counts by Home Country"
   Then verify text "* Date"
   Then enter date "* Date" "USE_CustomerReports2_StartDate"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -2074,6 +2181,7 @@ Scenario: Test to verify the steps taken by customer user to view the State Coun
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
   Then verify filetext "State Counts by Home Country" in downloaded file "csv"
@@ -2089,6 +2197,7 @@ Scenario: Test to verify the steps taken by customer user to view the State Coun
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -2115,16 +2224,19 @@ Scenario: Test to verify the steps taken by customer user to view State Counts S
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "State Counts Summary"
   Then verify text "* Date"
   Then enter date "* Date" "USE_CustomerReports2_StartDate"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -2143,6 +2255,7 @@ Scenario: Test to verify the steps taken by customer user to view State Counts S
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -2159,6 +2272,7 @@ Scenario: Test to verify the steps taken by customer user to view State Counts S
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"
@@ -2184,16 +2298,19 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
   Then verify text "USE_CustomerReports2_Cust3"
   When click on link "USE_CustomerReports2_Cust3"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Top and Bottom Circuit-Switched Devices by Duration"
   Then verify text "* Date"
   Then enter date "* Date" "USE_CustomerReports2_DateWithCalls"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_Cust3" in downloaded file "xml"
@@ -2217,6 +2334,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_Cust3" in downloaded file "csv"
@@ -2238,7 +2356,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_Cust3" in downloaded file "pdf"
   Then verify filetext "Top and Bottom Circuit-Switched Devices by Duration" in downloaded file "pdf"
@@ -2269,15 +2387,18 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Static IP Address Allocations"
   Then verify text "* Format"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -2294,6 +2415,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -2321,15 +2443,18 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Static IP Address Allocations v2"
   Then verify text "* Format"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -2346,6 +2471,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
@@ -2373,16 +2499,20 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
   Then verify text "USE_CustomerReports2_Cust"
   When click on link "USE_CustomerReports2_Cust"
   Then wait for 5 seconds
+  Then verify text "Reporting"
   When click on menu "Reporting"
+
+  Then wait for 5 seconds
   Then verify text "Reports"
   When click on submenu "Reports"
+  Then wait for 5 seconds
   Then verify text "Generate report"
   Then select dropdown "* Report" "Top and Bottom Packet-Data Devices by Data Usage v3"
   Then verify text "* Date"
   Then enter "* Date" "USE_CustomerReports2_DateWithUsage"
   Then select dropdown "* Format" "XML"
   When click on button "Generate"
-  Then wait for 10 seconds
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "xml"
@@ -2409,7 +2539,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "CSV"
   When click on button "Generate"
-
+  Then wait for 60 seconds
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "csv"
   Then verify filetext "Top and Bottom Packet-Data Devices by Data Usage" in downloaded file "csv"
@@ -2432,6 +2562,7 @@ Scenario: Test to verify the steps taken by the customer user to view Top and Bo
 
   Then select dropdown "* Format" "PDF"
   When click on button "Generate"
+  Then wait for 60 seconds
 
 
   Then verify filetext "USE_CustomerReports2_CustName" in downloaded file "pdf"

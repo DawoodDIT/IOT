@@ -13,6 +13,7 @@ Feature: SIM Custom Attributes
       Then verify text "Results"
       Then enter "Organisation" "USE_SIMCustomAttributes_Organisation"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_SIMCustomAttributes_Organisation"
       Then verify text "Overview"
       When click on tab "Details"
@@ -51,6 +52,7 @@ Feature: SIM Custom Attributes
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_SIMCustomAttributes_IMSI"
       Then verify text "Service Profile"
       Then verify text "USE_SIMCustomAttributes_CustomAttribute2"
@@ -72,7 +74,8 @@ Feature: SIM Custom Attributes
       Then verify text "Overview"
       When click on tab "Details"
       When click on button "Edit"
-      When click on button "customattribute"
+      Then enter "Custom attributes" "CustomAttribute1"
+      Then select check box "included on"
       When click on button "Save"
       Then logout
 
@@ -90,6 +93,7 @@ Feature: SIM Custom Attributes
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_SIMCustomAttributes_IMSI"
       Then verify text "Overview"
       When click on button "Edit"
@@ -116,6 +120,7 @@ Feature: SIM Custom Attributes
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       When click on button "Search"
+      Then verify text "Results"
       When click on link "USE_SIMCustomAttributes_IMSI"
       When click on button "Edit"
       Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"
@@ -141,6 +146,7 @@ Feature: SIM Custom Attributes
       Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
       Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"
       When click on button "Search"
+      Then verify text "Results"
       Then verify text "USE_SIMCustomAttributes_IMSI"
       Then logout
 
