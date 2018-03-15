@@ -901,5 +901,26 @@
     "SMSDeliveryUser": "Test",
     "SMSDeliveryPwd": "Test",
     "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+  },
+    "CustomerDATA": {
+      "OpCoAdmin": "PPVGE as Operator Administrator",
+      "CustAdmin": "AutomationCust1 as Customer Administrator",
+      "IMSIData": "204043258711183",
+      "IMSIDataLTE": "901289999900330",
+      "DataAPN": "ppinternet.gdsp",
+      "LTEAPN": "ppinternet4gd.gdsp",
+      "DynamicAPN": "gdsp40.vodafone.com",
+      "StaticAPN": "gdsp40.vodafone.com",
+      "NoneAPN": "gdsp40.vodafone.com",
+      "MixedAPN": "gdsp40.vodafone.com",
+      "APNUser": "gdsp",
+      "APNPWD": "gdsp",
+      "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+  },
+  "User":{
+      "CustomerAdministratorRole":"Automation3 as Customer Administrator",
+      "OperatorAdministratorRole":"PPVGE as Operator Administrator",
+      "PlatformAdministratorRole":"Platform as Platform Administrator",
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator"
   }
 }
