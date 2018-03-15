@@ -28,6 +28,10 @@
           "locator": "id",
           "locatorvalue": "__ns2036993941_refreshPage"
         },
+        "SelectFile": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_selectFile"
+        },
 	"removegroup":{
         "locator":"class",
         "locatorvalue":"remove"
@@ -92,12 +96,13 @@
 
   "uploadbutton": {
      "Select file": {
-        "locator": "id",
-        "locatorvalue": "attchFileId"
+        "locator": "id,id",
+        "locatorvalue": "attchFileId,batchFileId"
       }
     },
    "link": {
      "TXT": {
+
         "locator": "class",
         "locatorvalue": "batchType"
       }
