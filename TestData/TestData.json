@@ -1000,6 +1000,22 @@
 		"oldDate":"2017-11-01",
 	    "futureDate":"2018-12-01",
 	    "futureDate2":"2018-05-01"
+	},
+
+	"CustomerReports1": {
+    "Period1": "Range",
+    "Period2": "Last 30 days",
+    "StartDate": "2016-02-02",
+    "EndDate": "2018-01-02",
+    "CustName":"AutomationCust1",
+    "OpcoName":"PPVGE",
+    "CSP1": "Auto1_CSP_IMEI",
+    "SIMId": "204043258711181",
+    "attribute1":"A",
+    "attribute2":"B",
+    "attribute3":"C",
+    "attribute4":"D",
+    "attribute5":"E"
 	}
 
 
