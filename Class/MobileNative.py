@@ -39,11 +39,12 @@ class MobileNative:
             self.platformName = Module.Utility.ReadDataFromMobileConfig(self.device, "platformName")
             self.platformVersion = Module.Utility.ReadDataFromMobileConfig(self.device, "platformVersion")
             self.deviceName = Module.Utility.ReadDataFromMobileConfig(self.device, "deviceName")
-
+            self.deviceId=Module.Utility.ReadDataFromMobileConfig(self.device, "deviceId")
             self.desired_caps = {}
             self.desired_caps['platformName'] = self.platformName
             self.desired_caps['platformVersion'] = self.platformVersion
             self.desired_caps['deviceName'] = self.deviceName
+            self.desired_caps['udid'] = self.deviceId
         except:
             Module.logger.ERROR("Mobile device not found")
             Module.Report.Failure(self.mobiledriver, "Mobile device not found")

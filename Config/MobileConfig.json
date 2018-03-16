@@ -2,26 +2,33 @@
   "mobile1": {
     "platformName": "Android",
     "platformVersion": "4.4.4",
-    "deviceName": "Arun (Galaxy E7)"
+    "deviceName": "Arun (Galaxy E7)",
+    "deviceId":""
   },
 
   "mobile2": {
     "platformName": "Android",
     "platformVersion": "4.4.2",
-    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)"
+    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
+    "deviceId":"EABYBQGANJLBBEVS"
+
   },
 
   "mobile80": {
     "platformName": "Android",
     "platformVersion": "4.4.2",
-    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)"
+    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
+    "deviceId":""
+  },
 
-   },
+
   "mobile3": {
     "platformName": "Android",
     "platformVersion": "6.0",
-    "deviceName": "ALCATEL PIXI 4 (4)"
+    "deviceName": "ALCATEL PIXI 4 (4)",
+    "deviceId":""
   },
+
 
   "youtube": {
     "appPackage": "com.google.android.youtube",
