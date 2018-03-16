@@ -901,5 +901,110 @@
     "SMSDeliveryUser": "Test",
     "SMSDeliveryPwd": "Test",
     "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
-  }
+  },
+    "CustomerDATA": {
+      "OpCoAdmin": "PPVGE as Operator Administrator",
+      "CustAdmin": "AutomationCust1 as Customer Administrator",
+      "IMSIData": "204043258711183",
+      "IMSIDataLTE": "901289999900330",
+      "DataAPN": "ppinternet.gdsp",
+      "LTEAPN": "ppinternet4gd.gdsp",
+      "DynamicAPN": "gdsp40.vodafone.com",
+      "StaticAPN": "gdsp40.vodafone.com",
+      "NoneAPN": "gdsp40.vodafone.com",
+      "MixedAPN": "gdsp40.vodafone.com",
+      "APNUser": "gdsp",
+      "APNPWD": "gdsp",
+      "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+  },
+  "User":{
+      "CustomerAdministratorRole":"Automation3 as Customer Administrator",
+      "OperatorAdministratorRole":"PPVGE as Operator Administrator",
+      "PlatformAdministratorRole":"Platform as Platform Administrator",
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator"
+
+
+    "FilterIMSI":"111117500000013",
+    "PSUsageIMSI":"204043258711178",
+    "CSUsageIMSI":"204043258711178"
+  },
+
+  "BatchOperationCustomer": {
+		"IMSI": "204043258711182",
+		"IMSI2": "204043258711184",
+		"CSP1": "AutoCSP2",
+		"CSP2": "AutoDataCSP",
+		"IMSI3": "204043258711185",
+		"NotLiveIMSI1": "204043720141084",
+		"NotLiveIMSI2": "204043251049911",
+
+		"IMSIStatic": "204043258711182",
+		"IMSIAPNCred": "204043258711182",
+		"IMSIipv6": "901280015030580",
+		"IMSIHomeCountry": "204043258711184",
+		"PLMNIMSI": "204043258711181",
+		"PLMNText": "Moving to AutomationPLMN",
+		"Cust": "AutomationCust1",
+		"IMEI": "353621070632753",
+		"DeviceGroup": "AutomationGroup",
+		"ChangeState": "Active.Live",
+		"IPAddress": "10.25.109.23",
+		"OpCoAdmin": "PPVGE as Operator Administrator",
+		"OpCoGroupAdmin": "AutoOpGrp11 as Operator Group Administrator",
+		"CustomerAdmin": "AutomationCust1 as Customer Administrator",
+		"SubCustAdmin": "AutoSubCust as Sub-customer Administrator",
+		"CustGroupAdmin": "AutoCustGroup as Customer Group Administrator",
+		"ResellerAdmin": "",
+		"PlatformAdmin": "Platform as Platform Administrator",
+		"MSISDN1": "111110001000000",
+		"IMSIRange": "204043258711181,204043258711182",
+		"IMSI1": "204043258711181",
+		"MSISDN": "204043720199828",
+		"Status": "Active"
+	},
+
+	"BatchOperationOpco": {
+
+		"NotLiveIMSI1": "111117500000540",
+		"NotLiveIMSI2": "111117500000530",
+		"NotLiveIMSI3": "111117500000526",
+		"IMSIIMEI":"111117500010766",
+		"IMSI": "111117500000530",
+		"IMSI1": "204043258711182",
+        "IMSIHomeCountry": "111117500000530",
+        "IMEI": "1111189876543042",
+		"Cust": "AutomationCust1",
+		"Org": "PPVGE",
+		"PLMNIMSI": "111110001000018",
+		"PLMNText": "Moving to AutomationPLMN",
+		"IMSIStatic": "204043258711182",
+		"IMSIAPNCred": "204043258711182",
+		"DeviceGroup": "AutomationGroup",
+		"IMSI3": "204043258711185"
+
+
+	},
+
+
+		"Tariffs": {
+		"Tariff5": "01121_test.-223311ddee",
+        "Org":"PPVGE",
+
+			"Tariff1": "22222",
+		"Tariff2": "Assurance",
+		"Tariff3": "DWH_Test_Tariff_4",
+		"Tariff4": "NotTariff",
+        "TariffForCSP":"JCIDEMOTARIFF",
+		"ActiveTariff":"AutoTestTariff178",
+		"TariffSP": "Testing_adi",
+		"CustOrg": "AutomationCust1",
+		"CustReport": "ADI_Testing_Cust",
+		"oldDate":"2017-11-01",
+	    "futureDate":"2018-12-01",
+	    "futureDate2":"2018-05-01"
+	}
+
+
+
+
 }
