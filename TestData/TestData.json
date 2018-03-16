@@ -115,12 +115,7 @@
     "Cust1": "ADI_Testing_Cust",
     "IMSI": "204043258711182"
   },
-  "User": {
-    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
-    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
-  },
+
   "PSUsageUser": {
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator"
   },
