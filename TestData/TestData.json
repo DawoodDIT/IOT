@@ -353,13 +353,14 @@
     "PlatformAdministratorRole": "Platform as Platform Administrator"
   },
   "mobile2": {
-    "deviceId": "FA4HBA5LAQK7BEEA",
-    "deviceId1": "FA4HBA5LAQK7BEEA",
-    "RecMobNo": "+447891913566"
+    "deviceId":"8L7DGYYPGEFEP74P",
+    "RecMobNo" :"+447891913566"
+
   },
   "mobile3": {
-    "deviceId": "CY8LBQS4BIS4W8FU",
+    "deviceId":"CY8LBQS4BIS4W8FU",
     "RecMobNo": "+447891913566"
+
   },
   "CustomerOnboarding": {
     "Customer": "Automation3",
