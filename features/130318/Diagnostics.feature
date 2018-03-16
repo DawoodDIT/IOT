@@ -10,6 +10,7 @@ Feature: Diagnostics
       Then login
       Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Customer"
       When click on button "Search"
       Then verify text "Results"
@@ -19,6 +20,7 @@ Feature: Diagnostics
       |Customer|
       Then verify text "Customer"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Global"
       When click on button "Search"
       Then verify text "Results"
@@ -28,6 +30,7 @@ Feature: Diagnostics
       |Global|
       Then verify text "Global"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Operator/Reseller"
       When click on button "Search"
       Then verify text "Results"
@@ -50,9 +53,11 @@ Feature: Diagnostics
       Then enter "APN" "USE_Diagnostics_APNExtRad"
       When click on button "Search"
       Then verify text "Results"
+      Then verify text "USE_Diagnostics_APNExtRad"
       When click on link "USE_Diagnostics_APNExtRad"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "RADIUS"
       When click on link "RADIUS"
       Then verify text "Server IP address"
       Then verify text "RADIUS secret"
@@ -67,11 +72,13 @@ Feature: Diagnostics
       Then login
       Then verify text "M2M Dashboard"
       When click on link "USE_Diagnostics_OperatorAdministratorRole"
+      Then verify text "USE_Diagnostics_CustomerAdministratorRole"
       When click on link "USE_Diagnostics_CustomerAdministratorRole"
-      When click on menu "Administration"
-      When click on submenu "My organisation"
+      Then verify text "M2M Dashboard"
+      When click menu "Administration" and submenu "My organisation"
       Then verify text "USE_Diagnostics_Customer"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       Then verify text "Data service"
       Then verify no text "None"
@@ -86,8 +93,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
       Then verify text "Results"
@@ -110,6 +117,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
       When click on menu "Tools"
       When click on submenu "Trace results"
@@ -120,7 +128,6 @@ Feature: Diagnostics
       Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
@@ -145,8 +152,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
       Then verify text "Results"
@@ -166,6 +173,7 @@ Feature: Diagnostics
       When launch mobile app "message"
       Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
       Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 120 seconds
 #    Web Part
       When click on menu "Tools"
       When click on submenu "Trace results"
@@ -176,7 +184,6 @@ Feature: Diagnostics
       Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
@@ -203,8 +210,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
       Then verify text "Results"
@@ -227,6 +234,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #    Web Part
       When click on menu "Tools"
       When click on submenu "Trace results"
@@ -236,7 +244,6 @@ Feature: Diagnostics
       Then verify text "Results"
       Then verify text "Trace results"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
@@ -262,8 +269,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
@@ -290,6 +296,7 @@ Feature: Diagnostics
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
       Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then wait for 120 seconds
 #    Web Part
 #    Diameter Trace
       When click on menu "Tools"
@@ -361,8 +368,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_MultipleSIMs"
       When click on button "Search"
       Then verify text "Results"
@@ -397,6 +404,7 @@ Feature: Diagnostics
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile3_deviceId" to "USE_mobile3_RecMobNo"
       Then from "USE_mobile3_deviceId" call No "USE_mobile3_RecMobNo"
+      Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace - SIM1
       When click on menu "Tools"
@@ -549,6 +557,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
       When click on menu "Tools"
       When click on submenu "Trace results"
@@ -606,6 +615,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
       When click on menu "Tools"
       When click on submenu "Trace results"
@@ -663,6 +673,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #    Web Part
 #      Diameter Trace Verification
       When click on menu "Tools"
@@ -744,6 +755,7 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace Verification
       When click on menu "Tools"
@@ -753,7 +765,6 @@ Feature: Diagnostics
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
