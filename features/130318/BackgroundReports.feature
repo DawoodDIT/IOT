@@ -8,13 +8,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -24,21 +26,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | API Usage for Customer    |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -48,21 +53,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | API Usage for Customer    |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "API Usage for Customer" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -72,18 +80,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | API Usage for Customer    |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -96,13 +108,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -112,22 +126,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
     Then verify filetext "PERIOD_START" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -137,22 +154,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
     Then verify filetext "PERIOD_START" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -162,19 +182,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -187,13 +211,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -203,22 +229,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
     Then verify filetext "PERIOD_START" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -228,22 +257,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
     Then verify filetext "PERIOD_START" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -253,19 +285,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -279,13 +315,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -295,21 +333,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Customer Overview         |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -319,21 +360,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Customer Overview         |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -343,18 +387,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Customer Overview         |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -368,13 +416,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -385,22 +435,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "csv"
     Then verify filetext "TIMESTAMP" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -411,22 +464,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "pdf"
     Then verify filetext "TIMESTAMP" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -437,19 +493,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     Then verify filetext "TIMESTAMP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -463,13 +523,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -480,21 +542,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -505,21 +570,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -530,18 +598,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -555,13 +627,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -571,21 +645,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | High Usage Events v2      |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -595,21 +672,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | High Usage Events v2      |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -619,18 +699,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | High Usage Events v2      |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 90 seconds
     Then logout
@@ -644,13 +728,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -660,21 +746,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMEI-Rule Failed Events   |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -684,21 +773,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMEI-Rule Failed Events   |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -708,18 +800,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMEI-Rule Failed Events   |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -733,13 +829,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -749,21 +847,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMSI-MSISDN Pairing       |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -773,21 +874,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMSI-MSISDN Pairing       |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -797,18 +901,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | IMSI-MSISDN Pairing       |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -821,13 +929,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -837,21 +947,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
       | USE_Reporting_RequestedOn  |
       | USE_Reporting_CustName     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -861,21 +974,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
       | USE_Reporting_RequestedOn  |
       | USE_Reporting_CustName     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -885,18 +1001,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
       | USE_Reporting_RequestedOn  |
       | USE_Reporting_CustName     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -909,13 +1029,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -925,21 +1047,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
       | USE_Reporting_RequestedOn                    |
       | USE_Reporting_CustName                       |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -949,21 +1074,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
       | USE_Reporting_RequestedOn                    |
       | USE_Reporting_CustName                       |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -973,18 +1101,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
       | USE_Reporting_RequestedOn                    |
       | USE_Reporting_CustName                       |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -997,13 +1129,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1014,21 +1148,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1039,21 +1176,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1064,18 +1204,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
+    Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1088,13 +1232,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1105,21 +1251,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
       | USE_Reporting_RequestedOn                |
       | USE_Reporting_CustName                   |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1130,21 +1279,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
       | USE_Reporting_RequestedOn                |
       | USE_Reporting_CustName                   |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1155,18 +1307,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
       | USE_Reporting_RequestedOn                |
       | USE_Reporting_CustName                   |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1178,13 +1334,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1194,21 +1352,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
       | USE_Reporting_RequestedOn                  |
       | USE_Reporting_CustName                     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1218,21 +1379,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
       | USE_Reporting_RequestedOn                  |
       | USE_Reporting_CustName                     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1242,18 +1406,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
       | USE_Reporting_RequestedOn                  |
       | USE_Reporting_CustName                     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1266,13 +1434,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1283,21 +1453,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
       | USE_Reporting_RequestedOn                          |
       | USE_Reporting_CustName                             |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1308,21 +1481,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
       | USE_Reporting_RequestedOn                          |
       | USE_Reporting_CustName                             |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1333,18 +1509,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
       | USE_Reporting_RequestedOn                          |
       | USE_Reporting_CustName                             |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1357,13 +1537,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1374,21 +1556,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
       | USE_Reporting_RequestedOn             |
       | USE_Reporting_CustName                |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1399,21 +1584,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
       | USE_Reporting_RequestedOn             |
       | USE_Reporting_CustName                |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1424,18 +1612,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
       | USE_Reporting_RequestedOn             |
       | USE_Reporting_CustName                |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1448,13 +1640,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1464,21 +1658,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
       | USE_Reporting_RequestedOn                               |
       | USE_Reporting_CustName                                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1488,21 +1685,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
       | USE_Reporting_RequestedOn                               |
       | USE_Reporting_CustName                                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1512,18 +1712,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
       | USE_Reporting_RequestedOn                               |
       | USE_Reporting_CustName                                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1536,13 +1740,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1553,21 +1759,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
       | USE_Reporting_RequestedOn                                       |
       | USE_Reporting_CustName                                          |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1578,21 +1787,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
       | USE_Reporting_RequestedOn                                       |
       | USE_Reporting_CustName                                          |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1603,18 +1815,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
       | USE_Reporting_RequestedOn                                       |
       | USE_Reporting_CustName                                          |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1627,13 +1843,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1644,21 +1862,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1669,21 +1890,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1694,18 +1918,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1718,13 +1946,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1734,21 +1964,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | Itemised SMS Usage By Customer |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1758,18 +1991,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                         |
       | Itemised SMS Usage By Customer |
       | USE_Reporting_RequestedOn      |
       | USE_Reporting_CustName         |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1782,13 +2019,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1799,21 +2038,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                 |
       | Itemised SMS Usage By Customer Profile |
       | USE_Reporting_RequestedOn              |
       | USE_Reporting_CustName                 |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1824,18 +2066,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                 |
       | Itemised SMS Usage By Customer Profile |
       | USE_Reporting_RequestedOn              |
       | USE_Reporting_CustName                 |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1848,13 +2094,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1865,22 +2113,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                     |
       | Itemised SMS Usage By IMSI |
       | USE_Reporting_RequestedOn  |
       | USE_Reporting_CustName     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
     Then verify filetext "DATA_CODING" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1891,19 +2142,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                     |
       | Itemised SMS Usage By IMSI |
       | USE_Reporting_RequestedOn  |
       | USE_Reporting_CustName     |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "DATA_CODING" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1916,13 +2171,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1932,21 +2189,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1956,21 +2216,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1980,18 +2243,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2003,13 +2270,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2019,22 +2288,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
       | USE_Reporting_RequestedOn            |
       | USE_Reporting_CustName               |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
     Then verify filetext "USE_Reporting_PdAPN" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2044,22 +2316,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
       | USE_Reporting_RequestedOn            |
       | USE_Reporting_CustName               |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_PdAPN" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2069,19 +2344,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
       | USE_Reporting_RequestedOn            |
       | USE_Reporting_CustName               |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_PdAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2094,13 +2373,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2110,22 +2391,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
       | USE_Reporting_RequestedOn                   |
       | USE_Reporting_CustName                      |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2135,22 +2419,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
       | USE_Reporting_RequestedOn                   |
       | USE_Reporting_CustName                      |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2160,19 +2447,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
       | USE_Reporting_RequestedOn                   |
       | USE_Reporting_CustName                      |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2185,13 +2476,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2202,22 +2495,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2228,22 +2524,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2254,19 +2553,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
       | USE_Reporting_RequestedOn                           |
       | USE_Reporting_CustName                              |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2279,13 +2582,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2296,22 +2601,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
       | USE_Reporting_RequestedOn               |
       | USE_Reporting_CustName                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2322,22 +2630,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
       | USE_Reporting_RequestedOn               |
       | USE_Reporting_CustName                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2348,19 +2659,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
       | USE_Reporting_RequestedOn               |
       | USE_Reporting_CustName                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2373,13 +2688,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2389,21 +2706,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Rogue Usage Events v2     |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2413,21 +2733,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Rogue Usage Events v2     |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2437,18 +2760,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Rogue Usage Events v2     |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2460,11 +2787,12 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Secondary MSISDN Mapping"
     Then select dropdown "* Format" "CSV"
@@ -2473,18 +2801,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | Secondary MSISDN Mapping  |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2496,13 +2828,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2513,21 +2847,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                        |
       | SIM Delta Events for Customer |
       | USE_Reporting_RequestedOn     |
       | USE_Reporting_CustName        |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2538,18 +2875,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                        |
       | SIM Delta Events for Customer |
       | USE_Reporting_RequestedOn     |
       | USE_Reporting_CustName        |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2561,13 +2902,15 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2579,22 +2922,25 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                |
       | SIM Delta Events for Customer Profile |
       | USE_Reporting_RequestedOn             |
       | USE_Reporting_CustName                |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer Profile"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2606,19 +2952,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                                |
       | SIM Delta Events for Customer Profile |
       | USE_Reporting_RequestedOn             |
       | USE_Reporting_CustName                |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2631,14 +2981,16 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     Then get todays date and store in "ToDate"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2650,21 +3002,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | SIM Delta Events for IMSI |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for IMSI"
+    Then verify text "* Period"
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2676,18 +3031,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | SIM Delta Events for IMSI |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2700,11 +3059,12 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
     Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Group Detail"
     Then select dropdown "* SIM group name" "USE_Reporting_SIMGroup"
@@ -2714,19 +3074,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | SIM Group Detail          |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Group Detail"
     Then select dropdown "* SIM group name" "USE_Reporting_SIMGroup"
@@ -2736,19 +3098,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | SIM Group Detail          |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Group Detail"
     Then select dropdown "* SIM group name" "USE_Reporting_SIMGroup"
@@ -2758,18 +3122,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then click on results based on below criteria
       | values                    |
       | SIM Group Detail          |
       | USE_Reporting_RequestedOn |
       | USE_Reporting_CustName    |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2782,10 +3150,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype14"
     Then select dropdown "SIM state" "USE_Reporting_SIMState"
@@ -2795,22 +3163,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype14 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "imsi" in downloaded file "pdf"
     Then verify filetext "TodayDate" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype14"
     Then select dropdown "SIM state" "USE_Reporting_SIMState"
@@ -2820,18 +3190,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype14 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "imsi" in downloaded file "csv"
     Then verify filetext "TodayDate" in downloaded file "csv"
 
@@ -2844,10 +3217,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype15"
     Then enter "* Customer order number" "USE_Reporting_Customerorderno"
@@ -2857,18 +3230,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype15 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
 
@@ -2879,10 +3255,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype16"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -2893,22 +3269,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype16 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Circuit-Switched Usage by IMSI" in downloaded file "xml"
     Then verify filetext "IMSI" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype16"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -2919,18 +3297,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype16 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Circuit-Switched Usage by IMSI" in downloaded file "csv"
     Then verify filetext "IMSI" in downloaded file "csv"
     Then logout
@@ -2942,10 +3323,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype17"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -2955,22 +3336,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype17 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
     Then verify filetext "change date" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype17"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -2980,22 +3363,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype17 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
     Then verify filetext "change date" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype17"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3005,18 +3390,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype17 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then verify filetext "change date" in downloaded file "csv"
     Then logout
@@ -3027,10 +3415,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype10"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3040,22 +3428,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype10 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
     Then verify filetext "from state" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype10"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3065,22 +3455,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype10 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
     Then verify filetext "from state" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype10"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3090,18 +3482,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype10 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then verify filetext "from state" in downloaded file "csv"
     Then logout
@@ -3112,10 +3507,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype11"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3125,22 +3520,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype11 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
     Then verify filetext "Static IP Address Allocations" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype11"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3150,18 +3547,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype11 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then verify filetext "Static IP Address Allocations" in downloaded file "csv"
     Then logout
@@ -3173,10 +3573,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype12"
     Then enter date for "* Date" "2017-12-05"
@@ -3186,22 +3586,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype12 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Circuit-Switched Devices by Duration" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype12"
     Then enter date for "* Date" "2017-12-05"
@@ -3211,22 +3613,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype12 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Circuit-Switched Devices by Duration" in downloaded file "xml"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype12"
     Then enter date for "* Date" "2017-12-05"
@@ -3236,18 +3640,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype12 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Circuit-Switched Devices by Duration" in downloaded file "csv"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
@@ -3259,10 +3666,10 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_ADMIN_Opco"
     When click on link "USE_ADMIN_Cust1"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype13"
     Then enter date for "* Date" "2017-12-05"
@@ -3272,22 +3679,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype13 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Packet-Data Devices by Data Usage" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype13"
     Then enter date for "* Date" "2017-12-05"
@@ -3297,22 +3706,24 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype13 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Packet-Data Devices by Data Usage" in downloaded file "xml"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype13"
     Then enter date for "* Date" "2017-12-05"
@@ -3322,18 +3733,21 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | USE_Reporting_Reporttype13 |
       | USE_Reporting_Custname     |
       | TodayDate                  |
+    Then wait for 60 seconds
     Then verify filetext "Top and Bottom Packet-Data Devices by Data Usage" in downloaded file "csv"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
@@ -3345,8 +3759,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3356,21 +3770,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                   |
       | USE_Reporting_Reporttype |
       | TodayDate                |
+    Then wait for 60 seconds
     Then verify filetext "Data Usage Total" in downloaded file "pdf"
     Then verify filetext "Data Usage By Serving Opco" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3380,21 +3796,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                   |
       | USE_Reporting_Reporttype |
       | TodayDate                |
+    Then wait for 60 seconds
     Then verify filetext "Data Usage Total" in downloaded file "xml"
     Then verify filetext "Data Usage By Serving Opco" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3404,17 +3822,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                   |
       | USE_Reporting_Reporttype |
       | TodayDate                |
+    Then wait for 60 seconds
     Then verify filetext "Data Usage Total" in downloaded file "csv"
     Then verify filetext "Data Usage By Serving Opco" in downloaded file "csv"
     Then logout
@@ -3426,8 +3847,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype1"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3437,21 +3858,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype1 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "IMEI Locked Devices" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_OpConame" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype1"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3461,21 +3884,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype1 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "IMEI Locked Devices" in downloaded file "xml"
     Then verify filetext "USE_Reporting_OpConame" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype1"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3485,17 +3910,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype1 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "IMEI Locked Devices" in downloaded file "csv"
     Then verify filetext "USE_Reporting_OpConame" in downloaded file "csv"
     Then logout
@@ -3507,8 +3935,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype2"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3519,21 +3947,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype2 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Notification Events for Customer" in downloaded file "pdf"
     Then verify filetext "imsi" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype2"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3544,21 +3974,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype2 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Notification Events for Customer" in downloaded file "xml"
     Then verify filetext "imsi" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype2"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3569,17 +4001,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype2 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Notification Events for Customer" in downloaded file "csv"
     Then verify filetext "imsi" in downloaded file "csv"
     Then logout
@@ -3591,8 +4026,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype3"
     Then select dropdown "* Customer" "USE_Reporting_Custname"
@@ -3603,21 +4038,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype3 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM Group Detail" in downloaded file "pdf"
     Then verify filetext "imsi" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype3"
     Then select dropdown "* Customer" "USE_Reporting_Custname"
@@ -3628,21 +4065,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype3 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM Group Detail" in downloaded file "xml"
     Then verify filetext "imsi" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype3"
     Then select dropdown "* Customer" "USE_Reporting_Custname"
@@ -3653,17 +4092,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype3 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM Group Detail" in downloaded file "csv"
     Then verify filetext "imsi" in downloaded file "csv"
     Then logout
@@ -3674,8 +4116,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype4"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3687,21 +4129,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype4 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype4"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3713,21 +4157,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype4 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer" in downloaded file "xml"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype4"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3739,17 +4185,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype4 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer" in downloaded file "csv"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
@@ -3761,8 +4210,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype5"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3774,21 +4223,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype5 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer Profile" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype5"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3800,21 +4251,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype5 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer Profile" in downloaded file "xml"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype5"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3826,17 +4279,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype5 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for Customer Profile" in downloaded file "csv"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
@@ -3848,33 +4304,35 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-#    When click on menu "Reporting"
-#    When click on submenu "Reports"
-#    Then verify text "Reports"
-#    Then select dropdown "* Report" "USE_Reporting_Reporttype6"
-#    Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
-#    Then enter "* IMSI" "USE_Reporting_IMSI"
-#    Then select dropdown "Change type" "USE_Reporting_Changetype"
-#    Then select dropdown "* Format" "USE_Reporting_ReportFormat"
-#    Then select radiobutton "Background"
-#    Then select radiobutton "Yes"
-#    Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
-#    Then select dropdown "Contact *" "USE_Reporting_Contact1"
-#    When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
+    Then verify text "Reports"
+    Then select dropdown "* Report" "USE_Reporting_Reporttype6"
+    Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
+    Then enter "* IMSI" "USE_Reporting_IMSI"
+    Then select dropdown "Change type" "USE_Reporting_Changetype"
+    Then select dropdown "* Format" "USE_Reporting_ReportFormat"
+    Then select radiobutton "Background"
+    Then select radiobutton "Yes"
+    Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
+    Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    When click on button "Generate"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
-#    Then click on header "Requested on"
-#    Then verify text "Results"
-#    Then click on header "Requested on"
+    Then click on header "Requested on"
+    Then wait for 30 seconds
+    Then verify text "Results"
+    Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype6 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for IMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype6"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3886,20 +4344,22 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype6 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for IMSI" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype6"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3911,17 +4371,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype6 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "SIM History Audit for IMSI" in downloaded file "csv"
     Then logout
 
@@ -3931,8 +4394,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype7"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3943,21 +4406,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype7 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Unauthorised API Requests" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype7"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3968,21 +4433,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype7 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Unauthorised API Requests" in downloaded file "xml"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype7"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -3993,17 +4460,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype7 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Unauthorised API Requests" in downloaded file "csv"
     Then verify filetext "USE_Reporting_Custname" in downloaded file "csv"
     Then logout
@@ -4014,8 +4484,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype8"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4025,21 +4495,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype8 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Transaction Report" in downloaded file "pdf"
     Then verify filetext "Data" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype8"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4049,21 +4521,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype8 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Transaction Report" in downloaded file "xml"
     Then verify filetext "Data" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype8"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4073,17 +4547,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype8 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Transaction Report" in downloaded file "csv"
     Then verify filetext "Data" in downloaded file "csv"
     Then logout
@@ -4094,8 +4571,8 @@ Feature: This feature covers Background Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype9"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4105,21 +4582,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype9 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Serving OpCo Packet-Data Overview" in downloaded file "pdf"
     Then verify filetext "Packet Data Usage For Serving Opco" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype9"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4129,21 +4608,23 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype9 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Serving OpCo Packet-Data Overview" in downloaded file "xml"
     Then verify filetext "Packet Data Usage For Serving Opco" in downloaded file "xml"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "USE_Reporting_Reporttype9"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
@@ -4153,17 +4634,20 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
     When click on button "Generate"
-    When click on menu "Reporting"
-    When click on submenu "Background reports"
+    Then wait for 15 seconds
+    When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then verify text "Results"
     Then click on header "Requested on"
+    Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | USE_Reporting_Reporttype9 |
       | TodayDate                 |
+    Then wait for 60 seconds
     Then verify filetext "Serving OpCo Packet-Data Overview" in downloaded file "csv"
     Then verify filetext "Packet Data Usage For Serving Opco" in downloaded file "csv"
     Then logout
