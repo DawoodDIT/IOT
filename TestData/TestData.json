@@ -524,7 +524,7 @@
     "ThresholdMinutes": "3",
     "ThresholdMIB": "3",
     "IPAllocationAPN": "gdsp04.vodafone.com",
-    "RequestedOn": "2018-03-15",
+    "RequestedOn": "2018-03-16",
     "Custname": "AutomationCust1",
     "OpConame": "PPVGE",
     "Serviceprofile": "AutoCSP2",
@@ -921,12 +921,10 @@
       "CustomerAdministratorRole":"Automation3 as Customer Administrator",
       "OperatorAdministratorRole":"PPVGE as Operator Administrator",
       "PlatformAdministratorRole":"Platform as Platform Administrator",
-      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator"
-
-
-    "FilterIMSI":"111117500000013",
-    "PSUsageIMSI":"204043258711178",
-    "CSUsageIMSI":"204043258711178"
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator",
+      "FilterIMSI":"111117500000013",
+      "PSUsageIMSI":"204043258711178",
+      "CSUsageIMSI":"204043258711178"
   },
 
   "BatchOperationCustomer": {

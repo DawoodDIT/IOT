@@ -7,32 +7,36 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     When click on input "Organisation" and enter value "USE_Reporting_CustName"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Configured Event Business Rules"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "Time In State" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
-    Then verify text "Reports"
-    When click on input "Organisation" and enter value "USE_Reporting_CustName"
-    Then select dropdown "Report family" ""
-    Then select dropdown "* Report" "Configured Event Business Rules"
-    Then select dropdown "* Format" "CSV"
-    When click on button "Generate"
-    Then verify filetext "Time In State" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     When click on input "Organisation" and enter value "USE_Reporting_CustName"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Configured Event Business Rules"
+    Then wait for 15 seconds
+    Then select dropdown "* Format" "CSV"
+    When click on button "Generate"
+    Then wait for 60 seconds
+    Then verify filetext "Time In State" in downloaded file "csv"
+    When click menu "Reporting" and submenu "Reports"
+    Then verify text "Reports"
+    When click on input "Organisation" and enter value "USE_Reporting_CustName"
+    Then select dropdown "Report family" "All"
+    Then select dropdown "* Report" "Configured Event Business Rules"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "Time In State" in downloaded file "xml"
     Then logout
 
@@ -43,32 +47,39 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Contracting OpCo Overview v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Contracting OpCo Overview v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Contracting OpCo Overview v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then logout
 
@@ -78,32 +89,38 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Currently Suspended Devices for Customer"
+    Then wait for 15 seconds
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "STATE_CHANGE_REASON" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
+    Then wait for 15 seconds
     Then select dropdown "* Report" "Currently Suspended Devices for Customer"
+    Then wait for 15 seconds
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "STATE_CHANGE_REASON" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
+    Then wait for 15 seconds
     Then select dropdown "* Report" "Currently Suspended Devices for Customer"
+    Then wait for 15 seconds
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "STATE_CHANGE_REASON" in downloaded file "xml"
     Then logout
 
@@ -114,35 +131,39 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer Invoice-Data v2"
+    Then wait for 15 seconds
     Then enter "* Date" "USE_Reporting_InvoiceDate"
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "BILLING_REFERENCE" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer Invoice-Data v2"
+    Then wait for 15 seconds
     Then enter "* Date" "USE_Reporting_InvoiceDate"
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "BILLING_REFERENCE" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer Invoice-Data v2"
+    Then wait for 15 seconds
     Then enter "* Date" "USE_Reporting_InvoiceDate"
     Then select dropdown "Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "BILLING_REFERENCE" in downloaded file "xml"
     Then logout
 
@@ -152,29 +173,33 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer VPN Numbers"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer VPN Numbers"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Customer VPN Numbers"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then logout
 
@@ -185,29 +210,33 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "IMEI Locked Devices"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USER_NAME" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "IMEI Locked Devices"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USER_NAME" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "IMEI Locked Devices"
+    Then wait for 15 seconds
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USER_NAME" in downloaded file "xml"
     Then logout
 
@@ -217,35 +246,42 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Notification Events for Customer"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Notification Events for Customer"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Notification Events for Customer"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     Then logout
 
@@ -256,23 +292,28 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Operating Company Summary v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Operating Company Summary v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then logout
 
@@ -283,23 +324,28 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Reseller Summary"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
 #    Content of file need to verify here
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Reseller Summary"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
 #    Content of file need to verify here
     Then logout
 
@@ -310,23 +356,28 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Reseller Summary v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
 #    Content of file need to verify here
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Reseller Summary v2"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
 #    Content of file need to verify here
     Then logout
 
@@ -337,35 +388,39 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Detail"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* SIM group name" "USE_Reporting_SimGroup"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SimGroup" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Detail"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* SIM group name" "USE_Reporting_SimGroup"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SimGroup" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Detail"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* SIM group name" "USE_Reporting_SimGroup"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SimGroup" in downloaded file "xml"
     Then logout
 
@@ -376,32 +431,36 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Summary"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Summary"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM Group Summary"
+    Then wait for 15 seconds
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then logout
 
@@ -412,35 +471,42 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then logout
 
@@ -451,35 +517,42 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer Profile"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Service profile" "USE_Reporting_SIMHistoryCSP"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryIMSI" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer Profile"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Service profile" "USE_Reporting_SIMHistoryCSP"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryIMSI" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for Customer Profile"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Service profile" "USE_Reporting_SIMHistoryCSP"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryIMSI" in downloaded file "xml"
     Then logout
 
@@ -490,39 +563,46 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for IMSI"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then enter "* IMSI" "USE_Reporting_SIMHistoryIMSI"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "csv"
     Then verify filetext "USE_Reporting_SIMHistoryCountry" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for IMSI"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then enter "* IMSI" "USE_Reporting_SIMHistoryIMSI"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "pdf"
     Then verify filetext "USE_Reporting_SIMHistoryCountry" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "SIM History Audit for IMSI"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then enter "* IMSI" "USE_Reporting_SIMHistoryIMSI"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     Then verify filetext "USE_Reporting_SIMHistoryCountry" in downloaded file "xml"
@@ -535,32 +615,39 @@ Feature: This feature covers OpCo Reports
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    Then verify text "M2M Dashboard"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Transaction Report"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "Success" in downloaded file "csv"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Transaction Report"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "PDF"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "Success" in downloaded file "pdf"
-    When click on menu "Reporting"
-    When click on submenu "Reports"
+    When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "Report family" "All"
     Then select dropdown "* Report" "Transaction Report"
+    Then wait for 15 seconds
+    Then verify text "* Period"
     Then select dropdown "* Period" "USE_Reporting_ReportPeriod"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
+    Then wait for 60 seconds
     Then verify filetext "Success" in downloaded file "xml"
     Then logout
 
