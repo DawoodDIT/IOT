@@ -665,6 +665,11 @@ Feature: Customer On Boarding
       Then enter "Customer name" "USE_CustomerOnboarding_CustomerCodeEdit"
       When click on button "Save"
       Then verify text "USE_CustomerOnboarding_CustomerCodeEdit"
+#      Reverting the Customer Code Edit
+      When click on button "Edit"
+      Then enter "Customer name" "USE_CustomerOnboarding_Customer"
+      When click on button "Save"
+      Then wait for 10 seconds
       Then logout
 
     @REG_R8_GUI_Customer_Onboarding_011
