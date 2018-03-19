@@ -1,4 +1,4 @@
-@BackgroundReportsUsinginStaging
+@BackgroundReports
 Feature: This feature covers Background Reports
 
   @REG_R10_GUI_Background_0
