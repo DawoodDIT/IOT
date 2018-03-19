@@ -1002,7 +1002,27 @@
 		"oldDate":"2017-11-01",
 	    "futureDate":"2018-12-01",
 	    "futureDate2":"2018-05-01"
-	}
+	},
+
+  "ProvisionProfile":{
+
+    "Org":"AutomationCust1",
+    "defaultOpco":"PPVGE as Operator Administrator",
+    "opcoTariffDisabled":"OpcoTariffDisabled as Operator Administrator",
+    "apn1":"centraltest",
+    "ghlrTemplate1":"GHLR template",
+    "qos1":"QoS-Standard",
+    "qosId":"1",
+    "roamGroup1":"UK Test",
+     "ghlrTemplate2":"test-stg",
+    "apn2":"apntest123",
+    "ghlrTemplate3":"LTE ONLY",
+    "apn3":"lte.m2m",
+    "ProvisionProfile3":"Opcoprofile_160318162311",
+    "ProvisionProfile4":"Tester_160318175132",
+    "ghlrTemplate4":"GHLR lbs1",
+    "apn4":"apn1"
+  }
 
 
 
