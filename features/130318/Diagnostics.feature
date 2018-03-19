@@ -1,6 +1,7 @@
 @Diagnostics
 Feature: Diagnostics
  This feature covers Diagnostics functionality.
+#  Ready for 19th March batch
 
   @REG_R10_GUI_APN_001
 #    Success
@@ -119,8 +120,7 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
@@ -175,8 +175,7 @@ Feature: Diagnostics
       Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
       Then wait for 120 seconds
 #    Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "SMPP"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
@@ -236,8 +235,7 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 120 seconds
 #    Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       When click on button "Search"
@@ -299,8 +297,7 @@ Feature: Diagnostics
       Then wait for 120 seconds
 #    Web Part
 #    Diameter Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
@@ -323,8 +320,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    SMPP Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
@@ -341,8 +337,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    Radius Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
@@ -407,8 +402,7 @@ Feature: Diagnostics
       Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace - SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
@@ -431,8 +425,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #      Diameter Trace - SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Diameter"
@@ -451,8 +444,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      SMPP Trace -SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
@@ -469,8 +461,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    SMPP Trace -SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "SMPP"
@@ -487,8 +478,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace -SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
@@ -505,8 +495,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #      Radius Trace -SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Radius"
@@ -559,8 +548,7 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -617,8 +605,7 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -676,8 +663,7 @@ Feature: Diagnostics
       Then wait for 120 seconds
 #    Web Part
 #      Diameter Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -699,8 +685,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -758,8 +743,7 @@ Feature: Diagnostics
       Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -781,8 +765,7 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -822,8 +805,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API transactions"
+      When click menu "Tools" and submenu "API transactions"
       Then verify text "API transactions"
       Then verify text "Results"
       Then validate table row count "10"
@@ -840,8 +822,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API transactions"
+      When click menu "Tools" and submenu "API transactions"
       Then verify text "API transactions"
       Then verify no text "No results were found"
       Then verify text "Date"
@@ -861,11 +842,9 @@ Feature: Diagnostics
 #      |text|Entity ID|
       When click on link "Export"
       When click on button "CSV"
-      Then verify filetext "0000" in downloaded file "csv"
+      Then wait for 60 seconds
+      Then verify filetext "000/0000" in downloaded file "csv"
       Then logout
-
-
-
 
 
   @REG_R6.0_GUI_Transactions_002
@@ -874,8 +853,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then verify text "* Organisation"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts1"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts2"
@@ -887,8 +866,8 @@ Feature: Diagnostics
       Then enter date "and" "USE_Diagnostics_RangeAnd"
       When click on button "Generate"
       Then verify no text "For the selected period there was zero usage."
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts4"
       Then select dropdown "Period" "USE_Diagnostics_APIChartsPeriod"
       Then enter date "between" "USE_Diagnostics_RangeBetween"
@@ -907,8 +886,8 @@ Feature: Diagnostics
       Then verify text "M2M Dashboard"
       When click on link "USE_Diagnostics_OperatorAdministratorRole"
       When click on link "USE_Diagnostics_ResellerAdministratorRole"
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then verify text "* Organisation"
       Then select dropdown "* API" "USE_Diagnostics_API4Reseller"
       Then select dropdown "Period" "USE_Diagnostics_APIChartsPeriod"
@@ -926,8 +905,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN3"
@@ -959,8 +937,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN3"
@@ -991,8 +968,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
@@ -1017,8 +993,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter date "Between" "USE_Diagnostics_RangeBetween1"
       Then enter date "And" "USE_Diagnostics_RangeAnd1"
