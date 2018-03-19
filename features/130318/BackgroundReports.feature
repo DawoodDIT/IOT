@@ -1,8 +1,8 @@
-@BackgroundReports
+@BackgroundReportsUsinginStaging
 Feature: This feature covers Background Reports
 
-  @REG_R10_GUI_Background_001
-#    Scripted and Patially Passed
+  @REG_R10_GUI_Background_0
+#  updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   API Usage for Customer report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -95,14 +95,13 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_002
-#    Scripted and Patially Passed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   Barred Calls for Customer report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -198,14 +197,13 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_003
-#    Scripted and Patially Passed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   Circuit-Switched Usage by IMSI report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -243,7 +241,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    Then verify filetext "PERIOD_START" in downloaded file "csv"
+    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
@@ -271,7 +269,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    Then verify filetext "PERIOD_START" in downloaded file "pdf"
+    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
@@ -299,17 +297,15 @@ Feature: This feature covers Background Reports
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
-    Then verify filetext "PERIOD_START" in downloaded file "xml"
+    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_004
-#  10/01/2018
-#  Scripted and Patially Passed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   Customer Overview report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -402,15 +398,13 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_005
-#  10/01/2018
-#  Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   High Circuit-Switched Usage Devices report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -448,8 +442,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "csv"
-    Then verify filetext "TIMESTAMP" in downloaded file "csv"
+    Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
@@ -477,8 +470,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "pdf"
-    Then verify filetext "TIMESTAMP" in downloaded file "pdf"
+    Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
@@ -506,18 +498,15 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "xml"
-    Then verify filetext "TIMESTAMP" in downloaded file "xml"
+    Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_006
-#  10/01/2018
-#  Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   High Packet-Data Usage Devices report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -613,15 +602,13 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_007
-#  10/01/2018
-#  Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   High Usage Events report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -714,15 +701,13 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 90 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_008
-#    11/01/2018
-#    Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   IMEI-Rule Failed Events report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -815,15 +800,13 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
 
   @REG_R10_GUI_Background_009
-#    11/01/2018
-#    Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   IMSI-MSISDN Pairing report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -916,14 +899,12 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
   @REG_R10_GUI_Background_010
-#  11/01/2018
-#  Scripted not executed
+#    updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   IP Allocation for Customer report from the Global M2M Platform in CSV PDF and XML format
     Given test case starts
@@ -1016,7 +997,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1116,7 +1096,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1219,7 +1198,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1322,7 +1300,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1421,7 +1398,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1524,7 +1500,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1627,7 +1602,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1727,7 +1701,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1830,7 +1803,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1933,7 +1905,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2006,7 +1977,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2081,7 +2051,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2158,7 +2127,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "DATA_CODING" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2258,7 +2226,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2360,7 +2327,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_PdAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2463,7 +2429,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2569,7 +2534,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2675,7 +2639,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2775,7 +2738,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2816,7 +2778,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2890,7 +2851,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2968,7 +2928,6 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3046,7 +3005,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3137,7 +3095,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
