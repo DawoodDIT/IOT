@@ -1,7 +1,7 @@
 @BackgroundReports
 Feature: This feature covers Background Reports
 
-  @REG_R10_GUI_Background_0
+  @REG_R10_GUI_Background_001
 #  updated 19march
   Scenario: Test to verify the steps taken by the Customer User to view Background
   API Usage for Customer report from the Global M2M Platform in CSV PDF and XML format
