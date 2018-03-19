@@ -115,12 +115,7 @@
     "Cust1": "ADI_Testing_Cust",
     "IMSI": "204043258711182"
   },
-  "User": {
-    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
-    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
-  },
+
   "PSUsageUser": {
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator"
   },
@@ -457,11 +452,12 @@
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
     "OperatorAdministratorRole": "PPVGE as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator",
     "Customer": "AutomationCust1",
     "IMSI": "204043258711180",
-    "IMSImsisdn": "882393258711178",
+    "IMSImsisdn": "882393258711180",
     "IMSI2": "204043258711178",
-    "MultipleSIMs": "204043258711178,204043258711180",
+    "MultipleSIMs": "204043258711180,204043258711178",
     "APN": "ppinternetd.gdsp",
     "APN2": "sms.profile",
     "APN3": "ppinternet.gdsp",
@@ -473,9 +469,9 @@
     "APIChartsPeriod": "Select range",
     "API4Reseller": "getDeviceUsageInfov3",
     "RangeBetween": "2015-06-01",
-    "RangeAnd": "2015-07-01",
+    "RangeAnd": "2017-07-01",
     "RangeBetween1": "2015-06-01",
-    "RangeAnd1": "2015-07-01"
+    "RangeAnd1": "2018-03-17"
   },
   "EventManagement": {
     "CustName": "AutomationCust1",
@@ -499,6 +495,7 @@
   },
   "Reporting": {
     "CustName": "AutomationCust1",
+    "CustNameInvoiceData":"ADI_Testing_Cust",
     "OpcoName": "PPVGE",
     "ReportPeriod": "Last month",
     "ReportPeriodImmediate": "Today",
@@ -512,6 +509,7 @@
     "RadiusFailureReason": "BAD AUTHENTICATION",
     "PdAPN": "ppinternet.gdsp",
     "SIMHistoryCSP": "AutoCSP2",
+    "SIMGroupCustomer":"ADI_Testing_Cust",
     "SIMGroup": "SIMGroup01",
     "RadiusFailureCSP": "AutoCSPipv6_90128",
     "SimGroup": "AutomationGroup",
