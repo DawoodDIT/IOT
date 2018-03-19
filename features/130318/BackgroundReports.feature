@@ -29,8 +29,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -56,8 +58,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -83,8 +87,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -128,8 +134,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -156,8 +164,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -184,8 +194,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -230,8 +242,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -258,8 +272,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -286,8 +302,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -332,8 +350,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -359,8 +379,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -386,8 +408,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -432,8 +456,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -460,8 +486,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -488,8 +516,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -534,8 +564,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -562,8 +594,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -590,8 +624,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -635,8 +671,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -662,8 +700,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -689,8 +729,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -734,8 +776,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -761,8 +805,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -788,8 +834,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -833,8 +881,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -860,8 +910,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -887,8 +939,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -931,8 +985,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -958,8 +1014,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -985,8 +1043,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1030,8 +1090,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1057,8 +1119,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1084,8 +1148,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1130,8 +1196,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1158,8 +1226,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1186,8 +1256,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1232,8 +1304,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1260,8 +1334,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1288,8 +1364,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1332,8 +1410,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1359,8 +1439,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1386,8 +1468,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1432,8 +1516,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1460,8 +1546,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1488,8 +1576,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1534,8 +1624,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1562,8 +1654,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1590,8 +1684,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1635,8 +1731,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1662,8 +1760,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1689,8 +1789,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1735,8 +1837,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1763,8 +1867,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1791,8 +1897,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1837,8 +1945,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1865,8 +1975,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1893,8 +2005,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1938,8 +2052,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -1965,8 +2081,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2011,8 +2129,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2039,8 +2159,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2085,8 +2207,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2114,8 +2238,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2160,8 +2286,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2187,8 +2315,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2214,8 +2344,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2258,8 +2390,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2286,8 +2420,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2314,8 +2450,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2360,8 +2498,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2388,8 +2528,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2416,8 +2558,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2463,8 +2607,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2492,8 +2638,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2521,8 +2669,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2568,8 +2718,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2597,8 +2749,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2626,8 +2780,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2672,8 +2828,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2699,8 +2857,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2726,8 +2886,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2766,8 +2928,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2811,8 +2976,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2839,8 +3006,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2885,8 +3054,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2915,8 +3086,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2964,8 +3137,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -2993,8 +3168,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -3035,8 +3212,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -3059,8 +3238,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -3083,8 +3264,10 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then click on results based on below criteria
@@ -3123,9 +3306,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3150,9 +3335,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3190,9 +3377,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3229,9 +3418,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3257,9 +3448,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3296,9 +3489,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3323,9 +3518,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3350,9 +3547,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3388,9 +3587,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3415,9 +3616,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3442,9 +3645,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3480,9 +3685,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3507,9 +3714,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3546,9 +3755,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3573,9 +3784,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3600,9 +3813,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3639,9 +3854,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3666,9 +3883,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3693,9 +3912,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3730,9 +3951,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3756,9 +3979,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3782,9 +4007,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3818,9 +4045,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3844,9 +4073,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3870,9 +4101,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3907,9 +4140,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3934,9 +4169,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3961,9 +4198,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -3998,9 +4237,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4025,9 +4266,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4052,9 +4295,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4089,9 +4334,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4117,9 +4364,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4145,9 +4394,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4183,9 +4434,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4211,9 +4464,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4239,9 +4494,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4277,9 +4534,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4304,9 +4563,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4331,9 +4592,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4366,9 +4629,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4393,9 +4658,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4420,9 +4687,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4455,9 +4724,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4481,9 +4752,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4507,9 +4780,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4542,9 +4817,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4568,9 +4845,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
@@ -4594,9 +4873,11 @@ Feature: This feature covers Background Reports
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then verify text "Results"
+    Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
     Then get todays date and store in "TodayDate"
