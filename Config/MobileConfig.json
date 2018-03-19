@@ -9,26 +9,20 @@
   "mobile2": {
     "platformName": "Android",
     "platformVersion": "4.4.2",
-    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
-    "deviceId":"EABYBQGANJLBBEVS"
+    "deviceName": "ALCATEL ONETOUCH PIXI 3(4)",
+    "deviceId":"8L7DGYYPGEFEP74P"
+
+
 
   },
-
-  "mobile80": {
-    "platformName": "Android",
-    "platformVersion": "4.4.2",
-    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
-    "deviceId":""
-  },
-
 
   "mobile3": {
     "platformName": "Android",
     "platformVersion": "6.0",
-    "deviceName": "ALCATEL PIXI 4 (4)",
-    "deviceId":""
-  },
+    "deviceName": "Alcatel Pixi 4 (4)",
+    "deviceId":"CY8LBQS4BIS4W8FU"
 
+  },
 
   "youtube": {
     "appPackage": "com.google.android.youtube",
