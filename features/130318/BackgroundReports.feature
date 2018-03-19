@@ -1208,7 +1208,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "csv"
+    Then verify filetext "Data" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
@@ -1238,7 +1238,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "pdf"
+    Then verify filetext "Data" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
@@ -1268,7 +1268,7 @@ Feature: This feature covers Background Reports
       | USE_Reporting_RequestedOn                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
-    Then verify filetext "PERIOD_START" in downloaded file "xml"
+    Then verify filetext "Data" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
