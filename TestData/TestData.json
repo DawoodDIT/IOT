@@ -1021,9 +1021,22 @@
   "NewPassword": "test123",
   "Supported": "Provisioning status",
   "Period": "hour"
-}
-
-
-
-
-}
+},
+   "CustServiceProfile": {
+     "OrgValue": "OpcoCustomer",
+     "SPname": "100",
+     "dropdownvalue": "OpcoProvisionProfile",
+     "ServiceProfile": "ADI_CSP_20404",
+     "Filetext": "Organisation",
+     "URL": "https://m2mportal-stage.vodafone.com/m2mscp/",
+     "Username": "test123",
+     "Password": "test123",
+     "ServiceProfile1": "1234",
+     "ServiceProfileName": "5678",
+     "Description1": "Api csp clone CSP 2",
+     "Description2": "Api csp clone CSP 3",
+     "Tariff1": "22222",
+     "Tariff2": "JCIDEMOTARIFFCSDB_GROUP_19",
+     "ServiceProfile2": "ADI_test_CSP",
+     "ServiceProfile3": "CSP_test"
+   }}
