@@ -11,6 +11,7 @@ Feature: Event Configuration part of Event Management functionality
     When click on menu "Tools"
     When click on submenu "Event triggers"
     Then verify text "Event triggers"
+    Then verify text "Create event trigger"
     When click on button "Create event trigger"
     Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventName"
@@ -56,8 +57,11 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "USE_EventManagement_ThresholdValue"
     Then verify text "USE_EventManagement_MonitoringPeriodHourly"
     When click on button "Edit" on position 3
+    Then verify text "Warning"
     Then select check box "Warning"
+    Then verify text "Immediate email"
     Then select check box "Immediate email"
+    Then verify text "Daily report"
     Then select check box "Daily report"
     When click on button "Save"
     Then verify text "Immediate email"
@@ -162,6 +166,7 @@ Feature: Event Configuration part of Event Management functionality
     Then login
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then verify text "Create event trigger"
     When click on button "Create event trigger"
     Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventNameForCopy"
@@ -221,6 +226,7 @@ Feature: Event Configuration part of Event Management functionality
     Then login
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then verify text "Create event trigger"
     When click on button "Create event trigger"
     Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventNameForCopy"
