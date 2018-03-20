@@ -35,11 +35,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | API Usage for Customer    |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | API Usage for Customer |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -64,11 +65,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | API Usage for Customer    |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | API Usage for Customer |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "API Usage for Customer" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -93,11 +95,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | API Usage for Customer    |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | API Usage for Customer |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -140,10 +143,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
@@ -170,10 +174,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
@@ -200,10 +205,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Barred Calls for Customer |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
@@ -248,10 +254,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
@@ -278,10 +285,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
@@ -308,10 +316,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | Circuit-Switched Usage by IMSI |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
@@ -356,11 +365,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Customer Overview         |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Customer Overview      |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -385,11 +395,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Customer Overview         |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Customer Overview      |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -414,11 +425,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Customer Overview         |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Customer Overview      |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -462,10 +474,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
-      | USE_Reporting_RequestedOn           |
+      | TodayDate                           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
     Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "csv"
@@ -492,10 +505,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
-      | USE_Reporting_RequestedOn           |
+      | TodayDate                           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
     Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "pdf"
@@ -522,10 +536,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                              |
       | High Circuit-Switched Usage Devices |
-      | USE_Reporting_RequestedOn           |
+      | TodayDate                           |
       | USE_Reporting_CustName              |
     Then wait for 60 seconds
     Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "xml"
@@ -570,10 +585,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -600,10 +616,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -630,10 +647,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | High Packet-Data Usage Devices |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -677,11 +695,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | High Usage Events v2      |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | High Usage Events v2   |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -706,11 +725,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | High Usage Events v2      |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | High Usage Events v2   |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -735,11 +755,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | High Usage Events v2      |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | High Usage Events v2   |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -782,11 +803,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMEI-Rule Failed Events   |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                  |
+      | IMEI-Rule Failed Events |
+      | TodayDate               |
+      | USE_Reporting_CustName  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -811,11 +833,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMEI-Rule Failed Events   |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                  |
+      | IMEI-Rule Failed Events |
+      | TodayDate               |
+      | USE_Reporting_CustName  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -840,11 +863,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMEI-Rule Failed Events   |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                  |
+      | IMEI-Rule Failed Events |
+      | TodayDate               |
+      | USE_Reporting_CustName  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -887,11 +911,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMSI-MSISDN Pairing       |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | IMSI-MSISDN Pairing    |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -916,11 +941,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMSI-MSISDN Pairing       |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | IMSI-MSISDN Pairing    |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -945,11 +971,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | IMSI-MSISDN Pairing       |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | IMSI-MSISDN Pairing    |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -991,10 +1018,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
-      | USE_Reporting_RequestedOn  |
+      | TodayDate                  |
       | USE_Reporting_CustName     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "csv"
@@ -1020,10 +1048,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
-      | USE_Reporting_RequestedOn  |
+      | TodayDate                  |
       | USE_Reporting_CustName     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "pdf"
@@ -1049,10 +1078,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | IP Allocation for Customer |
-      | USE_Reporting_RequestedOn  |
+      | TodayDate                  |
       | USE_Reporting_CustName     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "xml"
@@ -1096,10 +1126,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
-      | USE_Reporting_RequestedOn                    |
+      | TodayDate                                    |
       | USE_Reporting_CustName                       |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -1125,10 +1156,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
-      | USE_Reporting_RequestedOn                    |
+      | TodayDate                                    |
       | USE_Reporting_CustName                       |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -1154,10 +1186,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                       |
       | Itemised Circuit-Switched Usage for Customer |
-      | USE_Reporting_RequestedOn                    |
+      | TodayDate                                    |
       | USE_Reporting_CustName                       |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -1202,10 +1235,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
-      | USE_Reporting_RequestedOn                            |
+      | TodayDate                                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
     Then verify filetext "Data" in downloaded file "csv"
@@ -1232,10 +1266,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
-      | USE_Reporting_RequestedOn                            |
+      | TodayDate                                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
     Then verify filetext "Data" in downloaded file "pdf"
@@ -1262,10 +1297,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                               |
       | Itemised Circuit-Switched Usage for Customer Profile |
-      | USE_Reporting_RequestedOn                            |
+      | TodayDate                                            |
       | USE_Reporting_CustName                               |
     Then wait for 60 seconds
     Then verify filetext "Data" in downloaded file "xml"
@@ -1310,10 +1346,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
-      | USE_Reporting_RequestedOn                |
+      | TodayDate                                |
       | USE_Reporting_CustName                   |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -1340,10 +1377,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
-      | USE_Reporting_RequestedOn                |
+      | TodayDate                                |
       | USE_Reporting_CustName                   |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -1370,10 +1408,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                   |
       | Itemised Circuit-Switched Usage for IMSI |
-      | USE_Reporting_RequestedOn                |
+      | TodayDate                                |
       | USE_Reporting_CustName                   |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -1416,10 +1455,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
-      | USE_Reporting_RequestedOn                  |
+      | TodayDate                                  |
       | USE_Reporting_CustName                     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -1445,10 +1485,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
-      | USE_Reporting_RequestedOn                  |
+      | TodayDate                                  |
       | USE_Reporting_CustName                     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -1474,10 +1515,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                     |
       | Itemised Packet-Data Usage for Customer v5 |
-      | USE_Reporting_RequestedOn                  |
+      | TodayDate                                  |
       | USE_Reporting_CustName                     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -1522,10 +1564,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
-      | USE_Reporting_RequestedOn                          |
+      | TodayDate                                          |
       | USE_Reporting_CustName                             |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -1552,10 +1595,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
-      | USE_Reporting_RequestedOn                          |
+      | TodayDate                                          |
       | USE_Reporting_CustName                             |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -1582,10 +1626,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                             |
       | Itemised Packet-Data Usage for Customer Profile v5 |
-      | USE_Reporting_RequestedOn                          |
+      | TodayDate                                          |
       | USE_Reporting_CustName                             |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -1630,10 +1675,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
-      | USE_Reporting_RequestedOn             |
+      | TodayDate                             |
       | USE_Reporting_CustName                |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "csv"
@@ -1660,10 +1706,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
-      | USE_Reporting_RequestedOn             |
+      | TodayDate                             |
       | USE_Reporting_CustName                |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "pdf"
@@ -1690,10 +1737,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                |
       | Itemised Packet-Data Usage for SIM v5 |
-      | USE_Reporting_RequestedOn             |
+      | TodayDate                             |
       | USE_Reporting_CustName                |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "xml"
@@ -1737,10 +1785,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
-      | USE_Reporting_RequestedOn                               |
+      | TodayDate                                               |
       | USE_Reporting_CustName                                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
@@ -1766,10 +1815,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
-      | USE_Reporting_RequestedOn                               |
+      | TodayDate                                               |
       | USE_Reporting_CustName                                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
@@ -1795,10 +1845,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                  |
       | Itemised Packet-Data Usage with SMS Events for Customer |
-      | USE_Reporting_RequestedOn                               |
+      | TodayDate                                               |
       | USE_Reporting_CustName                                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
@@ -1843,10 +1894,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
-      | USE_Reporting_RequestedOn                                       |
+      | TodayDate                                                       |
       | USE_Reporting_CustName                                          |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -1873,10 +1925,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
-      | USE_Reporting_RequestedOn                                       |
+      | TodayDate                                                       |
       | USE_Reporting_CustName                                          |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
@@ -1903,10 +1956,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                                          |
       | Itemised Packet-Data Usage with SMS Events for Customer Profile |
-      | USE_Reporting_RequestedOn                                       |
+      | TodayDate                                                       |
       | USE_Reporting_CustName                                          |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -1951,10 +2005,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
@@ -1981,10 +2036,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
@@ -2011,10 +2067,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | Itemised Packet-Data Usage with SMS Events for IMSI |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
@@ -2058,10 +2115,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | Itemised SMS Usage By Customer |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -2087,10 +2145,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                         |
       | Itemised SMS Usage By Customer |
-      | USE_Reporting_RequestedOn      |
+      | TodayDate                      |
       | USE_Reporting_CustName         |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -2135,10 +2194,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                 |
       | Itemised SMS Usage By Customer Profile |
-      | USE_Reporting_RequestedOn              |
+      | TodayDate                              |
       | USE_Reporting_CustName                 |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -2165,10 +2225,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                 |
       | Itemised SMS Usage By Customer Profile |
-      | USE_Reporting_RequestedOn              |
+      | TodayDate                              |
       | USE_Reporting_CustName                 |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -2213,10 +2274,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | Itemised SMS Usage By IMSI |
-      | USE_Reporting_RequestedOn  |
+      | TodayDate                  |
       | USE_Reporting_CustName     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -2244,10 +2306,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                     |
       | Itemised SMS Usage By IMSI |
-      | USE_Reporting_RequestedOn  |
+      | TodayDate                  |
       | USE_Reporting_CustName     |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -2292,10 +2355,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -2321,10 +2385,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
@@ -2350,10 +2415,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | Packet-Data Usage By IMSI |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -2396,10 +2462,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
-      | USE_Reporting_RequestedOn            |
+      | TodayDate                            |
       | USE_Reporting_CustName               |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -2426,10 +2493,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
-      | USE_Reporting_RequestedOn            |
+      | TodayDate                            |
       | USE_Reporting_CustName               |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "pdf"
@@ -2456,10 +2524,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                               |
       | Packet-Data Usage By IMSI and APN v2 |
-      | USE_Reporting_RequestedOn            |
+      | TodayDate                            |
       | USE_Reporting_CustName               |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -2504,10 +2573,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
-      | USE_Reporting_RequestedOn                   |
+      | TodayDate                                   |
       | USE_Reporting_CustName                      |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
@@ -2534,10 +2604,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
-      | USE_Reporting_RequestedOn                   |
+      | TodayDate                                   |
       | USE_Reporting_CustName                      |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
@@ -2564,10 +2635,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                      |
       | RADIUS Authentication Failures for Customer |
-      | USE_Reporting_RequestedOn                   |
+      | TodayDate                                   |
       | USE_Reporting_CustName                      |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
@@ -2613,10 +2685,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
@@ -2644,10 +2717,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
@@ -2675,10 +2749,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                              |
       | RADIUS Authentication Failures for Customer Profile |
-      | USE_Reporting_RequestedOn                           |
+      | TodayDate                                           |
       | USE_Reporting_CustName                              |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
@@ -2724,10 +2799,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
-      | USE_Reporting_RequestedOn               |
+      | TodayDate                               |
       | USE_Reporting_CustName                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "csv"
@@ -2755,10 +2831,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
-      | USE_Reporting_RequestedOn               |
+      | TodayDate                               |
       | USE_Reporting_CustName                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "pdf"
@@ -2786,10 +2863,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                  |
       | RADIUS Authentication Failures for IMSI |
-      | USE_Reporting_RequestedOn               |
+      | TodayDate                               |
       | USE_Reporting_CustName                  |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
@@ -2834,11 +2912,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Rogue Usage Events v2     |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Rogue Usage Events v2  |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -2863,11 +2942,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Rogue Usage Events v2     |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Rogue Usage Events v2  |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -2892,11 +2972,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Rogue Usage Events v2     |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | Rogue Usage Events v2  |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -2935,11 +3016,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | Secondary MSISDN Mapping  |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                   |
+      | Secondary MSISDN Mapping |
+      | TodayDate                |
+      | USE_Reporting_CustName   |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -2982,10 +3064,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                        |
       | SIM Delta Events for Customer |
-      | USE_Reporting_RequestedOn     |
+      | TodayDate                     |
       | USE_Reporting_CustName        |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -3012,10 +3095,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                        |
       | SIM Delta Events for Customer |
-      | USE_Reporting_RequestedOn     |
+      | TodayDate                     |
       | USE_Reporting_CustName        |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -3060,10 +3144,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                |
       | SIM Delta Events for Customer Profile |
-      | USE_Reporting_RequestedOn             |
+      | TodayDate                             |
       | USE_Reporting_CustName                |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "csv"
@@ -3092,10 +3177,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                                |
       | SIM Delta Events for Customer Profile |
-      | USE_Reporting_RequestedOn             |
+      | TodayDate                             |
       | USE_Reporting_CustName                |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
@@ -3143,10 +3229,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | SIM Delta Events for IMSI |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "csv"
@@ -3174,10 +3261,11 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
       | values                    |
       | SIM Delta Events for IMSI |
-      | USE_Reporting_RequestedOn |
+      | TodayDate                 |
       | USE_Reporting_CustName    |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
@@ -3218,11 +3306,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | SIM Group Detail          |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | SIM Group Detail       |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "csv"
     When click menu "Reporting" and submenu "Reports"
@@ -3244,11 +3333,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | SIM Group Detail          |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | SIM Group Detail       |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "pdf"
     When click menu "Reporting" and submenu "Reports"
@@ -3270,11 +3360,12 @@ Feature: This feature covers Background Reports
     Then verify text "Requested on"
     Then click on header "Requested on"
     Then wait for 30 seconds
+    Then get todays date and store in "TodayDate"
     Then click on results based on below criteria
-      | values                    |
-      | SIM Group Detail          |
-      | USE_Reporting_RequestedOn |
-      | USE_Reporting_CustName    |
+      | values                 |
+      | SIM Group Detail       |
+      | TodayDate              |
+      | USE_Reporting_CustName |
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
@@ -3351,7 +3442,6 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "imsi" in downloaded file "csv"
     Then verify filetext "TodayDate" in downloaded file "csv"
-
     Then logout
 
 
