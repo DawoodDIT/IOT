@@ -9,7 +9,7 @@ Feature: SMS wakeup Device
     Given browser is open
     Then login
     When click menu "Devices" and submenu "All devices"
-    Then enter textarea "IMSI" "SMSConfiguration_IMSIwakeup"
+    Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIwakeup"
     When click on button "Search"
     When click on link "USE_SMSConfiguration_IMSIwakeup"
     When click on link "Operations"

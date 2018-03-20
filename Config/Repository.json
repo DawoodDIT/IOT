@@ -28,6 +28,10 @@
           "locator": "id",
           "locatorvalue": "__ns2036993941_refreshPage"
         },
+      "m2mHome": {
+          "locator": "id",
+          "locatorvalue": "__ns1790630358_homeLnk2"
+        },
         "SelectFile": {
           "locator": "id",
           "locatorvalue": "__ns2036994902_selectFile"
