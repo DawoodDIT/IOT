@@ -25,6 +25,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -55,6 +56,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -85,6 +87,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -104,6 +107,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "0000" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -133,6 +137,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -164,6 +169,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -195,6 +201,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -215,6 +222,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "PERIOD_START" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -244,6 +252,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -275,6 +284,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -306,6 +316,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -326,6 +337,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -355,6 +367,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -385,6 +398,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -415,6 +429,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -434,6 +449,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -464,6 +480,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -495,6 +512,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -526,6 +544,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -545,6 +564,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "High Circuit-Switched Usage SIMs" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -575,6 +595,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -606,6 +627,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -637,6 +659,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -656,6 +679,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -685,6 +709,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -715,6 +740,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -745,6 +771,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -764,6 +791,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 90 seconds
     Then logout
@@ -793,6 +821,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -823,6 +852,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -853,6 +883,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -872,6 +903,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -901,6 +933,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -931,6 +964,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -961,6 +995,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -980,6 +1015,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1008,6 +1044,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1038,6 +1075,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1068,6 +1106,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1087,6 +1126,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_IPAllocationAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1116,6 +1156,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1146,6 +1187,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1176,6 +1218,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1195,6 +1238,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1225,6 +1269,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1256,6 +1301,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1287,6 +1333,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1306,6 +1353,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "Data" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1336,6 +1384,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1367,6 +1416,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1398,6 +1448,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1417,6 +1468,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1445,6 +1497,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1475,6 +1528,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1505,6 +1559,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1524,6 +1579,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1554,6 +1610,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1585,6 +1642,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1616,6 +1674,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1635,6 +1694,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1665,6 +1725,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1696,6 +1757,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1727,6 +1789,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1746,6 +1809,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMIdentifier" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1775,6 +1839,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1805,6 +1870,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1835,6 +1901,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1854,6 +1921,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1884,6 +1952,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1915,6 +1984,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1946,6 +2016,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -1965,6 +2036,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -1995,6 +2067,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2026,6 +2099,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2057,6 +2131,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2076,6 +2151,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2105,6 +2181,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2135,6 +2212,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2154,6 +2232,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2184,6 +2263,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2215,6 +2295,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2234,6 +2315,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2264,6 +2346,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2296,6 +2379,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2316,6 +2400,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "DATA_CODING" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2345,6 +2430,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2375,6 +2461,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2405,6 +2492,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2424,6 +2512,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2452,6 +2541,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2483,6 +2573,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2514,6 +2605,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2534,6 +2626,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_PdAPN" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2563,6 +2656,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2594,6 +2688,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2625,6 +2720,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2645,6 +2741,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2675,6 +2772,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2707,6 +2805,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2739,6 +2838,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2759,6 +2859,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2789,6 +2890,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2821,6 +2923,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2853,6 +2956,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2873,6 +2977,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_RadiusFailureReason" in downloaded file "xml"
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -2902,6 +3007,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2932,6 +3038,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2962,6 +3069,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -2981,6 +3089,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "Rogue Usage Events" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3005,6 +3114,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3025,6 +3135,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_RadiusFailureIMSI" in downloaded file "csv"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3054,6 +3165,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes" on position 2
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3085,6 +3197,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes" on position 2
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3104,6 +3217,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3134,6 +3248,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes" on position 2
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3167,6 +3282,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes" on position 2
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3187,6 +3303,7 @@ Feature: This feature covers Background Reports
     Then verify filetext "USE_Reporting_PacketDataIMSI" in downloaded file "xml"
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3219,6 +3336,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3251,6 +3369,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3270,6 +3389,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMHistoryCSP" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3296,6 +3416,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3323,6 +3444,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3350,6 +3472,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "Contact"
     Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3369,6 +3492,7 @@ Feature: This feature covers Background Reports
     Then wait for 60 seconds
     Then verify filetext "USE_Reporting_SIMGroup" in downloaded file "xml"
     When click on link "USE_Reporting_CustomerAdministratorRole"
+    Then verify text "USE_Reporting_OperatorAdministratorRole"
     When click on link "USE_Reporting_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
@@ -3393,6 +3517,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3422,6 +3547,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3463,6 +3589,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact3"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3504,6 +3631,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3534,6 +3662,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3575,6 +3704,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3604,6 +3734,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3633,6 +3764,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3673,6 +3805,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3702,6 +3835,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3731,6 +3865,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3771,6 +3906,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3800,6 +3936,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3841,6 +3978,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3870,6 +4008,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3899,6 +4038,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3940,6 +4080,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3969,6 +4110,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -3998,6 +4140,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4037,6 +4180,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4065,6 +4209,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4093,6 +4238,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4131,6 +4277,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4159,6 +4306,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4187,6 +4335,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4226,6 +4375,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4255,6 +4405,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4284,6 +4435,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4323,6 +4475,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4352,6 +4505,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4381,6 +4535,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4420,6 +4575,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4450,6 +4606,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4480,6 +4637,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4520,6 +4678,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4550,6 +4709,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4580,6 +4740,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4620,6 +4781,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4649,6 +4811,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4678,6 +4841,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4715,6 +4879,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4744,6 +4909,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4773,6 +4939,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4810,6 +4977,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4838,6 +5006,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4866,6 +5035,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4903,6 +5073,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4931,6 +5102,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
@@ -4959,6 +5131,7 @@ Feature: This feature covers Background Reports
     Then select radiobutton "Yes"
     Then select dropdown "* Notification Method" "USE_Reporting_NotificationMethod1"
     Then select dropdown "Contact *" "USE_Reporting_Contact1"
+    Then verify text "Generate"
     When click on button "Generate"
     Then wait for 15 seconds
     When click menu "Reporting" and submenu "Background reports"
