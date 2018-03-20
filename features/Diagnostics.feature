@@ -172,8 +172,7 @@ Feature: Diagnostics
       Then store time in "time1"
       When launch mobile app "message"
       Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
-      Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
-      Then wait for 120 seconds
+      Then wait for 60 seconds
 #    Web Part
       When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
@@ -291,8 +290,10 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
       Then wait for 120 seconds
 #    Web Part
@@ -385,9 +386,12 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
 #    Mobile Part -SIM2
       Given select mobile "mobile3"
       When launch mobile app "youtube"
@@ -396,8 +400,10 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile3_deviceId" to "USE_mobile3_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile3_deviceId" call No "USE_mobile3_RecMobNo"
       Then wait for 120 seconds
 #      Web Part
