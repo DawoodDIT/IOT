@@ -126,8 +126,8 @@ Feature: Service Profile Create and Edit and Delete and View and Copy
     Then enter "* Username" "USE_CustServiceProfile_Username"
     Then enter "* Password" "USE_CustServiceProfile_Password"
     When click on button "Save"
-  Mobile part- nitiate an SMS session from a device and verify on application server that SMS is received
-  Verify that SMS-MO routing information is automatically updated when the user changes the outbound SMS-MO API configuration
+#  Mobile part- nitiate an SMS session from a device and verify on application server that SMS is received
+#  Verify that SMS-MO routing information is automatically updated when the user changes the outbound SMS-MO API configuration
     Then logout
 
   @REG_R5_GUI_Edit_CSP_001
