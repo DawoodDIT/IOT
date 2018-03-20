@@ -719,3 +719,8 @@ def step_impl(context, menu,submenu):
         Then verify text "{submenu}"
         When click on submenu "{submenu}"
     """.format(menu=menu,submenu=submenu))
+
+
+@Then('remove item "{itemName}" by clicking close')
+def removeItem(context, itemName):
+    context.driver.removeItem(itemName)

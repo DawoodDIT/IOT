@@ -37,6 +37,8 @@ Feature: Tariff Activation
     Then enter date "Start date (UTC)" "today"
     When click on button "Save"
     Then verify text "Settings successfully updated"
+    Then wait for 10 seconds
+    Then verify text "Administration"
     When click on menu "Administration"
     Then verify text "Tariffs"
     When click on menu "Tariffs"
@@ -71,7 +73,7 @@ Feature: Tariff Activation
     When click on button "Edit" on Position 1
     Then verify text "Withdraw Date (UTC)"
     #Then enter date "Withdraw Date (UTC)" "2018-03-30"
-    Then enter date "USE_Tariffs_futureDate"
+    Then enter date "Withdraw Date (UTC)" "USE_Tariffs_futureDate"
     When click on button "Save"
     Then verify text "Settings successfully updated"
     Then logout
@@ -440,18 +442,19 @@ Feature: Tariff Activation
     When click on button "Edit" on position 2
     Then verify text "* Tariffs"
     Then select dropdown "* Tariffs" "USE_Tariffs_ActiveTariff"
-    Then verify text "Contract information"
-    When click on link "Contract information"
     Then verify text "Save"
     When click on button "Save"
     Then wait for 10 seconds
     Then verify text "Contract information"
     When click on link "Contract information"
+    Then wait for 10 seconds
+    When click on button "m2mHome"
     Then verify text "Administration"
     When click on menu "Administration"
-    Then wait for 5 seconds
+    Then wait for 20 seconds
     Then verify text "Customers"
     When click on menu "Customers"
+    Then wait for 10 seconds
     Then verify text "Organisation"
     Then enter "Organisation" "USE_Tariffs_CustOrg"
     When click on button "Search"
@@ -464,7 +467,14 @@ Feature: Tariff Activation
     When click on link "Contract"
     Then verify text "Contract information"
     Then verify text "USE_Tariffs_ActiveTariff"
-    #Then report "Value for 'Tariff' attribute is correct in customer details."
+
+    #restoring data state
+    Then verify text "Edit"
+    When click on button "Edit" on position 2
+    Then verify text "* Tariffs"
+    Then remove item "USE_Tariffs_ActiveTariff" by clicking close
+    Then verify text "Save"
+    Then verify text "Contract information"
     Then logout
 
   #Generate CIR report

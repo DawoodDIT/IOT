@@ -52,6 +52,7 @@ import Commands.uploadFile
 import Commands.verifyDownloadedFile
 import Commands.verifyEmail
 import Commands.verifyHiddenHeader
+import Commands.removeItem
 
 class Automation:
     def __init__(self):
@@ -969,6 +970,24 @@ class Automation:
                 Commands.verifyHiddenHeader.verifyHiddenHeader(self.driver,headerName)
                 success = 1
                 Module.Report.Success(self.driver, "Hidden Header:" + headerName + " is verified")
+            except selenium.common.exceptions.StaleElementReferenceException:
+                time.sleep(5)
+                success = 0
+                counter = counter + 1
+
+    def removeItem(self, itemName):
+        Module.logger.INFO("Removing Item : " + itemName)
+        self.itemName = itemName
+        self.performPreChecks()
+        itemName = Module.Utility.readTestData(itemName)
+        Module.Report.Info(self.driver, "Removing Item : " + itemName)
+        counter = 1
+        success = 0
+        while ((success != 1) and (counter < 5)):
+            try:
+                Commands.removeItem.removeItem(self.driver, itemName)
+                success = 1
+                Module.Report.Success(self.driver, "Removing Item : " + itemName)
             except selenium.common.exceptions.StaleElementReferenceException:
                 time.sleep(5)
                 success = 0
