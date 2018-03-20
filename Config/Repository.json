@@ -28,6 +28,14 @@
           "locator": "id",
           "locatorvalue": "__ns2036993941_refreshPage"
         },
+      "m2mHome": {
+          "locator": "id",
+          "locatorvalue": "__ns1790630358_homeLnk2"
+        },
+        "SelectFile": {
+          "locator": "id",
+          "locatorvalue": "__ns2036994902_selectFile"
+        },
 	"removegroup":{
         "locator":"class",
         "locatorvalue":"remove"
@@ -92,12 +100,13 @@
 
   "uploadbutton": {
      "Select file": {
-        "locator": "id",
-        "locatorvalue": "attchFileId"
+        "locator": "id,id",
+        "locatorvalue": "attchFileId,batchFileId"
       }
     },
    "link": {
      "TXT": {
+
         "locator": "class",
         "locatorvalue": "batchType"
       }

@@ -1,0 +1,4 @@
+FORMAT01	Change Device State	CHANGE_STATE
+IMSI	STATE	STCHGREASON
+111117500000540	LIVE	Activation of new SIM in state live
+END	1

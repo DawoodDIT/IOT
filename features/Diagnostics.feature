@@ -1,6 +1,7 @@
 @Diagnostics
 Feature: Diagnostics
  This feature covers Diagnostics functionality.
+#  Ready for 19th March batch
 
   @REG_R10_GUI_APN_001
 #    Success
@@ -10,7 +11,9 @@ Feature: Diagnostics
       Then login
       Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Customer"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -19,7 +22,9 @@ Feature: Diagnostics
       |Customer|
       Then verify text "Customer"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Global"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -28,7 +33,9 @@ Feature: Diagnostics
       |Global|
       Then verify text "Global"
       When click menu "Administration" and submenu "APNs"
+      Then verify text "Results"
       Then select dropdown "Class" "Operator/Reseller"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -48,11 +55,14 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APNExtRad"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
+      Then verify text "USE_Diagnostics_APNExtRad"
       When click on link "USE_Diagnostics_APNExtRad"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "RADIUS"
       When click on link "RADIUS"
       Then verify text "Server IP address"
       Then verify text "RADIUS secret"
@@ -67,11 +77,13 @@ Feature: Diagnostics
       Then login
       Then verify text "M2M Dashboard"
       When click on link "USE_Diagnostics_OperatorAdministratorRole"
+      Then verify text "USE_Diagnostics_CustomerAdministratorRole"
       When click on link "USE_Diagnostics_CustomerAdministratorRole"
-      When click on menu "Administration"
-      When click on submenu "My organisation"
+      Then verify text "M2M Dashboard"
+      When click menu "Administration" and submenu "My organisation"
       Then verify text "USE_Diagnostics_Customer"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       Then verify text "Data service"
       Then verify no text "None"
@@ -86,9 +98,10 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
@@ -110,20 +123,22 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
+      Then verify text "Search"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -145,9 +160,10 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
@@ -156,8 +172,8 @@ Feature: Diagnostics
       When click on tab "Device_Tools"
       When click on button "Diagnostic trace"
       Then select dropdown "Type" "SMS"
-      Then select dropdown "Duration" "30 minutes"
-#      Then select dropdown "Extend by" "30 minutes"
+#      Then select dropdown "Duration" "30 minutes"
+      Then select dropdown "Extend by" "30 minutes"
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part
@@ -165,24 +181,26 @@ Feature: Diagnostics
       Then store time in "time1"
       When launch mobile app "message"
       Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
-      Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
 #    Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "SMPP"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
+      Then verify text "Search"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -203,9 +221,10 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
@@ -227,20 +246,22 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #    Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
+      Then verify text "Search"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -262,10 +283,10 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on "checkbox" of table based on below criteria
@@ -287,16 +308,19 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then wait for 120 seconds
 #    Web Part
 #    Diameter Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
@@ -304,6 +328,7 @@ Feature: Diagnostics
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -316,11 +341,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    SMPP Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -334,11 +359,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    Radius Trace
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -361,9 +386,10 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Devices"
-      When click on submenu "All devices"
+      When click menu "Devices" and submenu "All devices"
+      Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_MultipleSIMs"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then select all from table
@@ -383,9 +409,12 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then wait for 60 seconds
 #    Mobile Part -SIM2
       Given select mobile "mobile3"
       When launch mobile app "youtube"
@@ -394,16 +423,19 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 60 seconds
       When launch mobile app "message"
       Then send sms "Hello M2M" from "USE_mobile3_deviceId" to "USE_mobile3_RecMobNo"
+      Then wait for 60 seconds
       Then from "USE_mobile3_deviceId" call No "USE_mobile3_RecMobNo"
+      Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace - SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Diameter"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
@@ -411,6 +443,7 @@ Feature: Diagnostics
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -423,14 +456,15 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #      Diameter Trace - SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Diameter"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -443,11 +477,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      SMPP Trace -SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "SMPP"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -461,11 +495,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #    SMPP Trace -SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "SMPP"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -479,11 +513,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace -SIM1
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then select dropdown "Network Protocol" "Radius"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -497,11 +531,11 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI"
 #      Radius Trace -SIM2
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
       Then select dropdown "Network Protocol" "Radius"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -527,6 +561,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
@@ -536,8 +571,8 @@ Feature: Diagnostics
       Then verify text "Status"
       When click on button "Edit"
       Then select dropdown "Type" "Radius"
-      Then select dropdown "Duration" "30 minutes"
-      #      Then select dropdown "Extended by" "30 minutes"
+#      Then select dropdown "Duration" "30 minutes"
+      Then select dropdown "Extended by" "30 minutes"
       When click on button "Save"
       Then verify text "Expires on"
       Then store time in "time1"
@@ -549,16 +584,18 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "This step is just to add some wait"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -584,6 +621,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
@@ -606,16 +644,18 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -640,6 +680,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
@@ -663,19 +704,21 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #    Web Part
 #      Diameter Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -688,15 +731,16 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -721,6 +765,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
@@ -744,20 +789,21 @@ Feature: Diagnostics
       Then tap on enter key on mobile
       Then enter "Search YouTube" "java" on mobile
       When click on mobile link "Java Programming"
+      Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
-      Then verify text "Results"
       Then verify text "Results"
       Then verify text "Trace results"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -770,15 +816,16 @@ Feature: Diagnostics
       Then verify if "time2" "greater than or equal" "time1"
       Then verify text "USE_Diagnostics_IMSI2"
 #      Radius Trace Verification
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Radius"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then click on header "Trace Time"
@@ -793,6 +840,7 @@ Feature: Diagnostics
       When click menu "Administration" and submenu "APNs"
       Then verify text "Results"
       Then enter "APN" "USE_Diagnostics_APN"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       When click on link "USE_Diagnostics_APN"
@@ -811,8 +859,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API transactions"
+      When click menu "Tools" and submenu "API transactions"
       Then verify text "API transactions"
       Then verify text "Results"
       Then validate table row count "10"
@@ -829,8 +876,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API transactions"
+      When click menu "Tools" and submenu "API transactions"
       Then verify text "API transactions"
       Then verify no text "No results were found"
       Then verify text "Date"
@@ -850,11 +896,9 @@ Feature: Diagnostics
 #      |text|Entity ID|
       When click on link "Export"
       When click on button "CSV"
-      Then verify filetext "0000" in downloaded file "csv"
+      Then wait for 60 seconds
+      Then verify filetext "000/0000" in downloaded file "csv"
       Then logout
-
-
-
 
 
   @REG_R6.0_GUI_Transactions_002
@@ -863,8 +907,8 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then verify text "* Organisation"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts1"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts2"
@@ -876,8 +920,8 @@ Feature: Diagnostics
       Then enter date "and" "USE_Diagnostics_RangeAnd"
       When click on button "Generate"
       Then verify no text "For the selected period there was zero usage."
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then select dropdown "* API" "USE_Diagnostics_API4Charts4"
       Then select dropdown "Period" "USE_Diagnostics_APIChartsPeriod"
       Then enter date "between" "USE_Diagnostics_RangeBetween"
@@ -896,8 +940,8 @@ Feature: Diagnostics
       Then verify text "M2M Dashboard"
       When click on link "USE_Diagnostics_OperatorAdministratorRole"
       When click on link "USE_Diagnostics_ResellerAdministratorRole"
-      When click on menu "Tools"
-      When click on submenu "API charts"
+      When click menu "Tools" and submenu "API charts"
+      Then verify text "Chart"
       Then verify text "* Organisation"
       Then select dropdown "* API" "USE_Diagnostics_API4Reseller"
       Then select dropdown "Period" "USE_Diagnostics_APIChartsPeriod"
@@ -915,12 +959,12 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN3"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -948,12 +992,12 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN3"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -980,12 +1024,12 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then select dropdown "Network Protocol" "Diameter"
       Then select dropdown "APN" "USE_Diagnostics_APN"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"
@@ -1006,12 +1050,12 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click on menu "Tools"
-      When click on submenu "Trace results"
+      When click menu "Tools" and submenu "Trace results"
       Then verify text "Results"
       Then enter date "Between" "USE_Diagnostics_RangeBetween1"
       Then enter date "And" "USE_Diagnostics_RangeAnd1"
       Then select dropdown "APN" "USE_Diagnostics_APN2"
+      Then verify text "Search"
       When click on button "Search"
       Then verify text "Results"
       Then verify no text "No results were found"

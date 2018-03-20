@@ -66,7 +66,7 @@ Feature: ConfigMoveSIMCustomer
        When click on button "Next"
        Then verify text "* Action"
        Then select dropdown "* Action" "Change service profile"
-       When click on input "* Organisation" and enter value "USE_CSPOperations_CustMovesimCustname"
+#       When click on input "* Organisation" and enter value "USE_CSPOperations_CustMovesimCustname"
        Then select dropdown "New service profile" "USE_CSPOperations_CustMovesimCSPname"
        When click on button "Next"
        Then verify text "Action"

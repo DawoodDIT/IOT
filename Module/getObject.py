@@ -8,10 +8,20 @@ import time
 def getObjByRepo(driverObject,type,name):
 
     idtype, idvalue = Module.Utility.CheckIfDefinedElementExistInRepo(type, name)
+    i=0
+    j=0
     if idtype != None and idvalue != None:
-        Module.logger.INFO("ID Type for " +type+ " " +name+ " is " + idtype)
-        Module.logger.INFO("Value for " + type + " " + name + " is " + idvalue)
-        return Module.Algorithms.find_obj_using_config(driverObject,idtype, idvalue)
+        all_idtypes = idtype.split(sep=',')
+        all_idvalues = idvalue.split(sep=',')
+        for eachid in all_idtypes:
+            eachidvalue = all_idvalues[i]
+            i = i + 1
+            Module.logger.INFO("ID Type for " +eachid+ " " +name+ " is " + eachidvalue)
+            Module.logger.INFO("Value for " + eachid + " " + name + " is " + eachidvalue)
+            obj=Module.Algorithms.find_obj_using_config(driverObject,eachid, eachidvalue)
+            if obj is not None:
+                break
+        return obj
     else:
         return None
 

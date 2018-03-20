@@ -115,12 +115,7 @@
     "Cust1": "ADI_Testing_Cust",
     "IMSI": "204043258711182"
   },
-  "User": {
-    "CustomerAdministratorRole": "ADI_Testing_Cust as Customer Administrator",
-    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator"
-  },
+
   "PSUsageUser": {
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator"
   },
@@ -921,16 +916,6 @@
       "CustomerAdministratorRole":"Automation3 as Customer Administrator",
       "OperatorAdministratorRole":"PPVGE as Operator Administrator",
       "PlatformAdministratorRole":"Platform as Platform Administrator",
-      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator",
-      "CustomerUsername": "usercustomer@mailinator.com",
-      "ResellerUsername": "reseller@mailinator.com",
-      "PlatformUsername": "platform@mailinator.com",
-      "ResellerCustomer": "CARGOTEC",
-
-      "LoginName": "AS M",
-      "CurrentPassword": "Portal1*",
-      "NewPassword": "Portal2*",
-      "Keyword": "PPVGE"
-
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator"
   }
 }
