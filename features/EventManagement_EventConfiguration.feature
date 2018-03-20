@@ -45,17 +45,20 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "USE_EventManagement_EventName"
     When click on link "USE_EventManagement_EventName"
     Then verify text "Information"
+    Then verify text "Edit"
     When click on button "Edit" on position 1
     Then enter "Description" "USE_EventManagement_EventDescriptionEdit"
     Then select radiobutton "Yes"
     When click on button "Save"
     Then enter "Description" "USE_EventManagement_EventDescriptionEdit"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select dropdown "* Monitoring period" "USE_EventManagement_MonitoringPeriodHourly"
     Then enter "* Threshold value" "USE_EventManagement_ThresholdValue"
     When click on button "Save"
     Then verify text "USE_EventManagement_ThresholdValue"
     Then verify text "USE_EventManagement_MonitoringPeriodHourly"
+    Then verify text "Edit"
     When click on button "Edit" on position 3
     Then verify text "Warning"
     Then select check box "Warning"
@@ -91,18 +94,22 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "USE_EventManagement_EventName"
     When click on link "USE_EventManagement_EventName"
     Then verify text "Information"
+    Then verify text "Edit"
     When click on button "Edit" on position 1
     Then select radiobutton "No"
     When click on button "Save"
     Then verify text "No"
+    Then verify text "Edit"
     When click on button "Edit" on position 1
     Then select radiobutton "Yes"
     When click on button "Save"
     Then verify text "Yes"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select radiobutton "Enabled"
     When click on button "Save"
     Then verify text "Enabled"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select radiobutton "Disabled"
     When click on button "Save"
@@ -131,16 +138,19 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "USE_EventManagement_EventName"
     When click on link "USE_EventManagement_EventName"
     Then verify text "Information"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select radiobutton "Enabled"
     When click on button "Save"
     Then verify text "Enabled"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select dropdown "* Monitoring period" "USE_EventManagement_MonitoringPeriodMonthly"
     Then enter "* Threshold value" "USE_EventManagement_ThresholdValue"
     When click on button "Save"
     Then verify text "USE_EventManagement_ThresholdValue"
     Then verify text "USE_EventManagement_MonitoringPeriodMonthly"
+    Then verify text "Edit"
     When click on button "Edit" on position 2
     Then select radiobutton "Disabled"
     When click on button "Save"
