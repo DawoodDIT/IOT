@@ -921,6 +921,16 @@
       "CustomerAdministratorRole":"Automation3 as Customer Administrator",
       "OperatorAdministratorRole":"PPVGE as Operator Administrator",
       "PlatformAdministratorRole":"Platform as Platform Administrator",
-      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator"
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator",
+      "CustomerUsername": "usercustomer@mailinator.com",
+      "ResellerUsername": "reseller@mailinator.com",
+      "PlatformUsername": "platform@mailinator.com",
+      "ResellerCustomer": "CARGOTEC",
+
+      "LoginName": "AS M",
+      "CurrentPassword": "Portal1*",
+      "NewPassword": "Portal2*",
+      "Keyword": "PPVGE"
+
   }
 }
