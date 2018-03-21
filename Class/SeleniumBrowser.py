@@ -71,7 +71,7 @@ class SeleniumBrowser:
             Module.logger.DEBUG("exception in deleting cookies")
         Module.logger.DEBUG("COOKIE Listing and deletion end")
 
-        time.sleep(60)
+        time.sleep(15)
         # Opening URL
         self.driver.get(url)
 
