@@ -20,10 +20,12 @@ Feature: Service Profile Create and Edit and Delete and View and Copy
     Then enter "* Service profile name" "USE_CustServiceProfile_SPname"
     Then select dropdown "* Provisioning profile" "USE_CustServiceProfile_dropdownvalue"
     Then verify text "* Tariff"
+
     Then select dropdown "PLMN list" "PLMN_Staging_R10"
+
     When click on button "Next"
     Then verify text "SIM and IMEI"
-    Then verify text "SIM test mode"
+    #Then verify text "SIM test mode"
     Then enter "* Volume limit" "90"
     Then enter "* Expiration time limit" "80"
     Then enter "* Usage time limit" "30"
@@ -34,7 +36,7 @@ Feature: Service Profile Create and Edit and Delete and View and Copy
     Then select dropdown "* Match rule" "Match IMEI"
     When click on button "Next"
     Then verify text "Services"
-    Then verify text "SMS MT service"
+    #Then verify text "SMS MT service"
     Then enter "* Validity period" "30"
     When click on button "Next"
     Then verify text "Confirmation"

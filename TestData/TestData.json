@@ -17,20 +17,22 @@
   },
   "AccountManagement": {
     "admin": "testuser1234@mailinator.com",
-    "name": "Test189 User",
+    "name": "mtm",
+
     "notAdmin": "butterfly123456@mailinator.com",
-    "userForReset": "vidya.mahadevaiah@slr-consultants.com",
-    "userForAccessRight": "deftestprofile@gmail.com"
+    "userForReset": "butterfly123456@mailinator.com",
+    "userForAccessRight": "butterfly123456@mailinator.com"
   },
   "CustomerReports2": {
-    "opCo": "PPVGE as Operator Administrator",
-    "Cust": "AutomationCust1 as Customer Administrator",
-    "CustName": "AutomationCust1",
-    "StartDate": "2017-11-01",
-    "SimWithSMSUsage": "204043258711180",
-    "SimWithRadFailure": "204043258711182",
-    "SIMGroupName": "SIMGroup01",
+    "opCo": "E2Eopco as Operator Administrator",
+    "Cust": "GDSP_Cust_R11_2 as Customer Administrator",
+    "CustName": "GDSP_Cust_R11_2",
+    "StartDate": "2015-02-01",
+    "SimWithSMSUsage": "901289999900323",
+    "SimWithRadFailure": "901280030000036",
+    "SIMGroupName": "TestSIMGroup",
     "StartDate2": "2017-10-01",
+
     "DateWithUsage": "2018-01-18",
     "DateWithCalls": "2018-01-11",
     "Cust2": "Automation2",
@@ -71,7 +73,7 @@
   },
   "ADMIN": {
     "Platform": "Platform as Platform Administrator",
-    "Opco": "PPVGE as Operator Administrator",
+    "Opco": "E2Eopco as Operator Administrator",
     "Cust1": "AutomationCust1 as Customer Administrator",
     "Cust2": "Automation2 as Customer Administrator",
     "Cust3": "Automation3 as Customer Administrator",
@@ -768,14 +770,14 @@
   },
   "PlatformOpCoEnablement": {
     "Custname": "Geo_LBS",
-    "MCCMNC": "62234",
+    "MCCMNC": "66794",
     "Type": "GDSP enabled operator",
     "VirtualType": "GDSP enabled virtual operator",
-    "Country": "United Kingdom",
+    "Country": "Germany",
     "TADIGcode": "Opco",
-    "APIGroup": "test_APIgroup",
-    "ResAPIGroup": "MyAPI",
-    "ResOpConame": "test",
+    "APIGroup": "Mithun_Test1",
+    "ResAPIGroup": "Mithun_Test1",
+    "ResOpConame": "test_reseller_E2E",
     "OpConame": "test_Operator",
     "NewResOpConame": "test_Updated",
     "ResOpCodescription": "DescriptionUpdated",
@@ -787,7 +789,7 @@
   "APIThrottle": {
     "OpConame": "test_Operator",
     "Webservice": "getCustomerServiceProfileDetailsv4",
-    "CustAPIGroup": "MyAPI",
+    "CustAPIGroup": "Mithun_Test1",
     "CustWebservice": "getDeviceHistory",
     "CreateWebservice": "setSimDetails",
     "WebserviceCreateuser": "createUser",
@@ -922,21 +924,21 @@
       "CSUsageIMSI":"204043258711178"
   },
   "CustServiceProfile": {
-     "OrgValue": "OpcoCustomer",
-     "SPname": "100",
-     "dropdownvalue": "Opcoprofile_181217104418",
+     "OrgValue": "AutomationCust1",
+     "SPname": "e2e123",
+     "dropdownvalue": "AutomationPP",
      "ServiceProfile": "ADI_CSP_20404",
      "Filetext": "Organisation",
      "URL": "https://m2mportal-stage.vodafone.com/m2mscp/",
      "Username": "test123",
      "Password": "test123",
      "ServiceProfile1": "1234",
-     "ServiceProfileName": "5678",
+     "ServiceProfileName": "Auto1_CSP_IMEI",
      "Description1": "Api csp clone CSP 2",
      "Description2": "Api csp clone CSP 3",
      "Tariff1": "22222",
      "Tariff2": "JCIDEMOTARIFFCSDB_GROUP_19",
-     "ServiceProfile2": "ADI_test_CSP",
+     "ServiceProfile2": "e2e123_070218131454",
      "ServiceProfile3": "CSP_test"
   },
 
@@ -959,21 +961,23 @@
   "ProvisionProfile":{
 
     "Org":"AutomationCust1",
-    "defaultOpco":"PPVGE as Operator Administrator",
-    "opcoTariffDisabled":"OpcoTariffDisabled as Operator Administrator",
-    "apn1":"centraltest",
-    "ghlrTemplate1":"GHLR template",
+    "defaultOpco":"E2Eopco as Operator Administrator",
+
+    "opcoTariffDisabled":"tariffdisableCust as Customer Administrator",
+
+    "apn1":"test01.e2e.aff.vodafone.com",
+    "ghlrTemplate1":"DATA SMS-MT SMS-MO CSV1",
     "qos1":"QoS-Standard",
     "qosId":"1",
-    "roamGroup1":"UK Test",
-     "ghlrTemplate2":"test-stg",
-    "apn2":"apntest123",
-    "ghlrTemplate3":"LTE ONLY",
-    "apn3":"lte.m2m",
-    "ProvisionProfile3":"Opcoprofile_160318162311",
-    "ProvisionProfile4":"Tester_160318175132",
-    "ghlrTemplate4":"GHLR lbs1",
-    "apn4":"apn1"
+    "roamGroup1":"werwer",
+     "ghlrTemplate2":"DATA SMS-MT SMS-MO CSV1",
+    "apn2":"test01.e2e.aff.vodafone.com",
+    "ghlrTemplate3":"AUTO_GHLR_CSBLTE_Enabled_001",
+    "apn3":"test01.e2e.aff.vodafone.com",
+    "ProvisionProfile3":"001pp",
+    "ProvisionProfile4":"Tester_140218133449",
+    "ghlrTemplate4":"DATA SMS-MT SMS-MO CSV1",
+    "apn4":"test01.e2e.aff.vodafone.com"
   },
 
    "BatchOperationCustomer": {
@@ -1030,5 +1034,24 @@
 		"IMSI3": "204043258711185"
 
 
-	}
+	},
+
+  "EventUsageNotification": {
+   "Cust1": "AutomationCust1",
+    "Cust": "Automation3",
+   "Admin": "Automation3 as Customer Administrator",
+   "CSP1": "AutoCSP_Voice",
+   "CSP2": "CSP_Static_APN",
+   "IMSI": "901289999900323",
+   "APN": "test01.e2e.cis.vodafone.com",
+   "HourFrom": "1:00",
+   "HourTo": "2:00",
+   "State": "Inactive",
+   "State1": "Active.Live",
+   "TransitionState": "Active.Live",
+   "FreshInactiveIMSI": "901289999900323",
+   "BService": "getCustomerDetails",
+       "Shortcode": "310000210"
+}
+
 }
