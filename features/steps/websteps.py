@@ -240,7 +240,9 @@ def step_impl(context,imsivalue,initState,finalState):
         Then enter textarea "IMSI" "{imsivalue}"
         When click on button "Search"
         Then verify text "Results"
-        Then verify text "{initState}"
+        Then verify value of "State" is "{initState}" of table based on below criteria
+        |IMSI|
+        |{imsivalue}|
         Then click on "checkbox" of table based on below criteria
         |IMSI|
         |{imsivalue}|
