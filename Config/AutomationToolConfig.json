@@ -2,8 +2,8 @@
   "tool": {
     "browserType": "chrome",
     "timeout": 60,
-    "loglevel": "DEBUG",
-    "reportlevel":"ALL",
+    "loglevel": "ERROR",
+    "reportlevel":"test",
     "configfile":"json",
     "reporttype":"ALL"
   },
