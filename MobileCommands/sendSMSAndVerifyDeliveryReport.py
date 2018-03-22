@@ -64,8 +64,10 @@ def sendSMSAndVerifyDeliveryReport(driverObject,deviceId,receiverNo,msgBody):
         os.system(sendcmd)
         msgSentTime1=datetime.now().strftime('%H:%M')
         msgSentTime2=(datetime.now() - timedelta(minutes=1)).strftime('%H:%M')
+        msgSentTime3 = (datetime.now() + timedelta(minutes=1)).strftime('%H:%M')
         timeStr1="Sent: "+msgSentTime1
         timeStr2="Sent: "+msgSentTime2
+        timeStr3="Sent: "+msgSentTime3
     except OSError as e:
         Module.Report.Failure(driverObject, "SMS to no"+receiverNo+" is not send successfull")
         Module.logger.ERROR("SMS to no"+receiverNo+" is not send successfull")
@@ -77,6 +79,7 @@ def sendSMSAndVerifyDeliveryReport(driverObject,deviceId,receiverNo,msgBody):
     firstmessage = Module.getMobileObject.getMobileObjByAlgo_ObjectWithNoValue(driverObject, "firstmessage")
     if firstmessage != None:
         try:
+            time.sleep(5)
             firstmessage.click()
 
         except:
@@ -103,7 +106,7 @@ def sendSMSAndVerifyDeliveryReport(driverObject,deviceId,receiverNo,msgBody):
 
             except:
                 continue
-            if currsms.text.strip() == msgBody and (currsmmstime.text == timeStr1 or currsmmstime.text == timeStr2):
+            if currsms.text.strip() == msgBody and (currsmmstime.text == timeStr1 or currsmmstime.text == timeStr2 or currsmmstime.text == timeStr3):
                 try:
                     status = each.find_element_by_class_name("android.widget.LinearLayout")
                     deliverystatus=status.find_element_by_id("com.android.mms:id/delivered_indicator")

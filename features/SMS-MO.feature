@@ -18,10 +18,13 @@ Feature: SMS MO
     When click menu "Devices" and submenu "All devices"
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
+    Then verify text "Results"
     When click on link "USE_SMSConfiguration_IMSIMO"
+    Then verify text "USE_SMSConfiguration_IMSIMO"
     When click on link "History"
     Then verify text "Voice"
     Then select radiobutton "Activity list"
+    Then verify text "Results"
     Then select dropdown "Type" "SMS"
     When click on button "Search"
     Then verify text "Results"
@@ -59,11 +62,14 @@ Feature: SMS MO
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     Then wait for 60 seconds
     When click on button "Search"
+    Then verify text "Results"
     Then verify text "Active.Live"
     When click on link "USE_SMSConfiguration_IMSIMO"
+    Then verify text "USE_SMSConfiguration_IMSIMO"
     When click on link "History"
     Then verify text "Voice"
     Then select radiobutton "Activity list"
+    Then verify text "Results"
     Then select dropdown "Type" "SMS"
     When click on button "Search"
     Then verify text "Results"
@@ -99,7 +105,9 @@ Feature: SMS MO
     When click menu "Devices" and submenu "All devices"
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
+    Then verify text "Results"
     When click on link "USE_SMSConfiguration_IMSIMO"
+    Then verify text "USE_SMSConfiguration_IMSIMO"
     When click on link "History"
     Then verify text "Voice"
     Then select radiobutton "Activity list"
@@ -118,10 +126,10 @@ Feature: SMS MO
         | text  | Report Date        |
     Then report "SMS MO details are available on history"
     #Step def is required to verify SMS MO
-    When click on menu "Devices"
-    When click on menu "SMS inbox"
+    When click menu "Devices" and submenu "SMS inbox"
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
+    Then verify text "Results"
     # Step definition to validate the correct message with timestamp
     #As it is more than 160 two messages needs to be validated
     Then click on results based on below criteria
@@ -154,7 +162,9 @@ Feature: SMS MO
     When click menu "Devices" and submenu "All devices"
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
+    Then verify text "Results"
     When click on link "USE_SMSConfiguration_IMSIMO"
+    Then verify text "USE_SMSConfiguration_IMSIMO"
     When click on link "History"
     Then verify text "Voice"
     Then select radiobutton "Activity list"
@@ -180,13 +190,22 @@ Feature: SMS MO
     Given browser is open
     Then login
     When click menu "Devices" and submenu "All devices"
+    Then verify text ""
     Then enter textarea "IMSI" "USE_SMSConfiguration_IMSIMO"
     When click on button "Search"
+    Then verify text "Results"
+    Then verify text ""
     When click on link "USE_SMSConfiguration_IMSIMO"
+    Then verify text "USE_SMSConfiguration_IMSIMO"
+    Then verify text ""
     When click on link "History"
+    Then verify text "Voice"
     Then select radiobutton "Activity list"
+    Then verify text ""
     Then select dropdown "Type" "SMS"
+    Then verify text ""
     When click on button "Search"
+    Then verify text "Results"
     Then verify
     | type |value             |
     | link |SMS Payload       |

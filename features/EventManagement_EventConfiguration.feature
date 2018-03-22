@@ -284,6 +284,7 @@ Feature: Event Configuration part of Event Management functionality
     Then select dropdown "* Customer" "USE_Reporting_CustName"
     Then select dropdown "* Format" "CSV"
     When click on button "Generate"
+    Then wait for 60 seconds
 #    No text in file, verification required
     Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
     Then logout
