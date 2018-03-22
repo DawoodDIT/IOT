@@ -1,16 +1,17 @@
 {
   "mobile1": {
     "platformName": "Android",
-    "platformVersion": "4.4.4",
-    "deviceName": "Arun (Galaxy E7)",
-    "deviceId":""
-  },
-
-  "mobile2": {
-    "platformName": "Android",
     "platformVersion": "4.4.2",
     "deviceName": "ALCATEL ONETOUCH PIXI 3(4)",
     "deviceId":"8L7DGYYPGEFEP74P"
+  },
+
+    "mobile2": {
+    "platformName": "Android",
+    "platformVersion": "4.4.2",
+    "deviceName": "ALCATEL ONETOUCH PIXI 3(4)",
+    "deviceId":"FA4HBA5LAQK7BEEA"
+
 
   },
 

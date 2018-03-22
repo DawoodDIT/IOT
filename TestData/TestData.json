@@ -444,6 +444,10 @@
     "NewHomeCountry": "Germany"
   },
   "Diagnostics": {
+    "mobile1deviceId": "8L7DGYYPGEFEP74P",
+    "mobile1RecMobNo": "+447891913566",
+    "mobile3deviceId": "CY8LBQS4BIS4W8FU",
+    "mobile3RecMobNo": "+447891913566",
     "APNExtRad": "123-321.reverseses35cenas",
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
     "OperatorAdministratorRole": "E2Eopco as Operator Administrator",
