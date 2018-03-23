@@ -113,7 +113,7 @@ Feature: SIM Operations
     Then verify text "Results"
     Then wait for 5 seconds
     Then verify text "Active.Live"
-    Then enter textarea "USE_IMSI_TextAreaName" "USE_IMSI_IMSINo"
+    Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
     Then verify text "Results"
     Then verify
