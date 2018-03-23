@@ -1,10 +1,10 @@
 {
    "sut": {
-    "url": "https://m2mportal-stage.vodafone.com/m2mscp"
+    "url": "https://m2mportal-e2e.vodafone.com/m2mscp"
   },
   "Login": {
-    "Username": "adil.mohammed@slr-consultants.co.uk",
-    "Password": "Portal4*"
+    "Username": "muhammad.dawood.khan@slr-consultants.com",
+    "Password": "Vodafone2*"
   },
 
   "CustomerWithOwnUsers": {
