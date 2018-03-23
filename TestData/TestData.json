@@ -348,7 +348,7 @@
   "SIMGroups": {
     "IMSI": "901289999900324",
     "Organisation": "AutomationCust1",
-    "GroupName": "SIMGroup123",
+    "GroupName": "SIMGroup1234",
     "Description": "SIM Group Des",
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
     "OperatorAdministratorRole": "E2Eopco as Operator Administrator",
