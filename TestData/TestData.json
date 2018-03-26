@@ -394,7 +394,7 @@
     "PlatformAdministratorRole": "Platform as Platform Administrator",
     "ResellerAdministratorRole": "E2EResellerYasmine as Reseller Administrator",
     "CustomerSMSCommand": "AutomationCust1",
-    "IMSICommand": "901289999900331",
+    "IMSICommand": "901289999900330",
     "CustomerSMSCommandUser": "AutomationCust1 as Customer Administrator",
     "SenderNumber": "310000210",
     "TransactionalSMS": "This is transactional SMS",
