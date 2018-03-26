@@ -99,6 +99,7 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_Customer"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       Then verify text "Device management"
       When click on button "Edit" on position 3
@@ -107,6 +108,7 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on menu "Devices"
+      Then wait for 5 seconds
       Then verify text "SMS inbox"
       Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
@@ -121,10 +123,12 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_Customer"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       When click on button "Edit" on position 3
       Then select radiobutton "Disabled" on position 2
       When click on button "Save"
+      Then wait for 10 seconds
       Then verify text "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
       Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
@@ -440,32 +444,32 @@ Feature: Customer On Boarding
       Then verify no text "Please insert between 4 and 15 digits, or 3 and 14 digits ending with *"
       Then logout
 
-    @REG_R5_Customer_Onboarding_016
-#    Success
-    Scenario: Test to create a Device groups to create a cluster devices to enable the easier management and application of actions
-      Given test case starts
-      Given browser is open
-      Then login
-      Then verify text "M2M Dashboard"
-      When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
-      When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
-      When click on menu "Administration"
-      When click on submenu "My organisation"
-      Then verify text "Overview"
-      When click on tab "Details"
-      When click on link "Profiles and groups"
-      Then verify
-      | type  | value  |
-      | button| Edit   |
-      When click on button "Edit"
-      Then verify text "+ Add group"
-      When click on link "+ Add group"
-      Then enter "* Name" "USE_CustomerOnboarding_GroupName"
-      Then enter "Description" "USE_CustomerOnboarding_Description"
-      When click on button "Save"
-      Then verify text "Groups"
-      Then verify text "USE_CustomerOnboarding_GroupName"
-      Then logout
+#    @REG_R5_Customer_Onboarding_016
+##    Success
+#    Scenario: Test to create a Device groups to create a cluster devices to enable the easier management and application of actions
+#      Given test case starts
+#      Given browser is open
+#      Then login
+#      Then verify text "M2M Dashboard"
+#      When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
+#      When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
+#      When click on menu "Administration"
+#      When click on submenu "My organisation"
+#      Then verify text "Overview"
+#      When click on tab "Details"
+#      When click on link "Profiles and groups"
+#      Then verify
+#      | type  | value  |
+#      | button| Edit   |
+#      When click on button "Edit"
+#      Then verify text "+ Add group"
+#      When click on link "+ Add group"
+#      Then enter "* Name" "USE_CustomerOnboarding_GroupName"
+#      Then enter "Description" "USE_CustomerOnboarding_Description"
+#      When click on button "Save"
+#      Then verify text "Groups"
+#      Then verify text "USE_CustomerOnboarding_GroupName"
+#      Then logout
 
 
     @REG_R5_GUI_Customer_Onboarding_001
