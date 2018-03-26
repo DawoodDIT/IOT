@@ -526,8 +526,9 @@ Feature: Customer On Boarding
       Then enter "* Name" "Server Certificate"
       Then enter "Description" "Certificate Description"
       When select upload button "Select file" and upload file "USE_CustomerOnboarding_Certificate"
-#      Then enter "Password" "USE_CustomerOnboarding_CertificatePassword"
+      Then enter "Password" "USE_CustomerOnboarding_CertificatePassword"
       When click on button "Save"
+      Then verify no text "None"
       Then verify text "USE_CustomerOnboarding_Certificate"
       Then logout
 
@@ -729,6 +730,7 @@ Feature: Customer On Boarding
       When click on link "Web services"
       Then verify text "Customer server certificates"
       When click on button "Edit" on position 3
+      Then verify no text "	+ Add certificate"
 #     Add code for deletion-----later
       When click on button "Save"
       Then wait for 5 seconds
