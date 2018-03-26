@@ -100,6 +100,7 @@ Feature: Customer On Boarding
       Then verify text "Overview"
       When click on tab "Details"
       When click on link "Connectivity services"
+      Then verify text "Device management"
       When click on button "Edit" on position 3
       Then select radiobutton "Enabled" on position 2
       When click on button "Save"
@@ -526,7 +527,7 @@ Feature: Customer On Boarding
       Then enter "* Name" "Server Certificate"
       Then enter "Description" "Certificate Description"
       When select upload button "Select file" and upload file "USE_CustomerOnboarding_Certificate"
-      Then enter "Password" "USE_CustomerOnboarding_CertificatePassword"
+      Then enter "* Password" "USE_CustomerOnboarding_CertificatePassword"
       When click on button "Save"
       Then verify no text "None"
       Then verify text "USE_CustomerOnboarding_Certificate"
