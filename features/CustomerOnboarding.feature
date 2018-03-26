@@ -29,7 +29,7 @@ Feature: Customer On Boarding
       Then logout
 
     @REG_R10_GUI_Customer_Onboarding_018
-#      Success
+#      Success!
     Scenario: Test to verify the functionality to copy a customer
       Given test case starts
       Given browser is open
