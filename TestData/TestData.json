@@ -418,6 +418,7 @@
     "TextAreaName": "IMSI"
   },
   "SIMProvisioning": {
+    "PlatformAdministratorRole": "Platform as Platform Administrator",
     "OperatorAdministratorRole": "E2Eopco as Operator Administrator",
     "CustomerAdministratorRole": "Geo_Mithun_e2eopco_Cust1 as Customer Administrator",
     "ResellerAdministratorRole": "E2EResellerYasmine as Reseller Administrator",
