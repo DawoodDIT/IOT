@@ -66,7 +66,7 @@ Feature: SIM Custom Attributes
       Then verify text "USE_SIMCustomAttributes_IMSI"
       When click on link "USE_SIMCustomAttributes_IMSI"
       Then verify text "Service Profile"
-      Then verify text "USE_SIMCustomAttributes_CustomAttribute2"
+      Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
       Then verify text "USE_SIMCustomAttributes_CA1Value"
       Then wait for 10 seconds
       Then logout
@@ -89,7 +89,7 @@ Feature: SIM Custom Attributes
       Then verify text "Edit"
       When click on button "Edit"
       Then enter "Custom attributes" "CustomAttribute1"
-      Then select check box "included on"
+#      Then select check box "included on"
       Then verify text "Save"
       When click on button "Save"
       Then logout

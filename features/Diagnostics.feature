@@ -115,7 +115,7 @@ Feature: Diagnostics
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile
@@ -177,10 +177,10 @@ Feature: Diagnostics
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       Then store time in "time1"
       When launch mobile app "message"
-      Then send sms "Hello" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then send sms "Hello" from "USE_Diagnostics_mobile1deviceId" to "USE_Diagnostics_mobile1RecMobNo"
       Then wait for 60 seconds
 #    Web Part
       When click menu "Tools" and submenu "Trace results"
@@ -238,7 +238,7 @@ Feature: Diagnostics
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile
@@ -300,7 +300,7 @@ Feature: Diagnostics
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #    Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile
@@ -310,9 +310,9 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 60 seconds
       When launch mobile app "message"
-      Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then send sms "Hello M2M" from "USE_Diagnostics_mobile1deviceId" to "USE_Diagnostics_mobile1RecMobNo"
       Then wait for 60 seconds
-      Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then from "USE_Diagnostics_mobile1deviceId" call No "USE_Diagnostics_mobile1RecMobNo"
       Then wait for 120 seconds
 #    Web Part
 #    Diameter Trace
@@ -401,7 +401,7 @@ Feature: Diagnostics
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part -SIM1
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile
@@ -411,9 +411,9 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 60 seconds
       When launch mobile app "message"
-      Then send sms "Hello M2M" from "USE_mobile2_deviceId" to "USE_mobile2_RecMobNo"
+      Then send sms "Hello M2M" from "USE_Diagnostics_mobile1deviceId" to "USE_Diagnostics_mobile1RecMobNo"
       Then wait for 60 seconds
-      Then from "USE_mobile2_deviceId" call No "USE_mobile2_RecMobNo"
+      Then from "USE_Diagnostics_mobile1deviceId" call No "USE_Diagnostics_mobile1RecMobNo"
       Then wait for 60 seconds
 #    Mobile Part -SIM2
       Given select mobile "mobile3"
@@ -425,9 +425,9 @@ Feature: Diagnostics
       When click on mobile link "Java Programming"
       Then wait for 60 seconds
       When launch mobile app "message"
-      Then send sms "Hello M2M" from "USE_mobile3_deviceId" to "USE_mobile3_RecMobNo"
+      Then send sms "Hello M2M" from "USE_Diagnostics_mobile3deviceId" to "USE_Diagnostics_mobile3RecMobNo"
       Then wait for 60 seconds
-      Then from "USE_mobile3_deviceId" call No "USE_mobile3_RecMobNo"
+      Then from "USE_Diagnostics_mobile3deviceId" call No "USE_Diagnostics_mobile3RecMobNo"
       Then wait for 120 seconds
 #      Web Part
 #      Diameter Trace - SIM1
@@ -577,7 +577,7 @@ Feature: Diagnostics
       Then verify text "Expires on"
       Then store time in "time1"
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then verify no text "No connection" on mobile
       Then click on mobile icon "Search"
@@ -637,7 +637,7 @@ Feature: Diagnostics
       Then verify text "Expires on"
       Then store time in "time1"
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then verify no text "No connection" on mobile
       Then click on mobile icon "Search"
@@ -696,7 +696,7 @@ Feature: Diagnostics
       Then verify text "Expires on"
       Then store time in "time1"
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile
@@ -781,7 +781,7 @@ Feature: Diagnostics
       Then verify text "Expires on"
       Then store time in "time1"
 #      Mobile Part
-      Given select mobile "mobile2"
+      Given select mobile "mobile1"
       When launch mobile app "youtube"
       Then store time in "time1"
       Then verify no text "No connection" on mobile

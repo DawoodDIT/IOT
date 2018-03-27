@@ -356,6 +356,7 @@ Feature: Transactional SMS
        Then verify text "USE_SMSConfiguration_CustAdmin"
        When click on link "USE_SMSConfiguration_CustAdmin"
        When click menu "Devices" and submenu "SMS inbox"
+       Then verify text "IMSI"
        Then enter textarea "IMSI" "USE_SMSConfiguration_IMSITrans"
        When click on button "Search"
        Then verify text "Date"

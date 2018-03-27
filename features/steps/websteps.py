@@ -380,14 +380,21 @@ def step_impl(context, smstype, msgbody, imsivalue, shortcodevalue):
     context.execute_steps("""
          When click menu "Devices" and submenu "All devices"
          Then verify text "Results"
+         Then verify text "IMSI"
          Then enter textarea "IMSI" "{imsivalue}"
          When click on button "Search"
+         Then verify text "{imsivalue}"
          When click on link "{imsivalue}"
          Then verify text "{imsivalue}"
+         Then verify text "Operations"
          When click on link "Operations"
+         Then verify text "Send SMS"
          When click on button "Send SMS"
+         Then verify text "Sender's Number"
          Then enter "* Sender's Number" "{shortcodevalue}"
+         Then verify text "Type"
          Then select dropdown "* Type" "{smstype}"
+         Then verify text "Message"
          Then enter textarea "Message" "{msgbody}"
      """.format(smstype=smstype, msgbody=msgbody, imsivalue=imsivalue, shortcodevalue=shortcodevalue))
 
@@ -718,8 +725,10 @@ def step_impl(context, menu,submenu):
     context.execute_steps("""
         Then verify text "{menu}"
         When click on menu "{menu}"
+        Then wait for 5 seconds
         Then verify text "{submenu}"
         When click on submenu "{submenu}"
+        Then wait for 5 seconds
     """.format(menu=menu,submenu=submenu))
 
 

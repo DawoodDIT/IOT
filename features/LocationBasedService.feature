@@ -100,6 +100,7 @@
       Then enter "* LBS username" "USE_AAAConfigureLBS_LBSusername"
       Then enter "* LBS password" "USE_AAAConfigureLBS_LBSPassword"
       Then verify text "Geofencing"
+      Then verify text "Enabled"
       Then select radiobutton "Enabled" on position 2
       When click on button "Save"
       Then verify text "LBS username"

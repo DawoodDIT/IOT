@@ -16,7 +16,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -47,7 +47,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -78,7 +78,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "API Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -128,7 +128,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -160,7 +160,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -192,7 +192,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Barred Calls for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -243,7 +243,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -275,7 +275,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -307,7 +307,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -358,7 +358,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -389,7 +389,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -420,7 +420,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Customer Overview"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -470,7 +470,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -502,7 +502,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -534,7 +534,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Circuit-Switched Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -585,7 +585,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -617,7 +617,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -649,7 +649,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Packet-Data Usage Devices"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -700,7 +700,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -731,7 +731,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -762,7 +762,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "High Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -812,7 +812,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -843,7 +843,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -874,7 +874,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMEI-Rule Failed Events"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -924,7 +924,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -955,7 +955,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -986,7 +986,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IMSI-MSISDN Pairing"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1035,7 +1035,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1066,7 +1066,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1097,7 +1097,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "IP Allocation for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1147,7 +1147,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1178,7 +1178,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1209,7 +1209,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1259,7 +1259,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1291,7 +1291,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1323,7 +1323,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1374,7 +1374,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1406,7 +1406,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1438,7 +1438,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Circuit-Switched Usage for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1488,7 +1488,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1519,7 +1519,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1550,7 +1550,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1600,7 +1600,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1632,7 +1632,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1664,7 +1664,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for Customer Profile v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1715,7 +1715,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1747,7 +1747,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1779,7 +1779,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage for SIM v5"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1830,7 +1830,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1861,7 +1861,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1892,7 +1892,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1942,7 +1942,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -1974,7 +1974,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2006,7 +2006,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2057,7 +2057,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2089,7 +2089,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2121,7 +2121,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised Packet-Data Usage with SMS Events for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2172,7 +2172,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2203,7 +2203,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2253,7 +2253,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2285,7 +2285,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2336,7 +2336,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2369,7 +2369,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Itemised SMS Usage By IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2421,7 +2421,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2452,7 +2452,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2483,7 +2483,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2532,7 +2532,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2564,7 +2564,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2596,7 +2596,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Packet-Data Usage By IMSI and APN v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2647,7 +2647,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2679,7 +2679,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2711,7 +2711,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2762,7 +2762,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2795,7 +2795,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2828,7 +2828,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2880,7 +2880,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2913,7 +2913,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2946,7 +2946,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "RADIUS Authentication Failures for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -2998,7 +2998,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3029,7 +3029,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3060,7 +3060,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "Rogue Usage Events v2"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3155,7 +3155,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3187,7 +3187,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3237,7 +3237,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3271,7 +3271,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for Customer Profile"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3325,7 +3325,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
@@ -3358,7 +3358,7 @@ Feature: This feature covers Background Reports
     When click menu "Reporting" and submenu "Reports"
     Then verify text "Reports"
     Then select dropdown "* Report" "SIM Delta Events for IMSI"
-    Then verify text "* Period"
+    Then wait for 5 seconds
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"

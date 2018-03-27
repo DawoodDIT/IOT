@@ -40,7 +40,8 @@ Feature: Customer On Boarding
       When click on link "Create organisation"
       When click on button "Create customer"
       Then verify text "* Customer name"
-      Then enter "* Customer name" "USE_CustomerOnboarding_NewCopyCustName"
+      Then generate unique name starts with "USE_CustomerOnboarding_Customer" and store in "CopyCust"
+      Then enter "* Customer name" "CopyCust"
       Then enter "* Customer description" "USE_CustomerOnboarding_CopyCustDes"
       Then select radiobutton "Yes"
       When click on input "* Copy settings from" and enter value "USE_CustomerOnboarding_Customer"
@@ -98,13 +99,16 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_Customer"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
+      Then verify text "Device management"
       When click on button "Edit" on position 3
       Then select radiobutton "Enabled" on position 2
       When click on button "Save"
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on menu "Devices"
+      Then wait for 5 seconds
       Then verify text "SMS inbox"
       Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
@@ -119,10 +123,12 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_Customer"
       Then verify text "Overview"
       When click on tab "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       When click on button "Edit" on position 3
       Then select radiobutton "Disabled" on position 2
       When click on button "Save"
+      Then wait for 10 seconds
       Then verify text "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
       Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
@@ -438,32 +444,32 @@ Feature: Customer On Boarding
       Then verify no text "Please insert between 4 and 15 digits, or 3 and 14 digits ending with *"
       Then logout
 
-    @REG_R5_Customer_Onboarding_016
-#    Success
-    Scenario: Test to create a Device groups to create a cluster devices to enable the easier management and application of actions
-      Given test case starts
-      Given browser is open
-      Then login
-      Then verify text "M2M Dashboard"
-      When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
-      When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
-      When click on menu "Administration"
-      When click on submenu "My organisation"
-      Then verify text "Overview"
-      When click on tab "Details"
-      When click on link "Profiles and groups"
-      Then verify
-      | type  | value  |
-      | button| Edit   |
-      When click on button "Edit"
-      Then verify text "+ Add group"
-      When click on link "+ Add group"
-      Then enter "* Name" "USE_CustomerOnboarding_GroupName"
-      Then enter "Description" "USE_CustomerOnboarding_Description"
-      When click on button "Save"
-      Then verify text "Groups"
-      Then verify text "USE_CustomerOnboarding_GroupName"
-      Then logout
+#    @REG_R5_Customer_Onboarding_016
+##    Success
+#    Scenario: Test to create a Device groups to create a cluster devices to enable the easier management and application of actions
+#      Given test case starts
+#      Given browser is open
+#      Then login
+#      Then verify text "M2M Dashboard"
+#      When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
+#      When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
+#      When click on menu "Administration"
+#      When click on submenu "My organisation"
+#      Then verify text "Overview"
+#      When click on tab "Details"
+#      When click on link "Profiles and groups"
+#      Then verify
+#      | type  | value  |
+#      | button| Edit   |
+#      When click on button "Edit"
+#      Then verify text "+ Add group"
+#      When click on link "+ Add group"
+#      Then enter "* Name" "USE_CustomerOnboarding_GroupName"
+#      Then enter "Description" "USE_CustomerOnboarding_Description"
+#      When click on button "Save"
+#      Then verify text "Groups"
+#      Then verify text "USE_CustomerOnboarding_GroupName"
+#      Then logout
 
 
     @REG_R5_GUI_Customer_Onboarding_001
@@ -486,7 +492,7 @@ Feature: Customer On Boarding
       When click on button "Next"
       Then verify text "Data service"
       Then verify text "Voice service"
-      Then select radiobutton "Enabled" on position 9
+      Then select radiobutton "Disabled" on position 9
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
@@ -525,8 +531,9 @@ Feature: Customer On Boarding
       Then enter "* Name" "Server Certificate"
       Then enter "Description" "Certificate Description"
       When select upload button "Select file" and upload file "USE_CustomerOnboarding_Certificate"
-#      Then enter "Password" "USE_CustomerOnboarding_CertificatePassword"
+      Then enter "* Password" "USE_CustomerOnboarding_CertificatePassword"
       When click on button "Save"
+      Then verify no text "None"
       Then verify text "USE_CustomerOnboarding_Certificate"
       Then logout
 
@@ -571,6 +578,7 @@ Feature: Customer On Boarding
       Then select radiobutton "Enabled" on position 3
       Then verify text "Voice service"
       Then select radiobutton "Enabled" on position 9
+      Then select dropdown "* NGIN" "USE_CustomerOnboarding_NGIN"
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
@@ -681,7 +689,6 @@ Feature: Customer On Boarding
       Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "Customers"
       Then verify text "Results"
-      Then verify text "Results"
       When click on link "Create organisation"
       When click on button "Create customer"
       Then verify text "Customer name"
@@ -694,7 +701,7 @@ Feature: Customer On Boarding
       Then select radiobutton "Enabled" on position 5
       Then enter "Maximum number of SMS messages" "USE_CustomerOnboarding_MaxNumberOfSMStoStore"
       Then verify text "Voice service"
-      Then select radiobutton "Enabled" on position 9
+      Then select radiobutton "Disabled" on position 9
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
@@ -728,6 +735,7 @@ Feature: Customer On Boarding
       When click on link "Web services"
       Then verify text "Customer server certificates"
       When click on button "Edit" on position 3
+      Then verify no text "	+ Add certificate"
 #     Add code for deletion-----later
       When click on button "Save"
       Then wait for 5 seconds

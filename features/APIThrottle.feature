@@ -34,17 +34,17 @@
 
 
 #       Verification
-       When click on link "Devices"
-       Then verify text "Devices"
-       When click on link "Web services"
+#       When click on link "Devices"
+#       Then verify text "Devices"
+#       When click on link "Web services"
        Then verify text "API configuration"
        Then verify text "USE_APIThrottle_Webservice"
 
 #      Restore
-       When click on button "Edit" on Position 1
-       Then remove item "getCustomerServiceProfileDetailsv4" by clicking close
-       When click on button "Save"
-       Then verify text "None"
+#       When click on button "Edit" on Position 1
+#       Then remove item "getCustomerServiceProfileDetailsv4" by clicking close
+#       When click on button "Save"
+#       Then verify text "None"
        Then logout
 
     @REG_R10_MR_GUI_API_Throttle_010
@@ -67,7 +67,7 @@
        Then verify text "SOAP API configuration"
        When click on button "Edit" on Position 1
        Then select dropdown "* API groups" "USE_APIThrottle_CustAPIGroup"
-       When click on link "API throttling"
+       #When click on link "API throttling"
        Then verify text "Add new"
        When click on link "Add new"
        Then enter values
@@ -78,18 +78,18 @@
        When click on button "Save"
 
 #    Verification
-       When click on link "Devices"
-       Then verify text "Devices"
-       When click on link "Web services"
+#       When click on link "Devices"
+#       Then verify text "Devices"
+#       When click on link "Web services"
        Then verify text "SOAP API configuration"
        Then verify text "USE_APIThrottle_CustWebservice"
 
 #      Restore
-       When click on button "Edit" on Position 1
-       Then remove item "MyAPI" by clicking close
-       Then remove item "getDeviceHistory" by clicking close
-       When click on button "Save"
-       Then verify text "None"
+#       When click on button "Edit" on Position 1
+#       Then remove item "MyAPI" by clicking close
+#       Then remove item "getDeviceHistory" by clicking close
+#       When click on button "Save"
+#       Then verify text "None"
        Then logout
 
     @REG_R5_MR_GUI_API_Throttle_002

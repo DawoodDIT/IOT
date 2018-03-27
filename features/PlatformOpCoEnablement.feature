@@ -44,10 +44,12 @@
        Then enter "Organisation" "OpConame"
        When click on button "Search"
        Then verify text "Results"
-       Then verify
-        | type  | value              |
-        | text  | OpConame           |
-        | text  | GDSP enabled operator |
+       Then verify text "OpConame"
+       Then verify text "GDSP enabled operator"
+#       Then verify
+#        | type  | value              |
+#        | text  | OpConame           |
+#        | text  | GDSP enabled operator |
        Then logout
 
 
@@ -91,10 +93,12 @@
        Then enter "Organisation" "OpConame"
        When click on button "Search"
        Then verify text "Results"
-       Then verify
-        | type  | value           |
-        | text  | OpConame        |
-        | text  | GDSP enabled virtual operator |
+       Then verify text "OpConame"
+       Then verify text "GDSP enabled virtual operator"
+#       Then verify
+#        | type  | value           |
+#        | text  | OpConame        |
+#        | text  | GDSP enabled virtual operator |
        Then logout
 
     @REG_R10_GUI_Platform_Opco_Enablement_010

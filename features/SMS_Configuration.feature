@@ -12,6 +12,7 @@ Feature: SMS Inbox
     Then verify text "USE_SMSConfiguration_CustAdmin"
     When click on link "USE_SMSConfiguration_CustAdmin"
     When click menu "Devices" and submenu "SMS inbox"
+    Then verify text "Results"
     Then enter date for "between" "today - 45days"
     Then enter date for "and" "today - 30days"
     When click on button "Search"
@@ -32,6 +33,8 @@ Feature: SMS Inbox
     Then verify text "USE_SMSConfiguration_CustAdmin"
     When click on link "USE_SMSConfiguration_CustAdmin"
     When click menu "Devices" and submenu "SMS inbox"
+    Then verify text "Results"
+    Then verify text "SMS Transactional"
     When click on link "SMS Transactional"
     Then verify
     | type  | value |
@@ -104,6 +107,7 @@ Feature: SMS Inbox
     When click menu "Devices" and submenu "SMS inbox"
     When click on input "Organisation" and enter value "USE_SMSConfiguration_CustSMS"
     When click on button "Search"
+    Then verify text "Results"
     Then verify Text "SMS Transactional"
     When click on link "SMS Transactional"
     Then verify
@@ -126,6 +130,7 @@ Feature: SMS Inbox
     When click menu "Devices" and submenu "SMS inbox"
     When click on input "Organisation" and enter value "USE_SMSConfiguration_CustSMS"
     When click on button "Search"
+    Then verify text "Results"
     Then verify Text "SMS Transactional"
     When click on link "SMS Transactional"
     Then verify
@@ -144,8 +149,10 @@ Feature: SMS Inbox
       Then verify text "Results"
       Then enter "Organisation" "USE_SMSConfiguration_CustSMS"
       When click on button "Search"
+      Then verify text "USE_SMSConfiguration_CustSMS"
       When click on link "USE_SMSConfiguration_CustSMS"
       When click on link "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       When click on button "Edit" on Position 3
       Then verify text "SMPP"
@@ -171,8 +178,11 @@ Feature: SMS Inbox
       Then verify text "Results"
       Then enter "Organisation" "USE_SMSConfiguration_CustSMS"
       When click on button "Search"
+      Then verify text "USE_SMSConfiguration_CustSMS"
       When click on link "USE_SMSConfiguration_CustSMS"
+      Then verify text "Details"
       When click on link "Details"
+      Then verify text "Connectivity services"
       When click on link "Connectivity services"
       When click on button "Edit" on Position 3
       Then select radiobutton "Yes" on Position 1
