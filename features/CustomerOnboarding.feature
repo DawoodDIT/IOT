@@ -492,7 +492,7 @@ Feature: Customer On Boarding
       When click on button "Next"
       Then verify text "Data service"
       Then verify text "Voice service"
-      Then select radiobutton "Enabled" on position 9
+      Then select radiobutton "Disabled" on position 9
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
@@ -578,6 +578,7 @@ Feature: Customer On Boarding
       Then select radiobutton "Enabled" on position 3
       Then verify text "Voice service"
       Then select radiobutton "Enabled" on position 9
+      Then select dropdown "* NGIN" "USE_CustomerOnboarding_NGIN"
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
@@ -688,7 +689,6 @@ Feature: Customer On Boarding
       Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "Customers"
       Then verify text "Results"
-      Then verify text "Results"
       When click on link "Create organisation"
       When click on button "Create customer"
       Then verify text "Customer name"
@@ -701,7 +701,7 @@ Feature: Customer On Boarding
       Then select radiobutton "Enabled" on position 5
       Then enter "Maximum number of SMS messages" "USE_CustomerOnboarding_MaxNumberOfSMStoStore"
       Then verify text "Voice service"
-      Then select radiobutton "Enabled" on position 9
+      Then select radiobutton "Disabled" on position 9
       When click on button "Next"
       Then verify text "* Tariffs"
       Then select dropdown "* Tariffs" "USE_CustomerOnboarding_Tariffs"
