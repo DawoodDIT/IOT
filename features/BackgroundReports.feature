@@ -228,231 +228,231 @@ Feature: This feature covers Background Reports
     Then logout
 
 
-  @REG_R10_GUI_Background_003
-#    updated 19march
-  Scenario: Test to verify the steps taken by the Customer User to view Background
-  Circuit-Switched Usage by IMSI report from the Global M2M Platform in CSV PDF and XML format
-    Given test case starts
-    Given browser is open
-    Then login
-    Then verify text "M2M Dashboard"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "CSV"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                         |
-      | Circuit-Switched Usage by IMSI |
-      | TodayDate                      |
-      | USE_Reporting_CustName         |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "PDF"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                         |
-      | Circuit-Switched Usage by IMSI |
-      | TodayDate                      |
-      | USE_Reporting_CustName         |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "XML"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                         |
-      | Circuit-Switched Usage by IMSI |
-      | TodayDate                      |
-      | USE_Reporting_CustName         |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then wait for 5 seconds
-    Then logout
+#  @REG_R10_GUI_Background_003
+##    updated 19march
+#  Scenario: Test to verify the steps taken by the Customer User to view Background
+#  Circuit-Switched Usage by IMSI report from the Global M2M Platform in CSV PDF and XML format
+#    Given test case starts
+#    Given browser is open
+#    Then login
+#    Then verify text "M2M Dashboard"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then verify text "USE_Reporting_CustomerAdministratorRole"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "M2M Dashboard"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "CSV"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                         |
+#      | Circuit-Switched Usage by IMSI |
+#      | TodayDate                      |
+#      | USE_Reporting_CustName         |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_CustName" in downloaded file "csv"
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "PDF"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                         |
+#      | Circuit-Switched Usage by IMSI |
+#      | TodayDate                      |
+#      | USE_Reporting_CustName         |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_CustName" in downloaded file "pdf"
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Circuit-Switched Usage by IMSI"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "XML"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                         |
+#      | Circuit-Switched Usage by IMSI |
+#      | TodayDate                      |
+#      | USE_Reporting_CustName         |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_CustName" in downloaded file "xml"
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "USE_Reporting_OperatorAdministratorRole"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then wait for 5 seconds
+#    Then logout
 
 
-  @REG_R10_GUI_Background_004
-#    updated 19march
-  Scenario: Test to verify the steps taken by the Customer User to view Background
-  Customer Overview report from the Global M2M Platform in CSV PDF and XML format
-    Given test case starts
-    Given browser is open
-    Then login
-    Then verify text "M2M Dashboard"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Customer Overview"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "CSV"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | Customer Overview      |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Customer Overview"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "PDF"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | Customer Overview      |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "Customer Overview"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "XML"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | Customer Overview      |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then wait for 5 seconds
-    Then logout
+#  @REG_R10_GUI_Background_004
+##    updated 19march
+#  Scenario: Test to verify the steps taken by the Customer User to view Background
+#  Customer Overview report from the Global M2M Platform in CSV PDF and XML format
+#    Given test case starts
+#    Given browser is open
+#    Then login
+#    Then verify text "M2M Dashboard"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then verify text "USE_Reporting_CustomerAdministratorRole"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "M2M Dashboard"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Customer Overview"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "CSV"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | Customer Overview      |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "csv"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Customer Overview"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "PDF"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | Customer Overview      |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "pdf"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "Customer Overview"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "XML"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | Customer Overview      |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_ServingOpco" in downloaded file "xml"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "USE_Reporting_OperatorAdministratorRole"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then wait for 5 seconds
+#    Then logout
 
 
   @REG_R10_GUI_Background_005
@@ -685,116 +685,116 @@ Feature: This feature covers Background Reports
     Then logout
 
 
-  @REG_R10_GUI_Background_007
-#    updated 19march
-  Scenario: Test to verify the steps taken by the Customer User to view Background
-  High Usage Events report from the Global M2M Platform in CSV PDF and XML format
-    Given test case starts
-    Given browser is open
-    Then login
-    Then verify text "M2M Dashboard"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then verify text "USE_Reporting_CustomerAdministratorRole"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "M2M Dashboard"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "High Usage Events v2"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "CSV"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | High Usage Events v2   |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "High Usage Events v2"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "PDF"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | High Usage Events v2   |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
-    When click menu "Reporting" and submenu "Reports"
-    Then verify text "Reports"
-    Then select dropdown "* Report" "High Usage Events v2"
-    Then wait for 5 seconds
-    Then select dropdown "* Period" "Range"
-    Then enter date "* Between" "USE_Reporting_RangeBetween"
-    Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then select dropdown "* Format" "XML"
-    Then select radiobutton "Background"
-    Then select radiobutton "Yes"
-    Then select dropdown "* Notification Method" "Contact"
-    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
-    Then verify text "Generate"
-    When click on button "Generate"
-    Then wait for 15 seconds
-    When click menu "Reporting" and submenu "Background reports"
-    Then verify text "Results"
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then verify text "Requested on"
-    Then click on header "Requested on"
-    Then wait for 30 seconds
-    Then get todays date and store in "TodayDate"
-    Then click on results based on below criteria
-      | values                 |
-      | High Usage Events v2   |
-      | TodayDate              |
-      | USE_Reporting_CustName |
-    Then wait for 60 seconds
-    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
-    When click on link "USE_Reporting_CustomerAdministratorRole"
-    Then verify text "USE_Reporting_OperatorAdministratorRole"
-    When click on link "USE_Reporting_OperatorAdministratorRole"
-    Then wait for 90 seconds
-    Then logout
+#  @REG_R10_GUI_Background_007
+##    updated 19march
+#  Scenario: Test to verify the steps taken by the Customer User to view Background
+#  High Usage Events report from the Global M2M Platform in CSV PDF and XML format
+#    Given test case starts
+#    Given browser is open
+#    Then login
+#    Then verify text "M2M Dashboard"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then verify text "USE_Reporting_CustomerAdministratorRole"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "M2M Dashboard"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "High Usage Events v2"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "CSV"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | High Usage Events v2   |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "csv"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "High Usage Events v2"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "PDF"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | High Usage Events v2   |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "pdf"
+#    When click menu "Reporting" and submenu "Reports"
+#    Then verify text "Reports"
+#    Then select dropdown "* Report" "High Usage Events v2"
+#    Then wait for 5 seconds
+#    Then select dropdown "* Period" "Range"
+#    Then enter date "* Between" "USE_Reporting_RangeBetween"
+#    Then enter date "* and" "USE_Reporting_RangeAnd"
+#    Then select dropdown "* Format" "XML"
+#    Then select radiobutton "Background"
+#    Then select radiobutton "Yes"
+#    Then select dropdown "* Notification Method" "Contact"
+#    Then select dropdown "Contact *" "USE_Reporting_NotificationContact"
+#    Then verify text "Generate"
+#    When click on button "Generate"
+#    Then wait for 15 seconds
+#    When click menu "Reporting" and submenu "Background reports"
+#    Then verify text "Results"
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then verify text "Requested on"
+#    Then click on header "Requested on"
+#    Then wait for 30 seconds
+#    Then get todays date and store in "TodayDate"
+#    Then click on results based on below criteria
+#      | values                 |
+#      | High Usage Events v2   |
+#      | TodayDate              |
+#      | USE_Reporting_CustName |
+#    Then wait for 60 seconds
+#    Then verify filetext "USE_Reporting_NotificationIMSI" in downloaded file "xml"
+#    When click on link "USE_Reporting_CustomerAdministratorRole"
+#    Then verify text "USE_Reporting_OperatorAdministratorRole"
+#    When click on link "USE_Reporting_OperatorAdministratorRole"
+#    Then wait for 90 seconds
+#    Then logout
 
 
   @REG_R10_GUI_Background_008
@@ -3241,7 +3241,7 @@ Feature: This feature covers Background Reports
     Then select dropdown "* Period" "Range"
     Then enter date "* Between" "USE_Reporting_RangeBetween"
     Then enter date "* and" "USE_Reporting_RangeAnd"
-    Then enter "* Service profile" "USE_Reporting_SIMHistoryCSP"
+    Then select dropdown "* Service profile" "USE_Reporting_SIMHistoryCSP"
     Then select radiobutton "Yes"
     Then select dropdown "* Format" "CSV"
     Then select radiobutton "Background"
