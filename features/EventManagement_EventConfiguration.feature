@@ -7,13 +7,16 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
 #    Below Code is to create an Event for rest of test cases in batch and is part of creating data
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Event triggers"
-    Then verify text "Create event trigger"
+    #Then verify text "Create event trigger"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
@@ -30,6 +33,7 @@ Feature: Event Configuration part of Event Management functionality
 #    Test data creation ends, Actual test case starts below
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
@@ -77,8 +81,10 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
@@ -123,10 +129,12 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on link "USE_EventManagement_OperatorAdministratorRole"
     When click on link "USE_EventManagement_CustomerAdministratorRole"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     Then verify text "Event trigger"
     Then verify text "Entity type"
@@ -157,6 +165,7 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "Disabled"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     Then enter "Event trigger" "USE_EventManagement_EventName"
     When click on button "Search"
@@ -174,11 +183,14 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Tools"
     When click on submenu "Event triggers"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventNameForCopy"
     Then enter "Description" "USE_EventManagement_EventDescription"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
@@ -205,8 +217,10 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     Then enter "Event trigger" "USE_EventManagement_EventNameForCopy"
@@ -220,6 +234,7 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "was successfully deleted!"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     Then enter "Event trigger" "USE_EventManagement_EventNameForCopy"
@@ -234,11 +249,14 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Tools"
     When click on submenu "Event triggers"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then enter "* Event trigger name" "USE_EventManagement_EventNameForCopy"
     Then enter "Description" "USE_EventManagement_EventDescription"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
@@ -254,6 +272,7 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "was successfully created!"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     Then enter "Event trigger" "USE_EventManagement_EventNameForCopy"
@@ -275,6 +294,7 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Reporting"
     When click on submenu "Reports"
     Then verify text "Reports"
@@ -295,8 +315,10 @@ Feature: Event Configuration part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
+    Then verify text "M2M Dashboard"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     Then enter "Event trigger" "USE_EventManagement_EventNameForCopy"
@@ -310,6 +332,7 @@ Feature: Event Configuration part of Event Management functionality
     Then verify text "was successfully deleted!"
     When click on menu "Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     Then enter "Event trigger" "USE_EventManagement_EventName"

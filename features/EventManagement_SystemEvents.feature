@@ -7,11 +7,13 @@ Feature: System Events part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    Then verify text "M2M Dashboard"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then generate unique name starts with "SysEvnt" and store in "SystemEventName"
     Then enter "* Event trigger name" "SystemEventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
@@ -42,11 +44,13 @@ Feature: System Events part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    Then verify text "M2M Dashboard"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then generate unique name starts with "SysEvnt" and store in "SystemEventName"
     Then enter "* Event trigger name" "SystemEventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
@@ -76,11 +80,13 @@ Feature: System Events part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    Then verify text "M2M Dashboard"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then generate unique name starts with "SysEvnt" and store in "SystemEventName"
     Then enter "* Event trigger name" "SystemEventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
@@ -88,7 +94,7 @@ Feature: System Events part of Event Management functionality
     Then select radiobutton "Yes"
     Then wait for 5 seconds
     Then select dropdown "* Copy settings from" "Inactive.Stopped to Terminated"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
     Then enter "* Threshold value" "USE_EventManagement_ThresholdValue"
     When click on button "Next"
     Then verify text "You are about to create the event"
@@ -111,11 +117,13 @@ Feature: System Events part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    Then verify text "M2M Dashboard"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then generate unique name starts with "SysEvnt" and store in "SystemEventName"
     Then enter "* Event trigger name" "SystemEventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
@@ -123,7 +131,7 @@ Feature: System Events part of Event Management functionality
     Then select radiobutton "Yes"
     Then wait for 5 seconds
     Then select dropdown "* Copy settings from" "Notify Inactive.Stopped Transition"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
     When click on button "Next"
     Then verify text "You are about to create the event"
     When click on button "Create"
@@ -147,42 +155,69 @@ Feature: System Events part of Event Management functionality
     Given test case starts
     Given browser is open
     Then login
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    Then verify text "M2M Dashboard"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
+    Then enter "Event trigger" "Active.Ready to Active.Standby"
     When click on button "Search"
-    Then verify text "Event trigger"
+    Then verify text "Active.Ready to Active.Standby"
     Then click on "Event triggers" of table based on below criteria
       | Event trigger                  | Entity type |
       | Active.Ready to Active.Standby | System      |
-#    When click on link "Active.Ready to Active.Standby"
+    When click on link "Active.Ready to Active.Standby"
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
-    Then wait for 10 seconds
-    When click on link "Active.Suspend to Active.Sleep"
+    Then wait for 15 seconds
+    Then enter "Event trigger" "Active.Suspend to Active.Sleep"
+    When click on button "Search"
+    Then verify text "Active.Suspend to Active.Sleep"
+    Then click on "Event triggers" of table based on below criteria
+      | Event trigger                  | Entity type |
+      | Active.Suspend to Active.Sleep | System      |
+    When click on link "Active.Active.Suspend to Active.Sleep"
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
+    Then enter "Event trigger" "Inactive.Stopped to Terminated"
+    When click on button "Search"
+    Then verify text "Inactive.Stopped to Terminated"
+    Then click on "Event triggers" of table based on below criteria
+      | Event trigger                  | Entity type |
+      | Inactive.Stopped to Terminated | System      |
     When click on link "Inactive.Stopped to Terminated"
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
+    Then enter "Event trigger" "Notify Imminent Termination"
+    When click on button "Search"
+    Then verify text "Notify Imminent Termination"
+    Then click on "Event triggers" of table based on below criteria
+      | Event trigger               | Entity type |
+      | Notify Imminent Termination | System      |
     When click on link "Notify Imminent Termination"
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
+    Then enter "Event trigger" "Notify Inactive.Stopped Transition"
+    When click on button "Search"
+    Then verify text "Notify Inactive.Stopped Transition"
+    Then click on "Event triggers" of table based on below criteria
+      | Event trigger                      | Entity type |
+      | Notify Inactive.Stopped Transition | System      |
     When click on link "Notify Inactive.Stopped Transition"
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
     When click on button "Create event trigger"
-    Then verify text "Create event trigger"
+    Then wait for 15 seconds
+    #Then verify text "Create event trigger"
     Then generate unique name starts with "SysEvnt" and store in "SystemEventName"
     Then enter "* Event trigger name" "SystemEventName"
     Then enter "Description" "USE_EventManagement_EventDescription"
@@ -190,7 +225,7 @@ Feature: System Events part of Event Management functionality
     Then select radiobutton "Yes"
     Then wait for 5 seconds
     Then select dropdown "* Copy settings from" "Active.Ready to Active.Standby"
-    Then wait for 10 seconds
+    Then wait for 15 seconds
     Then enter "* Threshold value" "USE_EventManagement_ThresholdValue"
     When click on button "Next"
     Then verify text "You are about to create the event"
@@ -206,8 +241,8 @@ Feature: System Events part of Event Management functionality
     Then verify text "You're about to delete"
     When click on button "Delete"
     Then verify text "was successfully deleted!"
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
@@ -219,8 +254,8 @@ Feature: System Events part of Event Management functionality
     Then verify text "You're about to delete"
     When click on button "Delete"
     Then verify text "was successfully deleted!"
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
@@ -232,8 +267,8 @@ Feature: System Events part of Event Management functionality
     Then verify text "You're about to delete"
     When click on button "Delete"
     Then verify text "was successfully deleted!"
-    When click on menu "Tools"
-    When click on submenu "Event triggers"
+    When click menu "Tools" and submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
@@ -247,6 +282,7 @@ Feature: System Events part of Event Management functionality
     Then verify text "was successfully deleted!"
     When click on menu e"Tools"
     When click on submenu "Event triggers"
+    Then wait for 15 seconds
     Then verify text "Results"
     When click on input "* Organisation" and enter value "USE_EventManagement_CustName"
     When click on button "Search"
