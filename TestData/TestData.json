@@ -498,6 +498,7 @@
   },
   "Reporting": {
     "CustName": "Geo_Mithun_e2eopco_Cust1",
+    "CustNameInvoiceData":"Geo_Mithun_e2eopco_Cust1",
     "OpcoName": "E2Eopco",
     "ReportPeriod": "Last month",
     "ReportPeriodImmediate": "Today",
