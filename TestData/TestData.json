@@ -1,15 +1,16 @@
 {
   "SIMStateOperation": {
     "InactiveIMSI": "111110001000000",
-    "SleepIMSI1": "111117500000021",
-    "SleepIMSI2": "111117500010753",
-    "SleepIMSI3": "111117500010764",
-    "TestIMSI1": "111117500010808",
-    "SuspendIMSI": "111117500000034",
-    "StandbyIMSI": "111117500000019",
-    "TestIMSI2": "111117600030701",
-    "ReadyIMSI1": "111110001000002",
-    "ReadyIMSI2": "111110001000003",
+    "InactiveIMSI": "111115000303058",
+    "SleepIMSI1": "111115000303050",
+    "SleepIMSI2": "111115000303051",
+    "SleepIMSI3": "111115000303052",
+    "TestIMSI1": "111115000303053",
+    "TestIMSI2": "111115000303054",
+    "SuspendIMSI": "111115000303002",
+    "StandbyIMSI": "111115000303119",
+    "ReadyIMSI1": "111115000303056",
+    "ReadyIMSI2": "111115000303057",
     "IMSIRange": "204043258711181,204043258711182",
     "RangeIMSI1": "204043258711181",
     "RangeIMSI2": "204043258711182",
@@ -117,6 +118,7 @@
     "Cust1": "ADI_Testing_Cust",
     "IMSI": "204043258711182"
   },
+
   "PSUsageUser": {
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator"
   },
@@ -401,6 +403,10 @@
     "TransactionalSMS": "This is transactional SMS",
     "GroupName": "SIMGroup",
     "Description": "SIM Group Des"
+
+
+
+
   },
   "SMSCommand": {
     "Customer": "AutomationCust1",
@@ -890,13 +896,13 @@
     "CustSMS": "AutomationCust1",
     "Cust2": "AutomationCust1",
     "CSP": "AutoCSP2",
-    "IMSI": "204043258711183",
-    "IMSIMO": "204043258711183",
-    "IMSIMT": "204043258711183",
-    "IMSITrans": "204043258711183",
-    "IMSIwakeup": "204043258711183",
+    "IMSI": "901289999900330",
+    "IMSIMO": "901289999900330",
+    "IMSIMT": "901289999900330",
+    "IMSITrans": "901289999900330",
+    "IMSIwakeup": "901289999900330",
     "TestMode": "204043258711183",
-    "Shortcode": "310000210",
+    "Shortcode": "810000001",
     "SMPPid": "Test",
     "SMPPpassword": "Test",
     "SMPPBind": "8",
@@ -905,31 +911,31 @@
     "SMSDeliveryURL": "http://195.233.215.91:8280/GDSPWebServiceStubs/SMSDeliveryNotificationServicev2",
     "SMSDeliveryUser": "Test",
     "SMSDeliveryPwd": "Test",
-    "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+    "Mobile2deviceId": "S8JNIJ4TA69L4D7D"
   },
-  "CustomerDATA": {
-    "OpCoAdmin": "PPVGE as Operator Administrator",
-    "CustAdmin": "AutomationCust1 as Customer Administrator",
-    "IMSIData": "204043258711183",
-    "IMSIDataLTE": "901289999900330",
-    "DataAPN": "ppinternet.gdsp",
-    "LTEAPN": "ppinternet4gd.gdsp",
-    "DynamicAPN": "gdsp40.vodafone.com",
-    "StaticAPN": "gdsp40.vodafone.com",
-    "NoneAPN": "gdsp40.vodafone.com",
-    "MixedAPN": "gdsp40.vodafone.com",
-    "APNUser": "gdsp",
-    "APNPWD": "gdsp",
-    "Mobile2deviceId": "FA4HBA5LAQK7BEEA"
+    "CustomerDATA": {
+      "OpCoAdmin": "E2Eopco as Operator Administrator",
+      "CustAdmin": "AutomationCust1 as Customer Administrator",
+      "IMSIData": "901289999900330",
+      "IMSIDataLTE": "901289999900330",
+      "DataAPN": "test01.e2e.cis.vodafone.com",
+      "LTEAPN": "ppinternet4gd.gdsp",
+      "DynamicAPN": "test01.e2e.aff.vodafone.com",
+      "StaticAPN": "test04.e2e.aff.vodafone.com",
+      "NoneAPN": "gdsp40.vodafone.com",
+      "MixedAPN": "gdsp40.vodafone.com",
+      "APNUser": "test",
+      "APNPWD": "test",
+      "Mobile2deviceId": "S8JNIJ4TA69L4D7D"
   },
-  "User": {
-    "CustomerAdministratorRole": "Automation3 as Customer Administrator",
-    "OperatorAdministratorRole": "PPVGE as Operator Administrator",
-    "PlatformAdministratorRole": "Platform as Platform Administrator",
-    "ResellerAdministratorRole": "CARGOTEC as Reseller Administrator",
-    "FilterIMSI": "111117500000013",
-    "PSUsageIMSI": "204043258711178",
-    "CSUsageIMSI": "204043258711178"
+  "User":{
+      "CustomerAdministratorRole":"Automation3 as Customer Administrator",
+      "OperatorAdministratorRole":"PPVGE as Operator Administrator",
+      "PlatformAdministratorRole":"Platform as Platform Administrator",
+      "ResellerAdministratorRole":"CARGOTEC as Reseller Administrator",
+      "FilterIMSI":"111117500000013",
+      "PSUsageIMSI":"204043258711178",
+      "CSUsageIMSI":"204043258711178"
   },
   "CustServiceProfile": {
      "OrgValue": "AutomationCust1",
