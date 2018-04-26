@@ -885,7 +885,7 @@
     "Period": "hour"
   },
   "SMSConfiguration": {
-    "OpCoAdmin": "PPVGE as Operator Administrator",
+    "OpCoAdmin": "E2Eopco as Operator Administrator",
     "CustAdmin": "AutomationCust1 as Customer Administrator",
     "CustSMS": "AutomationCust1",
     "Cust2": "AutomationCust1",
@@ -1056,6 +1056,21 @@
    "FreshInactiveIMSI": "901289999900323",
    "BService": "getCustomerDetails",
        "Shortcode": "310000210"
-}
+},
+  "CustomerReports1": {
+    "Period1": "Range",
+    "Period2": "Last 30 days",
+    "StartDate": "2016-02-02",
+    "EndDate": "2018-01-02",
+    "CustName":"GDSP_Cust_R11_2",
+    "OpcoName":"E2Eopco",
+    "CSP1": "Auto1_CSP_IMEI",
+    "SIMId": "204043258711181",
+    "attribute1":"A",
+    "attribute2":"B",
+    "attribute3":"C",
+    "attribute4":"D",
+    "attribute5":"E"
+	}
 
 }
