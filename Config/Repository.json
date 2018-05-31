@@ -159,6 +159,7 @@
     "Devices": {
       "locator": "xpath",
       "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul[1]/li[1]/ul[1]/li[1]/span[1]/a[1]"
+
     },
     "Event triggers": {
       "locator": "xpath",
@@ -167,7 +168,7 @@
          },
     "Reports": {
       "locator": "xpath",
-      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul/li[5]/ul/li[3]/span[1]/a"
+      "locatorvalue":"//*[@id='__ns1790630358_headerMenu']/ul/li[6]/ul/li[3]/span[1]/a"
     },
     "Operators": {
       "locator": "xpath",
