@@ -38,6 +38,8 @@ Feature: SIM Operations
     Then verify text "M2M Dashboard"
     When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
+    When click on button "Search"
+    Then wait for 10 seconds
     Then select all from table
     When click on link "Export"
     When click on button "CSV"
@@ -55,6 +57,8 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
     When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
+    When click on button "Search"
+    Then wait for 10 seconds
     Then select all from table
     When click on link "Export"
     When click on button "CSV"
