@@ -9,19 +9,19 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_WildCardIMSINo"
     When click on button "Search"
     Then verify text "Results"
     Then verify text "matching result(s)"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaNameICCID" "USE_SIMOperations_ICCIDNo"
     When click on button "Search"
     Then verify text "Results"
     Then verify text "matching result(s)"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter "USE_USE_SIMOperations_TextAreaNameIMEI" "USE_SIMOperations_IMEINo"
     When click on button "Search"
@@ -36,7 +36,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select all from table
     When click on link "Export"
@@ -53,7 +53,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select all from table
     When click on link "Export"
@@ -74,7 +74,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select dropdown "State" "Inactive"
     When click on button "Search"
@@ -99,14 +99,14 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select dropdown "State" "Inactive"
     When click on button "Search"
     Then verify text "Results"
     Then wait for 5 seconds
     Then verify text "Inactive"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select dropdown "State" "Active.Live"
     When click on button "Search"
@@ -131,7 +131,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then select dropdown "State" "Inactive"
     When click on button "Search"
@@ -151,7 +151,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then enter textarea "IMSI" "USE_SIMOperations_IMSINo"
     When click on button "Search"
     Then verify text "Results"
@@ -186,7 +186,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -221,7 +221,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then enter textarea "IMSI" "USE_SIMOperations_IMSINo"
     When click on button "Search"
     Then verify text "Results"
@@ -256,7 +256,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -290,7 +290,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
     Then verify text "Results"
@@ -319,7 +319,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -352,7 +352,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -386,7 +386,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -406,7 +406,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -439,7 +439,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -478,7 +478,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then verify text "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"
@@ -508,7 +508,7 @@ Feature: SIM Operations
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "USE_SIMOperations_TextAreaName" "USE_SIMOperations_IMSINo"
     When click on button "Search"

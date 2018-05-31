@@ -12,7 +12,7 @@
       When click on link "USE_SIMDetails_OperatorAdministratorRole"
       Then verify text "USE_SIMDetails_CustomerAdministratorRole"
       When click on link "USE_SIMDetails_CustomerAdministratorRole"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMDetails_IMSI"
       When click on button "Search"
@@ -20,11 +20,12 @@
       When click on link "USE_SIMDetails_IMSI"
       Then verify text "Overview"
       When click on tab "Details"
+      Then wait for 15 seconds
       Then verify text "SIM"
       Then verify text "Connectivity services"
       Then verify text "Profiles and groups"
       Then verify text "Contract"
-      Then verify text "Recent data usage"
+      Then verify text "Recent usage"
       Then verify text "2G / 3G Mobility"
       When click on link "Connectivity services"
       Then verify text "Data Service"
@@ -32,7 +33,7 @@
       Then verify text "Service Profiles"
       When click on link "Contract"
       Then verify text "Tariff"
-      When click on link "Recent data usage"
+      When click on link "Recent usage"
       When click on link "2G / 3G Mobility"
       Then verify text "Registration information"
       Then logout
@@ -45,7 +46,7 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMDetails_IMSI"
       When click on button "Search"
@@ -57,7 +58,7 @@
       Then verify text "Connectivity services"
       Then verify text "Profiles and groups"
       Then verify text "Contract"
-      Then verify text "Recent data usage"
+      Then verify text "Recent usage"
       Then verify text "2G / 3G Mobility"
       When click on link "Connectivity services"
       Then verify text "Data Service"
@@ -65,7 +66,7 @@
       Then verify text "Service Profiles"
       When click on link "Contract"
       Then verify text "Tariff"
-      When click on link "Recent data usage"
+      When click on link "Recent usage"
       When click on link "2G / 3G Mobility"
       Then verify text "Registration information"
       Then logout
@@ -77,7 +78,7 @@
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMDetails_IMSI"
       When click on button "Search"
@@ -86,7 +87,6 @@
       Then verify text "Overview"
       When click on tab "Operations"
       Then verify text "Configure"
-      When click on link "Configure"
       Then verify text "Set Home Country"
       When click on link "Set Home Country"
       Then verify text "* New home country"

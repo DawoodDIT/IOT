@@ -50,26 +50,6 @@ Feature: SIM Custom Attributes
       Then verify text "Custom attributes"
       Then logout
 
-    @REG_R10_GUI_Manage_CA_005
-#      Success
-    Scenario: Test to verify whether Opco User can View Custom Attribute values for a SIM
-      Given test case starts
-      Given browser is open
-      Then login
-      Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
-      Then verify text "Results"
-      Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
-      Then verify text "Search"
-      When click on button "Search"
-      Then verify text "Results"
-      Then verify text "USE_SIMCustomAttributes_IMSI"
-      When click on link "USE_SIMCustomAttributes_IMSI"
-      Then verify text "Service Profile"
-      Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
-      Then verify text "USE_SIMCustomAttributes_CA1Value"
-      Then wait for 10 seconds
-      Then logout
 
     @REG_R7_GUI_Config_CA_005
 #     Success
@@ -104,7 +84,7 @@ Feature: SIM Custom Attributes
       When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
       Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
       When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       Then verify text "Search"
@@ -121,10 +101,33 @@ Feature: SIM Custom Attributes
       Then verify text "Overview"
       Then verify text "USE_SIMCustomAttributes_CA1Value"
       Then verify text "Devices"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
       Then wait for 10 seconds
       Then logout
+
+     @REG_R10_GUI_Manage_CA_005
+#      Success
+    Scenario: Test to verify whether Opco User can View Custom Attribute values for a SIM
+      Given test case starts
+      Given browser is open
+      Then login
+      Then verify text "M2M Dashboard"
+      When click menu "Devices" and submenu "Devices"
+      Then verify text "Results"
+      Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
+      Then verify text "Search"
+      When click on button "Search"
+      Then verify text "Results"
+      Then verify text "USE_SIMCustomAttributes_IMSI"
+      When click on link "USE_SIMCustomAttributes_IMSI"
+      Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
+      Then verify text "USE_SIMCustomAttributes_CA1Value"
+      Then wait for 10 seconds
+      Then logout
+
+
+
     @REG_R9_GUI_Config_CA_004
 #      Success
     Scenario: Test to verify whether Customer User can configure Available Custom Attributes to be available in Search SIMs screens
@@ -135,7 +138,7 @@ Feature: SIM Custom Attributes
       When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
       Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
       When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SIMCustomAttributes_IMSI"
       Then verify text "Search"
@@ -166,7 +169,7 @@ Feature: SIM Custom Attributes
       When click on link "USE_SIMCustomAttributes_OperatorAdministratorRole"
       Then verify text "USE_SIMCustomAttributes_CustomerAdministratorRole"
       When click on link "USE_SIMCustomAttributes_CustomerAdministratorRole"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then verify text "USE_SIMCustomAttributes_CustomAttribute1"
       Then enter "USE_SIMCustomAttributes_CustomAttribute1" "USE_SIMCustomAttributes_CA1Value"

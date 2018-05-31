@@ -43,7 +43,7 @@
        Given browser is open
        Then login
        Then verify text "M2M Dashboard"
-       When click menu "Devices" and submenu "All devices"
+       When click menu "Devices" and submenu "Devices"
        Then verify text "Results"
        Then enter textarea "IMSI" "USE_SIMGroups_IMSI"
        When click on button "Search"
@@ -71,7 +71,7 @@
        When click on link "USE_SIMGroups_OperatorAdministratorRole"
        Then verify text "USE_SIMGroups_CustomerAdministratorRole"
        When click on link "USE_SIMGroups_CustomerAdministratorRole"
-       When click menu "Devices" and submenu "All devices"
+       When click menu "Devices" and submenu "Devices"
        Then enter textarea "IMSI" "USE_SIMGroups_IMSI"
        When click on button "Search"
        Then verify text "Results"

@@ -9,7 +9,7 @@ Feature: SIM Management
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -29,7 +29,7 @@ Feature: SIM Management
     Then verify text "Change service profile"
     Then verify text "Set home country"
     Then verify text "Set IMEI"
-    Then verify text "New SIM record"
+#    Then verify text "New SIM record"
     Then logout
 
   @REG_R10_GUI_SIM_History_004
@@ -39,7 +39,7 @@ Feature: SIM Management
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -69,7 +69,7 @@ Feature: SIM Management
     Given browser is open
     Then login
     Then verify text "M2M Dashboard"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -87,8 +87,8 @@ Feature: SIM Management
     Then verify text "Results"
     Then verify text "Change service profile"
     When click on expand link "Change service profile"
-    Then verify text "Previous customer"
-    Then verify text "New customer"
+    Then verify text "New service profile"
+    Then verify text "Previous service profile"
     Then verify text "Event date"
     Then logout
 
@@ -103,7 +103,7 @@ Feature: SIM Management
     When click on link "USE_SIMHistory_OperatorAdministratorRole"
     Then verify text "USE_SIMHistory_CustomerAdministratorRole"
     When click on link "USE_SIMHistory_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -123,7 +123,7 @@ Feature: SIM Management
     Then verify text "Change service profile"
     Then verify text "Set home country"
     Then verify text "Set IMEI"
-    Then verify text "New SIM record"
+#    Then verify text "New SIM record"
     When click on link "USE_SIMHistory_CustomerAdministratorRole"
     When click on link "USE_SIMHistory_OperatorAdministratorRole"
     Then wait for 5 seconds
@@ -140,7 +140,7 @@ Feature: SIM Management
     When click on link "USE_SIMHistory_OperatorAdministratorRole"
     Then verify text "USE_SIMHistory_CustomerAdministratorRole"
     When click on link "USE_SIMHistory_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -177,7 +177,7 @@ Feature: SIM Management
     When click on link "USE_SIMHistory_OperatorAdministratorRole"
     Then verify text "USE_SIMHistory_CustomerAdministratorRole"
     When click on link "USE_SIMHistory_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"
@@ -212,7 +212,7 @@ Feature: SIM Management
     When click on link "USE_SIMHistory_OperatorAdministratorRole"
     Then verify text "USE_SIMHistory_CustomerAdministratorRole"
     When click on link "USE_SIMHistory_CustomerAdministratorRole"
-    When click menu "Devices" and submenu "All devices"
+    When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
     Then enter textarea "IMSI" "USE_SIMHistory_IMSI"
     When click on button "Search"

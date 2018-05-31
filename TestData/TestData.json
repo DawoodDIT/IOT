@@ -1,6 +1,5 @@
 {
   "SIMStateOperation": {
-    "InactiveIMSI": "111110001000000",
     "InactiveIMSI": "111115000303058",
     "SleepIMSI1": "111115000303050",
     "SleepIMSI2": "111115000303051",
@@ -24,7 +23,7 @@
     "userForReset": "butterfly123456@mailinator.com",
     "userForAccessRight": "butterfly123456@mailinator.com"
   },
-  "CustomerReports2": {
+    "CustomerReports2": {
     "opCo": "E2Eopco as Operator Administrator",
     "Cust": "GDSP_Cust_R11_2 as Customer Administrator",
     "CustName": "GDSP_Cust_R11_2",
@@ -462,6 +461,7 @@
     "CustomerAdministratorRole": "AutomationCust1 as Customer Administrator",
     "OperatorAdministratorRole": "E2Eopco as Operator Administrator",
     "PlatformAdministratorRole": "Platform as Platform Administrator",
+    "ResellerAdministratorRole": "E2Ereseller as Reseller Administrator",
     "Customer": "AutomationCust1",
     "IMSI2": "901289999900331",
     "IMSImsisdn": "882399999900323",
@@ -478,7 +478,7 @@
     "APIChartsPeriod": "Select range",
     "API4Reseller": "getDeviceUsageInfov3",
     "RangeBetween": "2015-06-01",
-    "RangeAnd": "2015-07-01",
+    "RangeAnd": "2018-05-30",
     "RangeBetween1": "2016-06-01",
     "RangeAnd1": "2018-02-07"
   },

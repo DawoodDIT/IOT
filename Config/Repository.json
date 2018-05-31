@@ -1,150 +1,184 @@
 {
-    "text": {
-       "MSISDN": {
-          "locator": "name",
-          "locatorvalue": "condition.msisdn"
-        }
-      },
-      "text": {
-       "Organization Short Code": {
-          "locator": "id",
-          "locatorvalue": "orgCode_value"
-        }
-      },
   "text": {
-       "APN": {
-          "locator": "id",
-          "locatorvalue": "__ns2036994902_apnNameSelectLbl"
-        }
-      },
-    "table":{
-      "device":{
-              "locator" : "id",
-              "locatorvalue": "__ns2036994902_tableColumns"
-      }
-    },
-    "button": {
-       "Refresh": {
-          "locator": "id",
-          "locatorvalue": "__ns2036993941_refreshPage"
-        },
-      "m2mHome": {
-          "locator": "id",
-          "locatorvalue": "__ns1790630358_homeLnk2"
-        },
-        "SelectFile": {
-          "locator": "id",
-          "locatorvalue": "__ns2036994902_selectFile"
-        },
-	"removegroup":{
-        "locator":"class",
-        "locatorvalue":"remove"
-    },
-       "VPN Plus": {
-          "locator": "id",
-          "locatorvalue": "__ns2036993941_newVPNBtn"
-        },
-       "APN Plus": {
-          "locator": "id",
-          "locatorvalue": "__ns2036994902_addNewAPNProfilePlus"
-        },
-	"MCCMNC Plus": {
-          "locator": "id",
-          "locatorvalue": "__ns2036993941_newMccMncBtn"
-        },
-	"Webservice Plus": {
-          "locator": "id",
-          "locatorvalue": "__ns2036993941_newWebServiceBtn"
-        },
-       "AddContact": {
-          "locator": "id",
-          "locatorvalue": "__ns2036993941_newContactBtn"
-        },
-      "editContact":{
-         "locator": "id",
-         "locatorvalue":"__ns2036993941_contact0editBtn"
-       },
-
-      "saveContact":{
-      "locator": "id",
-         "locatorvalue":"__ns2036993941_contact0saveBtnText"
-    },
-
-      "searchUser":{
-        "locator":"id",
-        "locatorvalue":"__ns2036994902_searchFiltersSearchBtnText"
-    },
- "clearFilters":{
-      "locator":"id",
-      "locatorvalue":"__ns2036994902_searchFiltersCleanFilters"
-    },
-
- "hamBurgerBefore":{
-    "locator":"xpath",
-    "locatorvalue":"//button[@class='ColVis_Button TableTools_Button ColVis_MasterButton']"
+    "MSISDN": {
+      "locator": "name",
+      "locatorvalue": "condition.msisdn"
+    }
   },
-
-
-  "hamBurgerAfter":{
-    "locator":"xpath",
-    "locatorvalue":"//div[@class='ColVis_catcher TableTools_catcher']"
-  }
-
-      },
+  "text": {
+    "Organization Short Code": {
+      "locator": "id",
+      "locatorvalue": "orgCode_value"
+    }
+  },
+  "text": {
+    "APN": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_apnNameSelectLbl"
+    }
+  },
+  "table": {
+    "device": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_tableColumns"
+    }
+  },
+  "button": {
+    "OrderSim": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_confirmBtn"
+    },
+    "removeSimMovCust": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns2036993941_organisationInputTree4FieldBlock']/a"
+    },
+    "Refresh": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_refreshPage"
+    },
+    "m2mHome": {
+      "locator": "id",
+      "locatorvalue": "__ns1790630358_homeLnk2"
+    },
+    "SelectFile": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_selectFile"
+    },
+    "removegroup": {
+      "locator": "css",
+      "locatorvalue": "a.remove"
+    },
+    "VPN Plus": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_newVPNBtn"
+    },
+    "APN Plus": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_addNewAPNProfilePlus"
+    },
+    "MCCMNC Plus": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_newMccMncBtn"
+    },
+    "Webservice Plus": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_newWebServiceBtn"
+    },
+    "AddContact": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_newContactBtn"
+    },
+    "editContact": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_contact0editBtn"
+    },
+    "saveContact": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_contact0saveBtnText"
+    },
+    "searchUser": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_searchFiltersSearchBtnText"
+    },
+    "clearFilters": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_searchFiltersCleanFilters"
+    },
+    "hamBurgerBefore": {
+      "locator": "xpath",
+      "locatorvalue": "//button[@class='ColVis_Button TableTools_Button ColVis_MasterButton']"
+    },
+    "hamBurgerAfter": {
+      "locator": "xpath",
+      "locatorvalue": "//div[@class='ColVis_catcher TableTools_catcher']"
+    },
+    "Create event trigger": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_createEventBtn"
+    },
+    "EvenTriggerNext": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_continueBtn"
+    }
+  },
   "radiobutton": {
-       "Default": {
-          "locator": "id",
-          "locatorvalue": "__ns2036994902_mccMncDefault"
-        }
-      },
-
+    "Default": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_mccMncDefault"
+    }
+  },
   "uploadbutton": {
-     "Select file": {
-        "locator": "id,id",
-        "locatorvalue": "attchFileId,batchFileId"
-      }
+    "Select file": {
+      "locator": "id,id",
+      "locatorvalue": "attchFileId,batchFileId"
+    }
+  },
+  "link": {
+    "TXT": {
+      "locator": "class",
+      "locatorvalue": "batchType"
+    }
+  },
+  "tab": {
+    "Device_Tools": {
+      "locator": "id",
+      "locatorvalue": "__ns2036994902_tab_Tools"
+    }
+  },
+  "expandlink": {
+    "Newvpn": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@class='vpn_name pull-left']"
+    }
+  },
+  "checkbox": {
+    "Incoming": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_blockIncoming1RW"
     },
-   "link": {
-     "TXT": {
-
-        "locator": "class",
-        "locatorvalue": "batchType"
-      }
+    "Outgoing": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_blockOutgoing1RW"
     },
-    "tab": {
-       "Device_Tools": {
-          "locator": "id",
-          "locatorvalue": "__ns2036994902_tab_Tools"
-        }
-      }
-	,
-    "expandlink": {
-      "Newvpn": {
-         "locator":"xpath",
-         "locatorvalue":"//*[@class='vpn_name pull-left']"
-        }
-      },
-    "checkbox": {
-      "Incoming": {
-         "locator":"id",
-         "locatorvalue":"__ns2036993941_blockIncoming1RW"
-        }, "Outgoing": {
-         "locator":"id",
-         "locatorvalue":"__ns2036993941_blockOutgoing1RW"
-        }
-      },
-    "checkbox2": {
-      "Incoming": {
-         "locator":"id",
-         "locatorvalue":"__ns2036993941_allowIncoming2RW"
-        }, "Outgoing": {
-         "locator":"id",
-         "locatorvalue":"__ns2036993941_allowOutgoing2RW"
-        }
-      }
+    "included on": {
+      "locator": "id",
+      "locatorvalue": "customAttributeAvailableOnReport1"
+    }
+  },
+  "checkbox2": {
+    "Incoming": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_allowIncoming2RW"
+    },
+    "Outgoing": {
+      "locator": "id",
+      "locatorvalue": "__ns2036993941_allowOutgoing2RW"
+    }
+  },
+  "submenu": {
+    "Devices": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul[1]/li[1]/ul[1]/li[1]/span[1]/a[1]"
+    },
+    "Event triggers": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul/li[4]/ul/li[1]/span[4]/a"
 
-
+         },
+    "Reports": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul/li[5]/ul/li[3]/span[1]/a"
+    },
+    "Operators": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul[1]/li[6]/ul[1]/li[3]/span[1]/a[1]"
+    },
+    "Resellers": {
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns1790630358_headerMenu']/ul/li[3]/ul/li[1]/span[4]/a"
+    }
   }
+}
   
 
 

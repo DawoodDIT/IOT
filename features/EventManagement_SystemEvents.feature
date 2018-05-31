@@ -167,6 +167,7 @@ Feature: System Events part of Event Management functionality
       | Event trigger                  | Entity type |
       | Active.Ready to Active.Standby | System      |
     When click on link "Active.Ready to Active.Standby"
+    Then wait for 10 seconds
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
@@ -178,6 +179,7 @@ Feature: System Events part of Event Management functionality
       | Event trigger                  | Entity type |
       | Active.Suspend to Active.Sleep | System      |
     When click on link "Active.Active.Suspend to Active.Sleep"
+    Then wait for 10 seconds
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
@@ -189,6 +191,7 @@ Feature: System Events part of Event Management functionality
       | Event trigger                  | Entity type |
       | Inactive.Stopped to Terminated | System      |
     When click on link "Inactive.Stopped to Terminated"
+    Then wait for 10 seconds
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
@@ -200,6 +203,7 @@ Feature: System Events part of Event Management functionality
       | Event trigger               | Entity type |
       | Notify Imminent Termination | System      |
     When click on link "Notify Imminent Termination"
+    Then wait for 10 seconds
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"
@@ -211,6 +215,7 @@ Feature: System Events part of Event Management functionality
       | Event trigger                      | Entity type |
       | Notify Inactive.Stopped Transition | System      |
     When click on link "Notify Inactive.Stopped Transition"
+    Then wait for 10 seconds
     Then verify no text "Edit"
     Then verify no text "Organisation"
     When click on link "Back"

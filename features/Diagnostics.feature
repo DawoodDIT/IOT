@@ -1,7 +1,7 @@
 @Diagnostics
 Feature: Diagnostics
  This feature covers Diagnostics functionality.
-#  Ready for 19th March batch
+
 
   @REG_R10_GUI_APN_001
 #    Success
@@ -86,7 +86,7 @@ Feature: Diagnostics
       Then verify text "Connectivity services"
       When click on link "Connectivity services"
       Then verify text "Data service"
-      Then verify no text "None"
+#      Then verify no text "None"
       Then verify text "APN"
       Then logout
 
@@ -98,7 +98,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then verify text "Search"
@@ -160,7 +160,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then verify text "Search"
@@ -172,8 +172,8 @@ Feature: Diagnostics
       When click on tab "Device_Tools"
       When click on button "Diagnostic trace"
       Then select dropdown "Type" "SMS"
-#      Then select dropdown "Duration" "30 minutes"
-      Then select dropdown "Extend by" "30 minutes"
+      Then select dropdown "Duration" "30 minutes"
+#      Then select dropdown "Extend by" "30 minutes"
       When click on button "Submit"
       Then verify text "The diagnostic trace was successfully submitted."
 #      Mobile Part
@@ -221,7 +221,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then verify text "Search"
@@ -283,7 +283,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_IMSI"
       Then verify text "Search"
@@ -386,7 +386,7 @@ Feature: Diagnostics
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
-      When click menu "Devices" and submenu "All devices"
+      When click menu "Devices" and submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Diagnostics_MultipleSIMs"
       Then verify text "Search"
@@ -571,8 +571,8 @@ Feature: Diagnostics
       Then verify text "Status"
       When click on button "Edit"
       Then select dropdown "Type" "Radius"
-#      Then select dropdown "Duration" "30 minutes"
-      Then select dropdown "Extended by" "30 minutes"
+      Then select dropdown "Duration" "30 minutes"
+#      Then select dropdown "Extended by" "30 minutes"
       When click on button "Save"
       Then verify text "Expires on"
       Then store time in "time1"
