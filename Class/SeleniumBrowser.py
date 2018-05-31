@@ -36,6 +36,9 @@ class SeleniumBrowser:
         self.get_input_type = Module.Utility.ReadDataFromJsonFile("tool", "configfile")
         self.dic = {}
         self.driver.maximize_window()
+       # self.driver.set_window_position(-3000, 0)
+
+
 
         Module.RecordTime.calculateTime("SeleniumBrowser_init", time.perf_counter() - t1)
         Module.RecordTime.calculateTime("AutomationTime", time.perf_counter() - t1)
@@ -281,6 +284,7 @@ class SeleniumBrowser:
             except:
                 Module.logger.DEBUG("Exception in driver.quit")
         #Module.Report.stopJVM()
+
 
 
     def addValueToDic(self,valuetoStore,valueToAdd):
