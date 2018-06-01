@@ -79,7 +79,7 @@
        When click on link "USE_SIMGroups_IMSI"
        When click on tab "Operations"
        Then verify text "Configure"
-       When click on link "Configure"
+#       When click on link "Configure"
        Then verify text "Set groups"
        When click on link "Set groups"
        #Removal of SIM Group is not working
