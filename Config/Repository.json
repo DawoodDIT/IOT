@@ -32,6 +32,10 @@
       "locator": "xpath",
       "locatorvalue": "//*[@id='__ns2036993941_organisationInputTree4FieldBlock']/a"
     },
+    "removeSIMgroup":{
+      "locator": "xpath",
+      "locatorvalue": "//*[@id='__ns2036993941_groups_chosen']/ul[1]/li[1]/a[1]"
+    },
     "Refresh": {
       "locator": "id",
       "locatorvalue": "__ns2036993941_refreshPage"

@@ -82,8 +82,10 @@
 #       When click on link "Configure"
        Then verify text "Set groups"
        When click on link "Set groups"
+       Then wait for 5 seconds
        #Removal of SIM Group is not working
-       Then remove options "USE_SIMGroups_GroupName" from dropdown "Groups"
+#       Then remove options "USE_SIMGroups_GroupName" from dropdown "Groups"
+       When click on button "removeSIMgroup"
        When click on button "Set"
        Then Verify text "were successfully set"
        When click on link "USE_SIMGroups_CustomerAdministratorRole"
