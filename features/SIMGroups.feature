@@ -52,7 +52,7 @@
        Then verify text "Overview"
        When click on tab "Operations"
        Then verify text "Configure"
-       When click on link "Configure"
+#       When click on link "Configure"
        Then verify text "Set groups"
        When click on link "Set groups"
        Then select dropdown "Groups" "USE_SIMGroups_GroupName"
