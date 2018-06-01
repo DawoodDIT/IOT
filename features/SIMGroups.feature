@@ -10,7 +10,7 @@
        Given browser is open
        Then login
        Then verify text "M2M Dashboard"
-       When click on link "USE_OperatorAdministratorRole"
+       When click on link "USE_SIMGroups_OperatorAdministratorRole"
        Then verify text "USE_SIMGroups_CustomerAdministratorRole"
        When click on link "USE_SIMGroups_CustomerAdministratorRole"
        When click menu "Administration" and submenu "My organisation"
