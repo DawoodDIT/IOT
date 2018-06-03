@@ -2,24 +2,24 @@
   "tool": {
     "browserType": "chrome",
     "timeout": 60,
-    "loglevel": "ERROR",
-    "reportlevel":"feature",
-    "configfile":"json",
-    "reporttype":"ALL"
+    "loglevel": "DEBUG",
+    "reportlevel": "feature",
+    "configfile": "json",
+    "reporttype": "ALL"
   },
-  "button":{
-    "locator":"tag_name,css,tag_name,tag_name,tag_name",
-    "locatorvalue":"button,input,input,a,span"
+  "button": {
+    "locator": "tag_name,css,tag_name,tag_name,tag_name",
+    "locatorvalue": "button,input,input,a,span"
   },
-  "menu":{
-    "locator":"tag_name",
-    "locatorvalue":"a"
+  "menu": {
+    "locator": "tag_name",
+    "locatorvalue": "a"
   },
   "submenu": {
     "locator": "tag_name",
     "locatorvalue": "a"
   },
-   "text": {
+  "text": {
     "locator": "tag_name,tag_name",
     "locatorvalue": "label,td"
   },
@@ -27,10 +27,10 @@
     "locator": "tag_name",
     "locatorvalue": "label"
   },
- "link": {
-   "locator": "tag_name,tag_name,tag_name,tag_name,tag_name",
-   "locatorvalue": "a,span,p,select,option"
-},
+  "link": {
+    "locator": "tag_name,tag_name,tag_name,tag_name,tag_name",
+    "locatorvalue": "a,span,p,select,option"
+  },
   "expandlink": {
     "locator": "tag_name,tag_name,tag_name",
     "locatorvalue": "strong,span,p"
@@ -43,51 +43,48 @@
     "locator": "tag_name",
     "locatorvalue": "label"
   },
-  "radiobutton":{
+  "radiobutton": {
     "locator": "tag_name",
-    "locatorvalue":"label"
+    "locatorvalue": "label"
   },
-  "statictext":{
+  "statictext": {
     "locator": "tag_name,tag_name,tag_name",
-    "locatorvalue":"div,label,strong"
+    "locatorvalue": "div,label,strong"
   },
-  "input":{
+  "input": {
     "locator": "tag_name",
-    "locatorvalue":"label"
+    "locatorvalue": "label"
   },
-  "list":{
+  "list": {
     "locator": "tag_name",
-    "locatorvalue":"li"
+    "locatorvalue": "li"
   },
-   "date":{
+  "date": {
     "locator": "tag_name",
-    "locatorvalue":"label"
+    "locatorvalue": "label"
   },
-  "checkbox":{
+  "checkbox": {
     "locator": "tag_name",
-    "locatorvalue":"label"
+    "locatorvalue": "label"
   },
-    "tab":{
+  "tab": {
     "locator": "tag_name",
-    "locatorvalue":"a"
+    "locatorvalue": "a"
   },
-   "table":{
-  "locator": "tag_name",
-  "locatorvalue":"td"
-},
-   "searchResult":{
-  "locator": "class_name",
-  "locatorvalue":"active-result"
-},
-
- "tableHeader": {
-   "locator": "xpath",
-   "locatorvalue": "//tr/th[@role='columnheader']"
- },
-
-"hamburgerMenu":{
-     "locator":"class_name",
-     "locatorvalue":"ColVis_title"
-   }
-
+  "table": {
+    "locator": "tag_name",
+    "locatorvalue": "td"
+  },
+  "searchResult": {
+    "locator": "class_name",
+    "locatorvalue": "active-result"
+  },
+  "tableHeader": {
+    "locator": "xpath",
+    "locatorvalue": "//tr/th[@role='columnheader']"
+  },
+  "hamburgerMenu": {
+    "locator": "class_name",
+    "locatorvalue": "ColVis_title"
+  }
 }
