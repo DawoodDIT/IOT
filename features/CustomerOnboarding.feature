@@ -105,8 +105,11 @@ Feature: Customer On Boarding
       When click on button "Edit" on position 3
       Then select radiobutton "Enabled" on position 2
       When click on button "Save"
+      Then wait for 30 seconds
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
+      Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
+      Then verify text "M2M Dashboard"
       When click on menu "Devices"
       Then wait for 5 seconds
       Then verify text "SMS inbox"
@@ -114,6 +117,7 @@ Feature: Customer On Boarding
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
       Then verify text "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
+      Then verify text "M2M Dashboard"
       When click menu "Administration" and submenu "Customers"
       Then verify text "Results"
       Then enter "Organisation" "USE_CustomerOnboarding_Customer"
@@ -128,11 +132,12 @@ Feature: Customer On Boarding
       When click on button "Edit" on position 3
       Then select radiobutton "Disabled" on position 2
       When click on button "Save"
-      Then wait for 10 seconds
+      Then wait for 30 seconds
       Then verify text "USE_CustomerOnboarding_OperatorAdministratorRole"
       When click on link "USE_CustomerOnboarding_OperatorAdministratorRole"
       Then verify text "USE_CustomerOnboarding_CustomerAdministratorRole"
       When click on link "USE_CustomerOnboarding_CustomerAdministratorRole"
+      Then verify text "M2M Dashboard"
       When click on menu "Devices"
       Then verify no text "SMS inbox"
       Then logout
