@@ -45,7 +45,7 @@ Feature: Customer On Boarding
       When click on tab "Details"
       Then verify text "Primary SIM identifier"
       When click on button "Edit" on position 3
-      When click on button "removeSimMovCust"
+      When click on button "* Customer"
       When click on button "Save"
       Then wait for 10 seconds
       Then verify text "No customers configured"
