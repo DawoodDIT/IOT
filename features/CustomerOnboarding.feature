@@ -28,6 +28,28 @@ Feature: Customer On Boarding
       Then verify no text "This is a mandatory field"
       Then logout
 
+    @RestorationData_TestCase_017_IgnoreResults
+      Given test case starts
+      Given browser is open
+      Then login
+      Then verify text "M2M Dashboard"
+      When click menu "Administration" and submenu "Customers"
+      Then verify text "Results"
+      Then enter "Organisation" "USE_CustomerOnboarding_Customer"
+      When click on button "Search"
+      Then verify text "Results"
+      Then verify text "USE_CustomerOnboarding_Customer"
+      When click on link "USE_CustomerOnboarding_Customer"
+      Then verify text "Overview"
+      When click on tab "Details"
+      Then verify text "Primary SIM identifier"
+      When click on button "Edit" on position 3
+      When click on button "removeSimMovCust"
+      When click on button "Save"
+      Then wait for 10 seconds
+      Then logout
+
+
     @REG_R10_GUI_Customer_Onboarding_018
 #      Success
     Scenario: Test to verify the functionality to copy a customer
