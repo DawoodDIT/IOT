@@ -29,6 +29,7 @@ Feature: Customer On Boarding
       Then logout
 
     @RestorationData_TestCase_017_IgnoreResults
+    Scenario: This test case is designed to restore the test data created on portal in TC 017, This is not part of actual test count
       Given test case starts
       Given browser is open
       Then login
