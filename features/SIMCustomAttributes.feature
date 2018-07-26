@@ -32,6 +32,7 @@ Feature: SIM Custom Attributes
     @REG_R9_GUI_Config_CA_003
 #       Success
     Scenario: Test to verify whether Customer User can Modify their own Naming and other options for enabled Custom Attributes
+      Given test case starts
       Given browser is open
       Then login
       Then verify text "M2M Dashboard"
