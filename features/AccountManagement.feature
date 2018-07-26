@@ -4,7 +4,7 @@ Feature:AccountManagement
    @TC_AccountManagement_022_006_CreateContact
    Scenario:Test to verify that Customer User can add a contact to their contact list
 
-      Given test case startsssss
+      Given test case start
       Given browser is open
       Then login
       When click on menu "Administration"
