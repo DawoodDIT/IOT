@@ -8,7 +8,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_Restricted"
       When click on button "Search"
@@ -27,7 +27,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_Purged"
       When click on button "Search"
@@ -46,7 +46,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_BarredNoUsage"
       When click on button "Search"
@@ -65,7 +65,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_BarredWithUsage"
       When click on button "Search"
@@ -84,7 +84,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_ActiveNoUsage"
       When click on button "Search"
@@ -104,7 +104,7 @@ Feature:  SubscriberState
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_SubscriberState_FailedPSIResponse"
       When click on button "Search"
