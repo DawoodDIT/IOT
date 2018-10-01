@@ -4,7 +4,7 @@ Feature:AccountManagement
    @TC_AccountManagement_022_006_CreateContact
    Scenario:Test to verify that Customer User can add a contact to their contact list
 
-      Given test case start
+      Given test case starts
       Given browser is open
       Then login
       When click on menu "Administration"
@@ -36,60 +36,95 @@ Feature:AccountManagement
    @TC_AccountManagement_024_UserFilter
    Scenario:Verify that Customer user can view details for all the users associated with their account and is able to use the different filter options
 
-
-      Given test case starts
-      Given browser is open
-      Then login
-      When click on menu "Administration"
+     Given test case starts
+     Given browser is open
+     Then login
+     When click on menu "Administration"
      Then verify text "Users"
-      When click on submenu "Users"
+     When click on submenu "Users"
+     Then enter "Username" "USE_AccountManagement_admin"
+     When click on button "Search"
+     Then verify text "1 matching result(s)."
+     When click on button "Clear fields"
+     Then enter "Role" "Operator Support"
+     Then wait for 5 seconds
+     When click on button "Search"
+     Then verify text "matching result(s)."
+     When click on button "Clear fields"
+     Then select check box "Directly under only"
+     Then enter "Name" "USE_AccountManagement_name"
+     When click on button "Search"
+     Then verify text "No results were found"
+     When click on button "Clear fields"
+     Then select dropdown "Status" "Blocked"
+     When click on button "Search"
+     Then verify text "matching result(s)."
+     When click on button "Clear fields"
 
+     Then logout
 
-      Then enter "Username" "USE_AccountManagement_admin"
-      When click on button "searchUser"
-      Then verify text "1 matching result(s)."
-      #When click on button "clearFilters"
-      When click on button "Clear fields"
-
-      Then enter "Role" "Operator Support"
-      Then wait for 5 seconds
-      When click on search result "Operator Support"
-      Then wait for 5 seconds
-      When click on button "searchUser"
-      Then verify text "matching result(s)."
-      When click on button "clearFilters"
-      When click on link "Remove All"
-      Then select check box "Only directly related"
-      Then select check box "Only directly related"
-
-      Then enter "Name" "USE_AccountManagement_name"
-      When click on button "searchUser"
-      Then verify text "1 matching result(s)."
-      When click on button "clearFilters"
-
-      When click on button "clearFilters"
-      Then select dropdown "Status" "Blocked"
-      When click on button "searchUser"
-      Then verify text "matching result(s)."
-      When click on button "clearFilters"
-
-
-      Then logout
 
    @TC_AccountManagement_002_UpdateUser_Admin
    Scenario:Test to verify that Customer User can maintain their own details
 
 
+#      Given test case starts
+#      Given browser is open
+#      Then login
+#      When click on menu "Administration"
+#      Then verify text "Users"
+#      When click on submenu "Users"
+#      Then enter "Username" "USE_AccountManagement_admin"
+#      When click on button "Search"
+#      When click on link "USE_AccountManagement_admin"
+#      When click on button "Edit"
+#      Then generate "12" random numbers and store in "RandomNum"
+#      Then join below strings and store in "randomPhoneNo"
+#          |strings|
+#          |+|
+#          |RandomNum|
+#      Then generate "5" random alphabets and store in "randomJob"
+#      Then enter "Mobile" "randomPhoneNo"
+#       Then enter "Job Title" "randomJob"
+#      When click on button "Save"
+#      Then wait for 20 seconds
+#  #    Then get value of "Mobile" and store in "newPhoneNo"
+#  #    Then verify if "newPhoneNo" "equal" "randomPhoneNo"
+#  #    Then get value of "Job Title" and store in "newJob"
+# #    Then verify if "newJob" "equal" "randomJob"
+#      When click on menu "Administration"
+#      When click on submenu "My Organisation"
+#      Then verify text "Overview"
+#      When click on link "Details"
+#      Then verify text "Devices"
+#      When click on link "Contacts and notifications"
+#      Then verify text "Notifications"
+#      When click on link "USE_AccountManagement_admin"
+#      When click on button "editContact"
+#      Then generate "12" random numbers and store in "RandomNum1"
+#      Then join below strings and store in "randomPhoneNo1"
+#          |strings|
+#          |+|
+#          |RandomNum1|
+#      Then generate "10" random alphabets and store in "randomAddress"
+#      Then enter "Secondary contact number" "randomPhoneNo1"
+#      Then enter textarea "Address" "randomAddress"
+#      When click on button "saveContact"
+#      Then wait for 60 seconds
+#      Then get value of "Secondary contact number" and store in "newPhoneNo1"
+##      Then verify if "newPhoneNo1" "equal" "randomPhoneNo1"
+##      Then get value of "Address" and store in "newAddress1"
+##      Then verify if "newAddress1" "equal" "randomAddress"
+#      Then logout
+
       Given test case starts
       Given browser is open
       Then login
       When click on menu "Administration"
-     Then verify text "Users"
+      Then verify text "Users"
       When click on submenu "Users"
-
-
       Then enter "Username" "USE_AccountManagement_admin"
-      When click on button "searchUser"
+      When click on button "Search"
       When click on link "USE_AccountManagement_admin"
       When click on button "Edit"
       Then generate "12" random numbers and store in "RandomNum"
@@ -99,25 +134,19 @@ Feature:AccountManagement
           |RandomNum|
       Then generate "5" random alphabets and store in "randomJob"
       Then enter "Mobile" "randomPhoneNo"
-      Then enter "Job Title" "randomJob"
+       Then enter "Job Title" "randomJob"
       When click on button "Save"
-      Then wait for 60 seconds
-      Then get value of "Mobile" and store in "newPhoneNo"
-      Then verify if "newPhoneNo" "equal" "randomPhoneNo"
-      Then get value of "Job Title" and store in "newJob"
-      Then verify if "newJob" "equal" "randomJob"
-
+      Then wait for 20 seconds
       When click on menu "Administration"
+      Then verify text "Organisation"
       When click on submenu "My organisation"
       Then verify text "Overview"
       When click on link "Details"
       Then verify text "Devices"
       When click on link "Contacts and notifications"
       Then verify text "Notifications"
-
-
       When click on link "USE_AccountManagement_admin"
-      When click on button "editContact"
+      When click on button "Edit"
       Then generate "12" random numbers and store in "RandomNum1"
       Then join below strings and store in "randomPhoneNo1"
           |strings|
@@ -128,13 +157,6 @@ Feature:AccountManagement
       Then enter textarea "Address" "randomAddress"
       When click on button "saveContact"
       Then wait for 60 seconds
-      Then get value of "Secondary contact number" and store in "newPhoneNo1"
-      Then verify if "newPhoneNo1" "equal" "randomPhoneNo1"
-      Then get value of "Address" and store in "newAddress1"
-      Then verify if "newAddress1" "equal" "randomAddress"
-
-
-
       Then logout
 
     @TC_AccountManagement_003_UpdateUser_NotAdmin
@@ -167,8 +189,7 @@ Feature:AccountManagement
       Then get value of "Job Title" and store in "newJob"
       Then verify if "newJob" "equal" "randomJob"
 
-      When click on menu "Administration"
-      When click on submenu "My organisation"
+      When click on menu "Administration on submenu "My organisation"
       Then verify text "Overview"
       When click on link "Details"
       Then verify text "Devices"
@@ -188,13 +209,6 @@ Feature:AccountManagement
       Then enter textarea "Address" "randomAddress"
       When click on button "saveContact"
       Then wait for 60 seconds
-      Then get value of "Secondary contact number" and store in "newPhoneNo1"
-      Then verify if "newPhoneNo1" "equal" "randomPhoneNo1"
-      Then get value of "Address" and store in "newAddress1"
-      Then verify if "newAddress1" "equal" "randomAddress"
-
-
-
       Then logout
 
    @TC_AccountManagement_023_ValidateEmail
@@ -213,20 +227,13 @@ Feature:AccountManagement
       Then wait for 5 seconds
       Then verify text "Notifications"
       When click on button "AddContact"
-
-
-
-
       Then generate unique name starts with "Auto_" and store in "RanName"
       Then enter "* Name" "RanName"
       Then enter "* Primary contact number" "+440987654321"
       Then enter "Secondary contact number" "+441234567890"
       Then enter "* Email" "abc#gmail.com"
       Then enter textarea "Address" "SampleAddress"
-
-
-     Then wait for 5 seconds
-
+      Then wait for 5 seconds
       When click on link "Save"
       Then verify text "Please enter a valid e-mail"
       Then enter "* Email" "abc@gmail.com"
@@ -241,45 +248,43 @@ Feature:AccountManagement
    @TC_AccountManagement_044_CreateAPIGroup
    Scenario:Verify that Platform user can create a new SIM Profile
 
+       Given test case starts
+       Given browser is open
+       Then login
+       When click on link "E2Eopco as Operator Administrator"
+       Then verify text "Platform as Platform Administrator"
+       When click on link "Platform as Platform Administrator"
+       When click on menu "Administration"
+       Then verify text "API groups"
+       When click on submenu "API groups"
+       Then verify text "Please use the search options on the left to search for API groups"
+       When click on button "Create API group"
+       Then verify text "API groups detail"
+       Then generate unique name starts with "Auto_" and store in "RanName"
+       Then enter "API group name" "RanName"
+       Then enter "Description" "SampleDescription"
+       Then select dropdown "Access level" "Platform"
+       Then select dropdown "APIs" "createUser"
+       When click on button "Next"
 
-        Given test case starts
-        Given browser is open
-        Then login
-        When click on link "PPVGE as Operator Administrator"
-        Then verify text "Platform as Platform Administrator"
-        When click on link "Platform as Platform Administrator"
-        When click on menu "Administration"
-        Then verify text "API groups"
-        When click on submenu "API groups"
-        Then verify text "Please use the search options on the left to search for API groups"
-        When click on button "Create API group"
-        Then verify text "API groups detail"
-        Then generate unique name starts with "Auto_" and store in "RanName"
-        Then enter "API group name" "RanName"
-        Then enter "Description" "SampleDescription"
-        Then select dropdown "Access level" "Platform"
-        Then select dropdown "APIs" "createUser"
-        When click on button "Next"
+       Then verify text "Please confirm the following data."
+       When click on button "Create"
+       Then verify text "was successfully created!"
+       When click on button "Go to API groups"
+       Then verify text "API groups"
+       Then enter "API group" "RanName"
+       When click on button "Search"
+       Then verify text "1 matching result(s)."
 
-        Then verify text "Please confirm the following data."
-        When click on button "Create"
-        Then verify text "was successfully created!"
-        When click on button "Go to API groups"
-        Then verify text "API groups"
-        Then enter "API group" "RanName"
-        When click on button "Search"
-        Then verify text "1 matching result(s)."
-
-        When click on link "RanName"
-        Then verify text "Information"
-        When click on button "Edit"
-        Then enter "Description" "Different"
-        When click on button "Save"
-        Then wait for 60 seconds
-        Then get value of "Description" and store in "newDescription"
-        Then verify if "newDescription" "equal" "Different"
-        Then logout
-
+       When click on link "RanName"
+       Then verify text "Information"
+       When click on button "Edit"
+       Then enter "Description" "Different"
+       When click on button "Save"
+       Then wait for 60 seconds
+       Then get value of "Description" and store in "newDescription"
+       Then verify if "newDescription" "equal" "Different"
+       Then logout
 
 
    @TC_AccountManagement_014_ConfigureSearchResult
@@ -288,21 +293,25 @@ Feature:AccountManagement
         Given test case starts
         Given browser is open
         Then login
+        When click on link "E2Eopco as Operator Administrator"
+       Then verify text "AutomationCust1 as Customer Administrator"
+       When click on link "AutomationCust1 as Customer Administrator"
         When click on menu "Devices"
-        Then verify text "All devices"
-        When click on submenu "All devices"
+        Then verify text "Devices"
+        When click on submenu "Devices"
         Then verify text "Results"
+        When click on button "Search"
         Then wait for 5 seconds
-        When click on button "hamBurgerBefore"
+        When click on button "hamBurger"
         When click on button "ICCID"
         When click on button "CSD MSISDN"
         When click on button "IMEI (assigned)"
-        When click on button "Linked Device"
-        When click on button "Custom attribute 1"
-        When click on button "Custom attribute 2"
-        When click on button "Custom attribute 3"
-        When click on button "Custom attribute 4"
-        When click on button "Custom attribute 5"
+#        When click on button "Linked Device"
+        When click on button "CustomAttribute1"
+        When click on button "ATTRIBUTE2"
+        When click on button "ATTRIBUTE3"
+        When click on button "ATTRIBUTE4"
+        When click on button "ATTRIBUTE5"
         When click on button "Data session status"
         When click on button "Tariff"
         When click on button "VPN group"
@@ -312,19 +321,19 @@ Feature:AccountManagement
         When click on button "Has been Active.live"
         When click on button "Has been Active.test"
         Then wait for 5 seconds
-        When click on button "hamBurgerAfter"
-        When click on button "Search"
+        When click on button "hamBurger2"
+       # When click on button "Search"
 
         Then wait for 10 seconds
         Then verify
         |type|value|
         |tableHeader|IMSI|
         |tableHeader|State|
-        |tableHeader|Organisation|
-        |tableHeader|Parent Organisation|
         |tableHeader|ICCID|
-        Then verify hidden header "CSD MSISDN"
-        Then verify hidden header "IMEI (assigned)"
+        |tableHeader|CSD MSISDN|
+        |tableHeader|IMEI (assigned)|
+        #Then verify hidden header "CSD MSISDN"
+    #    Then verify hidden header "IMEI (assigned)"
         Then verify hidden header "Linked Device"
         Then verify hidden header "Custom attribute 1"
         Then verify hidden header "Custom attribute 2"
@@ -338,8 +347,57 @@ Feature:AccountManagement
         Then verify hidden header "First used on"
         Then verify hidden header "Active.test started on"
         Then verify hidden header "Has been Active.live"
-        Then verify hidden header "Has been Active.test"
+        #Then verify hidden header "Has been Active.test"
         Then logout
+
+#        Given test case starts
+#        Given browser is open
+#        Then login
+#        When click on menu "Devices"
+#        Then verify text "Devices"
+#        When click on submenu "Devices"
+#        Then verify text "Results"
+#        Then wait for 5 seconds
+#        Then verify text "Organisation"
+#        Then verify text "State"
+#         Then select dropdown "State" "Active.Live"
+#        When click on button "Search"
+#        Then verify text "matching result(s)."
+#        When click on button "Clear fields"
+#        Then verify text "IMSI"
+#        Then enter textarea "IMSI" "901280000157504"
+#        When click on button "Search"
+#        Then verify text "1 matching result(s)."
+#         When click on button "Clear fields"
+#        Then verify text "ICCID"
+#        Then enter textarea "ICCID" "89882390000013263242"
+#        When click on button "Search"
+#        Then verify text "1 matching result(s)."
+#        When click on button "Clear fields"
+#        Then verify text "MSISDN"
+#        Then enter textarea "MSISDN" "882390000157500"
+#       When click on button "Search"
+#        Then verify text "1 matching result(s)."
+#        When click on button "Clear fields"
+#        Then verify text "Linked Device"
+#        Then select dropdown "Linked Device" "Yes"
+#        When click on button "Search"
+#        Then verify text "matching result(s)."
+#        When click on button "Clear fields"
+#        Then verify text "IMEI (assigned)"
+#        Then enter "IMEI" "3590530500936909"
+#        When click on button "Search"
+#        Then verify text "1 matching result(s)."
+#       When click on button "Clear fields"
+#        Then logout
+
+
+
+
+
+
+
+
 
    @TC_AccountManagement_015_SearchResultReadOnly
    Scenario:Verify that the configuration screen for the search results fields does not allow Customer User to remove the following fields from the SIM search results table:
@@ -348,18 +406,27 @@ Feature:AccountManagement
         Given test case starts
         Given browser is open
         Then login
+       When click on link "E2Eopco as Operator Administrator"
+       Then verify text "AutomationCust1 as Customer Administrator"
+       When click on link "AutomationCust1 as Customer Administrator"
         When click on menu "Devices"
-        Then verify text "All devices"
-        When click on submenu "All devices"
+        Then verify text "Devices"
+        When click on submenu "Devices"
         Then verify text "Results"
+        When click on button "Search"
         Then wait for 5 seconds
-        When click on button "hamBurgerBefore"
+        When click on button "hamBurger"
+#        Then verify no text "IMSI"
+#        Then verify no text "State"
+
         Then verify not
         |type|value|
         |hamburgerMenu|IMSI|
-        |hamburgerMenu|State|
-       # The verification for IMSI menu will result in failure because the code is picking up the wrong element due to ultiple validations.Once code is fixed this test case passes.
-        When click on button "hamBurgerAfter"
+       |hamburgerMenu|State|
+     Then wait for 5 seconds
+
+             #  The verification for IMSI menu will result in failure because the code is picking up the wrong element due to ultiple validations.Once code is fixed this test case passes.
+        When click on button "hamBurger2"
         Then logout
 
    @TC_AccountManagement_008_DeleteUser
@@ -367,23 +434,32 @@ Feature:AccountManagement
 
         Given test case starts
         Given browser is open
-        Then login as "CustomerWithOwnUsers"
+        #Then login as "CustomerWithOwnUsers"
+        Then login
         When click on menu "Administration"
         Then verify text "Users"
         When click on submenu "Users"
         Then verify text "Results"
         When click on button "Create user"
         Then verify text "User details"
+       #  Then enter "* Organisation" "Automation3"
+        When click on input "* Organisation" and enter value "AutomationCust1"
         Then generate "3" random alphabets and store in "RanName"
         Then join below strings and store in "RanEmail"
         |strings|
         |RanName|
         |@gmail.com|
-        Then enter "Username" "RanEmail"
-        Then enter "First Name" "Name1"
-        Then enter "Last Name" "Name2"
-        Then enter "Mobile" "+449876543210"
-        Then select dropdown "Role" "Customer Operations"
+        Then enter "* Username" "RanEmail"
+        Then enter "* First Name" "Name1"
+        Then enter "* Last Name" "Name2"
+        Then enter "* Mobile" "+449876543210"
+        # Then enter "* Email""RanEmail"
+
+        Then verify text "System"
+       Then select dropdown "Role" "Customer Operations"
+        Then verify text "* Access to device management"
+        Then select radiobutton "No"
+
         When click on button "Next"
 
         Then verify text "Please confirm the following data."
@@ -395,7 +471,7 @@ Feature:AccountManagement
         When click on button "Search"
         Then verify text "1 matching result(s)."
 
-        When click on link "RanName"
+        When click on link "RanEmail"
         Then verify text "Personal"
         When click on button "Delete User"
         Then verify text "You are about to delete the user"
@@ -414,7 +490,8 @@ Feature:AccountManagement
 
         Given test case starts
         Given browser is open
-        Then login as "CustomerWithOwnUsers"
+       # Then login as "CustomerWithOwnUsers"
+         Then login
         When click on menu "Administration"
         Then verify text "Users"
         When click on submenu "Users"
@@ -456,10 +533,10 @@ Feature:AccountManagement
         Then verify text "Results"
         Then verify
         |type|value|
-        |menu|Auto2CSP|
+        |menu|AutoCSP2|
         Then verify not
         |type|value|
-        |menu|AutoCSP1|
+        |menu|AutoCSP_Voice|
 
    @TC_AccountManagement_031_ReadOnlyaccess_Part1
    Scenario:Verify Restrict Customer Service Profiles functionality for CSPs.
@@ -494,7 +571,8 @@ Feature:AccountManagement
 
         Given test case starts
         Given browser is open
-        Then login as "CustomerWithAccessRight"
+       Then login as "CustomerWithAccessRight"
+        #Then login
         When click on menu "Administration"
         Then verify text "Users"
         When click on submenu "Users"
