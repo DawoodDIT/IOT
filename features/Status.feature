@@ -8,22 +8,31 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Suspended"
       When click on button "Search"
       When click on link "USE_Status_Suspended"
+      then wait for 20 seconds
       Then verify text "VLR UNKNOWN"
+      When click on link "Details"
+      Then verify text "Mobility"
       When click on link "Mobility"
+      Then wait for 10 seconds
 
-      Then get value of "Status" on position 1 and store in "CircuitStatus1"
-      Then verify if "CircuitStatus1" "equal" "Unknown in mobile network"
+      Then verify text "Registration information"
+      Then get value of "Status" on position 1 and store in "Status1"
+      Then verify if "Status1" "equal" "Unknown in mobile network"
 
-	  Then get value of "Status" on position 2 and store in "PacketStatus1"
-      Then verify if "PacketStatus1" "equal" "No location update yet"
+      Then verify text "Packet switched information"
+      Then get value of "Status" on position 2 and store in "Status2"
+      Then verify if "Status2" "equal" "No location update yet"
 
-      Then get value of "Subscriber state" on position 1 and store in "SubState1"
-      Then verify if "SubState1" "equal" "Device is not registered"
+     Then verify text "Location information"
+     Then get value of "Subscriber state" on position 1 and store in "State1"
+     Then verify if "State1" "equal" "Device is not registered"
+
+     Then logout
 
 
    @TC_REG_R10_STATUS_002_Active
@@ -34,20 +43,28 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Active"
       When click on button "Search"
       When click on link "USE_Status_Active"
+      Then wait for 20 seconds
       Then verify text "VLR UNKNOWN"
+      When click on link "Details"
+      Then verify text "Mobility"
       When click on link "Mobility"
+      Then wait for 10 seconds
 
-      Then get value of "Status" on position 1 and store in "CircuitStatus2"
-      Then verify if "CircuitStatus2" "equal" "Unknown in mobile network"
+     Then verify text "Registration information"
+      Then get value of "Status" on position 1 and store in "Status1"
+      Then verify if "Status1" "equal" "Unknown in mobile network"
 
-	  Then get value of "Status" on position 2 and store in "PacketStatus2"
-      Then verify if "PacketStatus2" "equal" "No location update yet"
+      Then verify text "Packet switched information"
+      Then get value of "Status" on position 2 and store in "Status2"
+      Then verify if "Status2" "equal" "No location update yet"
 
+
+       Then logout
 
    @TC_REG_R10_STATUS_003_Live/Test
    Scenario:Test to verify the GSM and GPRS status on User Registration page when SIM is in Live/Test state.
@@ -57,19 +74,26 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Live/Test"
       When click on button "Search"
       When click on link "USE_Status_Live/Test"
+     Then wait for 10 seconds
+      When click on link "Details"
+      Then verify text "Mobility"
       When click on link "Mobility"
+      Then wait for 10 seconds
 
-      Then get value of "Status" on position 1 and store in "CircuitStatus3"
-      Then verify if "CircuitStatus3" "equal" "Registered"
+      Then verify text "Registration information"
+      Then get value of "Status" on position 1 and store in "Status1"
+      Then verify if "Status1" "equal" "Unknown in mobile network"
 
-	  Then get value of "Status" on position 2 and store in "PacketStatus3"
-      Then verify if "PacketStatus3" "equal" "Registered"
+      Then verify text "Packet switched information"
+      Then get value of "Status" on position 2 and store in "Status2"
+      Then verify if "Status2" "equal" "No location update yet"
 
+     Then logout
 
    @TC_REG_R10_STATUS_004_Restricted
    Scenario:Test to verify the GSM and GPRS status on User Registration page when SIM is in Restricted state.
@@ -79,7 +103,7 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Restricted"
       When click on button "Search"
@@ -102,7 +126,7 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Detatched"
       When click on button "Search"
@@ -125,7 +149,7 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Barred"
       When click on button "Search"
@@ -147,7 +171,7 @@ Feature:  Status
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_Status_Purged"
       When click on button "Search"
