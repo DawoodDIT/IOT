@@ -6,6 +6,7 @@ import Module.logger
 import time
 import Module.Utility
 import Module.RecordTime
+import Module.logger
 
 cwd = os.getcwd()
 pcwd = "\\".join(cwd.split('\\')[:-1])
@@ -40,10 +41,12 @@ def stopJVM():
     shutdownJVM()
 
 
-def createTestReport(filename,testName,append):
+def createTestReport(filename,sName,testName,append):
     t1 = time.perf_counter()
     global tcName
+    global scenName
     tcName= testName
+    scenName = tcName+"_"+sName
 
     Module.logger.INFO("Starting report")
     jPack = JPackage("com.relevantcodes.extentreports")
@@ -59,7 +62,9 @@ def createTestReport(filename,testName,append):
     extentObj.addSystemInfo(JString("Environment"), JString("QA"))
     extentObj.addSystemInfo(JString("User Name"), JString("Test"))
     global extentTest
-    extentTest = extentObj.startTest(JString(tcName), JString("Description"))
+    ##extentTest = extentObj.startTest(JString(tcName), JString("Description"))
+    ## For report test case name change
+    extentTest = extentObj.startTest(JString(scenName), JString("Description"))
     Module.RecordTime.calculateTime("ReportingTime", time.perf_counter() - t1)
 
 def endTestReport():
@@ -111,15 +116,22 @@ def Success(driverObject,message):
 
 def Failure(driverObject,message):
     t1 = time.perf_counter()
-    if reportlevel != "NONE":
-        screenShotName = tcName + getDate()
+    Module.logger.INFO("In FAILURE Report Level is "+reportlevel)
+    if reportlevel == "ALL":
+        Module.logger.INFO("Inside FAILURE Report Level is " + reportlevel)
+        screenShotName = tcName + "_" + getDate()
+        #screenShotName = tcName + getDate()
         screenShotPath = takeScreenShot(driverObject, screenShotName)
         screenShotPathForHtml = "..\\Reports\\ErrorScreenShots\\" + screenShotName + ".png"
         message = message
+        Module.logger.INFO("Message to print is "+message)
         extentTest.log(logStatus.FAIL, JString(message))
+        Module.logger.INFO("After logStatus.Fail with message" + message)
         # extentTest.log(logStatus.FAIL,"Snapshot Details: "+extentTest.addScreenCapture(screenShotPath))
         extentTest.log(logStatus.FAIL, "Snapshot Details: " + extentTest.addScreenCapture(screenShotPathForHtml))
+        Module.logger.INFO("After logStatus.fail snapshot details")
         endTestReport()
+        Module.logger.INFO("Failure Reported ")
     else:
         pass
     Module.RecordTime.calculateTime("ReportingTime", time.perf_counter() - t1)
