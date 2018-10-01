@@ -12,44 +12,91 @@ Feature: Tariff Activation
     When click on menu "Administration"
     Then verify text "Tariffs"
     When click on menu "Tariffs"
-    Then verify text "Results"
-    Then enter "Tariff" "USE_Tariffs_Tariff5"
-    When click on button "Search"
-    Then verify text "USE_Tariffs_Tariff5"
-    When click on link "USE_Tariffs_Tariff5"
-    Then verify text "Tariff"
 
+
+    #Creation of Tariff
+    When click on button "Create tariff"
+    Then verify text "* Tariff"
+     Then generate unique name starts with "Tariff_" and store in "TarName"
+     Then enter "* Tariff" "TarName"
+    Then verify text "* Organisation"
+    When click on input "* Organisation" and enter value "E2Ereseller"
+    Then verify text "* Currency"
+    Then enter "* Currency" "gbp"
+    When click on button "Next"
+    Then verify text "Version information"
+    Then verify text "* Start date (UTC)"
+    Then wait for 10 seconds
+    Then enter date for "Start date (UTC)" "today +10 days"
+    Then wait for 10 seconds
+    Then select dropdown "* Type" "Both SIM and Usage"
+    Then wait for 20 seconds
+    Then verify text "* Roaming group"
+    Then select dropdown "* Roaming group" "CSDB_ALL NETWORKS"
+     When click on button "Next"
+    Then verify text "Recurring state charges"
+    Then verify text "State change charges"
+    When click on button "Next"
+    Then verify text "Tariff band"
+    Then verify text "Tariff usage"
+    Then select dropdown "* Inclusive usage" "No Inclusive Usage"
+    When click on button "Next"
+    When click on button "Create"
+    Then verify text "was successfully created!"
+
+    #Tariff Version Activation
+    When click on button "Go to tariffs"
+    Then enter "Tariff" "USE_Tariffs_TarName"
+    When click on button "Search"
+    Then verify text "USE_Tariffs_TarName"
+    When click on link "USE_Tariffs_TarName"
+    Then verify text "Tariff"
     When click on button "Edit"
     Then verify text "Withdraw Date (UTC)"
     Then enter date "Withdraw Date (UTC)" "USE_Tariffs_futureDate2"
     When click on button "Save"
-
-    Then verify text "Next version"
-    When click on link "Next version"
-    Then verify text "Version"
-    When click on button "Edit" on Position 1
-    Then verify text "Start date (UTC)"
-    Then enter date "Start date (UTC)" "USE_Tariffs_oldDate"
+    Then verify text "Create new version"
+    When click on link "Create new version"
+    Then verify text "Version information"
+    #When click on button "Edit" on Position 1
+    Then verify text "* Start date (UTC)"
+    Then wait for 10 seconds
+    Then enter date "* Start date (UTC)" "USE_Tariffs_oldDate"
     Then select dropdown "* Type" "Both SIM and Usage"
-    When click on button "Save"
+    When click on button "Next"
     Then verify text "Tariff Start Date must not be in the past or today's date"
-    Then get todays date and store in "today"
-    Then enter date "Start date (UTC)" "today"
-    When click on button "Save"
-    Then verify text "Settings successfully updated"
+   # Then get todays date and store in "today"
+    Then wait for 10 seconds
+   # Then enter date "Start date (UTC)" "today"
+    Then enter date for "Start date (UTC)" "today +10 days"
+    Then wait for 20 seconds
+    Then verify text "* Roaming group"
+    Then select dropdown "* Roaming group" "CSDB_ALL NETWORKS"
+    When click on button "Next"
+    Then verify text "Recurring state charges"
+    Then verify text "State change charges"
+    When click on button "Next"
+    Then verify text "Tariff band"
+    Then verify text "Tariff usage"
+    Then select dropdown "* Inclusive usage" "No Inclusive Usage"
+    When click on button "Next"
+    When click on button "Create"
+    Then verify text "The tariff version for the tariff"
+    When click on button "Go to tariffs"
     Then wait for 10 seconds
     Then verify text "Administration"
     When click on menu "Administration"
     Then verify text "Tariffs"
     When click on menu "Tariffs"
     Then verify text "Results"
-    Then enter "Tariff" "USE_Tariffs_Tariff5"
+    Then enter "Tariff" "USE_Tariffs_TarName"
     When click on button "Search"
-    Then verify text "USE_Tariffs_Tariff5"
-    When click on link "USE_Tariffs_Tariff5"
+    Then verify text "USE_Tariffs_TarName"
+    When click on link "USE_Tariffs_TarName"
     Then verify text "Tariff"
-    When click on link "Next version"
-    Then verify text "Version"
+    When click on link "Overview"
+    Then verify text "Current Version"
+    Then verify text "Next Version"
     Then logout
 
 
@@ -337,7 +384,7 @@ Feature: Tariff Activation
     Then enter "Price" "2.00"
     Then verify text "SMS"
     Then enter "* Included SMS MT" "4"
-    Then enter "* Included SMS MO" "23mo"
+    Then enter "* Included SMS MO" "23"
     Then enter "* Included SMS wakeup" "4"
     Then enter "* Included P2P SMS MT" "5"
     Then enter "* Included P2P SMS MO" "5"
@@ -374,7 +421,7 @@ Feature: Tariff Activation
     Then verify text "Administration"
     When click on menu "Administration"
     Then verify text "Service profiles"
-    When click on menu "Service profiles"
+    When click on submenu "Service profiles"
     Then verify text "Results"
     Then verify text "Service Profile"
     Then enter "Service Profile" "USE_Tariffs_TariffSP"
@@ -393,14 +440,14 @@ Feature: Tariff Activation
     Then select dropdown "* Tariff" "USE_Tariffs_TariffForCSP"
     When click on button "Save"
     Then verify text "Settings successfully updated"
-    Then wait for 5 seconds
-    Then verify text "Administration"
+    Then wait for 10 seconds
+   Then verify text "Administration"
     When click on menu "Administration"
     Then verify text "Service profiles"
-    When click on menu "Service profiles"
+    When click on submenu "Service profiles"
     Then verify text "Results"
-    Then wait for 10 seconds
-    Then verify text "Service Profile"
+
+    # verifying that changes have been done
     Then enter "Service Profile" "USE_Tariffs_TariffSP"
     When click on button "Search"
     Then verify text "USE_Tariffs_TariffSP"
@@ -432,7 +479,7 @@ Feature: Tariff Activation
     When click on button "Search"
     Then verify text "USE_Tariffs_CustOrg"
     When click on link "USE_Tariffs_CustOrg"
-    Then verify text "Customer"
+    #Then verify text "Customer"
     Then verify text "Details"
     When click on link "Details"
     Then verify text "Contract"
@@ -440,8 +487,10 @@ Feature: Tariff Activation
     Then verify text "Contract information"
     Then verify text "Edit"
     When click on button "Edit" on position 2
+    Then wait for 15 seconds
     Then verify text "* Tariffs"
-    Then select dropdown "* Tariffs" "USE_Tariffs_ActiveTariff"
+    Then verify text "672Test"
+    #Then select dropdown "* Tariffs" "USE_Tariffs_ActiveTariff"
     Then verify text "Save"
     When click on button "Save"
     Then wait for 10 seconds
@@ -485,17 +534,16 @@ Feature: Tariff Activation
     Given test case starts
     Given browser is open
     Then login
+    Then wait for 5 seconds
     Then verify text "Reporting"
     When click on menu "Reporting"
+    Then wait for 5 seconds
     Then verify text "Reports"
-    When click on menu "Reports"
+    When click on submenu "Reports"
+    Then wait for 5 seconds
     Then verify text "Generate report"
     Then select dropdown "* Report" "Customer Invoice-Data"
-    When click on button "Generate"
-    Then verify text "* Date"
-    Then verify text "This is a mandatory field"
-    #Then enter date "* Date" "2017-11-05"
-    Then enter date "* Date" "USE_Tariffs_oldDate"
+     Then enter date "* Date" "USE_Tariffs_oldDate"
     Then select dropdown "* Customer" "USE_Tariffs_CustReport"
     Then select dropdown "* Format" "XML"
     When click on button "Generate"
@@ -511,15 +559,18 @@ Feature: Tariff Activation
     Given test case starts
     Given browser is open
     Then login
+   Then wait for 5 seconds
     Then verify text "Reporting"
     When click on menu "Reporting"
+    Then wait for 5 seconds
     Then verify text "Reports"
-    When click on menu "Reports"
+    When click on submenu "Reports"
+    Then wait for 5 seconds
     Then verify text "Generate report"
     Then select dropdown "* Report" "Customer Invoice-Data"
-    When click on button "Generate"
-    Then verify text "* Date"
-    Then verify text "This is a mandatory field"
+#    When click on button "Generate"
+#    Then verify text "* Date"
+#    Then verify text "This is a mandatory field"
    # Then enter date "* Date" "2017-11-05"
     Then enter date "* Date" "USE_Tariffs_oldDate"
     Then select dropdown "* Customer" "USE_Tariffs_CustReport"
@@ -538,10 +589,11 @@ Feature: Tariff Activation
     Given browser is open
     Then login
     Then verify text "Reporting"
-    When click on menu "Reporting"
-    Then verify text "Reports"
-    When click on menu "Reports"
-    Then verify text "Generate report"
+     When click on menu "Reporting"
+     Then wait for 5 seconds
+     Then verify text "Reports"
+     When click on submenu "Reports"
+     Then verify text "Generate report"
     Then select dropdown "* Report" "Customer Invoice-Data"
     When click on button "Generate"
     Then verify text "* Date"
@@ -564,11 +616,13 @@ Feature: Tariff Activation
     Given test case starts
     Given browser is open
     Then login
-    Then verify text "Reporting"
-    When click on menu "Reporting"
-    Then verify text "Reports"
-    When click on menu "Reports"
-    Then verify text "Generate report"
+
+     Then verify text "Reporting"
+     When click on menu "Reporting"
+     Then wait for 5 seconds
+     Then verify text "Reports"
+     When click on submenu "Reports"
+     Then verify text "Generate report"
     Then select dropdown "* Report" "Customer Invoice-Data"
     #Then enter date "* Date" "2017-10-05"
     Then enter date "* Date" "USE_Tariffs_oldDate"
