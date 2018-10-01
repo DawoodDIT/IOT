@@ -28,10 +28,9 @@
       "locator": "id",
       "locatorvalue": "__ns2036994902_confirmBtn"
     },
-    "* Customer": {
+    "removeSimMovCust": {
       "locator": "xpath",
       "locatorvalue": "//*[@id='__ns2036993941_organisationInputTree0FieldBlock']/a[1]"
-
 
     },
     "removeSIMgroup":{
@@ -187,6 +186,6 @@
     }
   }
 }
-  
+
 
 
