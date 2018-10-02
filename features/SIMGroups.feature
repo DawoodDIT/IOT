@@ -23,7 +23,7 @@
        | button  | Edit   |
        When click on button "Edit"
        Then verify text "+ Add group"
-       When click on link "+ Add group"
+      # When click on link "+ Add group"
        Then verify text "* Name"
        Then enter "* Name" "USE_SIMGroups_GroupName"
        Then enter "Description" "USE_SIMGroups_Description"
