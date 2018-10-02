@@ -23,7 +23,7 @@ Feature: SIM Operations
     Then verify text "matching result(s)"
     When click menu "Devices" and submenu "Devices"
     Then verify text "Results"
-    Then enter "USE_USE_SIMOperations_TextAreaNameIMEI" "USE_SIMOperations_IMEINo"
+    Then enter "USE_SIMOperations_TextAreaNameIMEI" "USE_SIMOperations_IMEINo"
     When click on button "Search"
     Then verify text "Results"
     Then verify text "matching result(s)"
@@ -87,6 +87,9 @@ Feature: SIM Operations
     Then select all from table
     When click on link "Export"
     When click on button "CSV"
+#    Then wait for 10 seconds
+#    When click on button "Close"
+ #   Then wait for 10 seconds
     When click on link "USE_SIMOperations_CustomerAdministratorRole"
     When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then wait for 5 seconds
@@ -521,7 +524,7 @@ Feature: SIM Operations
     When click on link "USE_SIMOperations_IMSINo"
     Then verify text "Overview"
     When click on tab "Operations"
-#    When click on link "Configure"
+ #  When click on link "Configure"
     When click on link "Set APN username and password"
     Then select dropdown "* APN" "USE_SIMOperations_DropdownValue"
     Then enter "* Username" "USE_SIMOperations_Username"
