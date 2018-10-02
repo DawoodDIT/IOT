@@ -1,25 +1,29 @@
 {
-  "sut": {
+   "sut": {
     "url": "https://m2mportal-e2e.vodafone.com/m2mscp"
   },
   "Login": {
     "Username": "muhammad.dawood.khan@slr-consultants.com",
     "Password": "Vodafone6*"
   },
+
   "CustomerWithOwnUsers": {
-    "Username": "karthika.arun@slr-consultants.com",
-    "Password": "M3Mm3mM3M"
-  },
+   "Username": "karthika.arun@slr-consultants.com",
+   "Password": "M3Mm3mM3M"
+},
   "CustomerForReset": {
-    "Username": "vidya.mahadevaiah@slr-consultants.com",
-    "Password": "M2Mm2mM2M"
-  },
+   "Username": "kaptester715+897@gmail.com",
+   "Password": "Automation@123"
+},
   "CustomerWithRestrictCSP": {
-    "Username": "abctestprofile@gmail.com",
-    "Password": "M3Mm3mM3M"
-  },
+    "Username": "slrcustadmin4@sharklasers.com",
+    "Password":"Vodafone1*"
+},
+
   "CustomerWithAccessRight": {
     "Username": "deftestprofile@gmail.com",
-    "Password": "M4Mm4mM4M"
+    "Password": "M3Mm3mM3M"
   }
+
+
 }
