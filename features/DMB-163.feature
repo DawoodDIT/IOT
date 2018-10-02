@@ -8,7 +8,7 @@ Feature:  DMB-163
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_DMB163_WithProvisioningHistory"
       When click on button "Search"
@@ -34,11 +34,11 @@ Feature:  DMB-163
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_DMB163_WithProvisioningHistory"
+      Then enter textarea "IMSI" "USE_DMB163_WithProvisioningHistory2"
       When click on button "Search"
-      When click on link "USE_DMB163_WithProvisioningHistory"
+      When click on link "USE_DMB163_WithProvisioningHistory2"
       When click on link "History"
       Then select radiobutton "Activity list"
       Then select drop down "Type" "Administrative operations"
@@ -61,7 +61,7 @@ Feature:  DMB-163
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
       Then enter textarea "IMSI" "USE_DMB163_WithAPNAttributeChange"
       When click on button "Search"
@@ -86,14 +86,16 @@ Feature:  DMB-163
       Given browser is open
       Then login
       When click on menu "Devices"
-      When click on submenu "All devices"
+      When click on submenu "Devices"
       Then verify text "Results"
-      Then enter textarea "IMSI" "USE_DMB163_WithProvisioningHistory"
+      Then enter textarea "IMSI" "USE_DMB163_WithProvisioningHistory1"
       When click on button "Search"
-      When click on link "USE_DMB163_WithProvisioningHistory"
+      When click on link "USE_DMB163_WithProvisioningHistory1"
       When click on link "History"
       Then select radiobutton "Activity list"
       Then select drop down "Type" "Administrative operations"
+      Then enter date for "between" "today - 300days"
+      Then enter date for "and" "today - 100days"
       When click on button "Search"
       Then verify text "New SIM record"
       #verify timestamp is visible along with "New"
