@@ -125,7 +125,7 @@ Then end call from "USE_EMBREModification_CSdeviceID1"
 #     Web part
 
 When click on menu "Devices"
-When click on submenu "All devices"
+When click on submenu "Devices"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
 When click on link "USE_EMBREModification_IMSI"
@@ -173,7 +173,7 @@ Then verify text "successfully created!"
 #    Mobile part 1 - SMS MT
 
 When click on menu "Devices"
-When click on menu "All devices"
+When click on menu "Devices"
 Then verify text "Results"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
@@ -190,7 +190,7 @@ When click on button "Send"
 #     Web part
 
 When click on menu "Devices"
-When click on submenu "All devices"
+When click on submenu "Devices"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
 When click on link "USE_EMBREModification_IMSI"
@@ -247,7 +247,7 @@ Then send sms "USE_EMBREModification_Message" from "USE_EMBREModification_IOTdev
 #     Web Part
 
 When click on menu "Devices"
-When click on submenu "All devices"
+When click on submenu "Devices"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
 When click on link "USE_EMBREModification_IMSI"
@@ -386,7 +386,7 @@ Then end call from "USE_EMBREModification_CSdeviceID1"
 
 #     Web verification
 When click on menu "Devices"
-When click on submenu "All devices"
+When click on submenu "Devices"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
 When click on link "USE_EMBREModification_IMSI"
@@ -454,7 +454,7 @@ When click on mobile link "Java Programming"
 #    Mobile part 1 - SMS MT
 
 When click on menu "Devices"
-When click on menu "All devices"
+When click on menu "Devices"
 Then verify text "Results"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
@@ -541,7 +541,7 @@ Then end call from "USE_EMBREModification_CSdeviceID1"
 #    Mobile part - SMS MT
 
 When click on menu "Devices"
-When click on menu "All devices"
+When click on menu "Devices"
 Then verify text "Results"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
@@ -558,7 +558,7 @@ When click on button "Send"
 #     Web part - Device state
 
 When click on menu "Devices"
-When click on submenu "All devices"
+When click on submenu "Devices"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
 When click on link "USE_EMBREModification_IMSI"
@@ -716,7 +716,7 @@ Then end call from "USE_EMBREModification_CSdeviceID1"
 #    Mobile part - SMS MT
 
 When click on menu "Devices"
-When click on menu "All devices"
+When click on menu "Devices"
 Then verify text "Results"
 Then enter textarea "IMSI" "USE_EMBREModification_IMSI"
 When click on button "Search"
