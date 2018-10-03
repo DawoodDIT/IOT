@@ -62,8 +62,8 @@ Feature: SIM Operations
     Then select all from table
     When click on link "Export"
     When click on button "CSV"
-    When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click on link "USE_SIMOperations_OperatorAdministratorRole"
+#    When click on link "USE_SIMOperations_CustomerAdministratorRole"
+#    When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
@@ -90,8 +90,8 @@ Feature: SIM Operations
 #    Then wait for 10 seconds
 #    When click on button "Close"
  #   Then wait for 10 seconds
-    When click on link "USE_SIMOperations_CustomerAdministratorRole"
-    When click on link "USE_SIMOperations_OperatorAdministratorRole"
+#    When click on link "USE_SIMOperations_CustomerAdministratorRole"
+#    When click on link "USE_SIMOperations_OperatorAdministratorRole"
     Then wait for 5 seconds
     Then logout
 
