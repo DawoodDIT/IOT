@@ -6,10 +6,22 @@
     "deviceId": "EABYBQGANJLBBEVS"
   },
 
-    "mobile2": {
+    "mobile3": {
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "deviceName": "Alcatel Pixi 4 (4)",
+    "deviceId":"GQ9LNJNRGYEIUWNV"
+  },
+  "mobile1": {
     "platformName": "Android",
     "platformVersion": "4.4.2",
-    "deviceName": "ALCATEL ONETOUCH PIXI 3(4)",
+    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
+    "deviceId":"V4EURGUST8N7R4GI"
+  },
+   "mobile2": {
+    "platformName": "Android",
+    "platformVersion": "4.4.2",
+    "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
     "deviceId":"V4EURGUST8N7R4GI"
   },
   "mobileSMS": {
@@ -25,7 +37,7 @@
     "deviceId": "L7MZUOFMTTSKSKKR"
   },
 
- "mobile3": {
+ "mobile31": {
     "platformName": "Android",
     "platformVersion": "4.4.2",
     "deviceName": "ALCATEL ONETOUCH PIXI 3 (3.5)",
